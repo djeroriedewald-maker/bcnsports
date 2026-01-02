@@ -122,6 +122,59 @@
         </div>
     </section>
 
+
+    <!-- HYROX & Competitie Credentials Section -->
+    <section class="py-32 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
+                    Bewezen In <span class="text-[#c4ff00]">Competitie</span>
+                </h2>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
+                    Onze trainers nemen actief deel aan professionele fitness competities zoals HYROX.
+                    De kennis en ervaring die wij opdoen, brengen wij direct naar onze trainingen.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="fade-in-left dark-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-96 overflow-hidden">
+                        <img src="/images/13234_20241013_111118_415132811_socialmedia.jpg" alt="BCN Sports trainer bij HYROX Amsterdam - rowing" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                            HYROX Amsterdam 2024
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <h3 class="text-2xl font-bold text-white uppercase">Rowing Station</h3>
+                            <p class="text-[#c4ff00] font-semibold uppercase tracking-wider text-sm">Competition Ready</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fade-in-right dark-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-96 overflow-hidden">
+                        <img src="/images/13234_20241013_111559_415165870_socialmedia.jpg" alt="BCN Sports trainer HYROX competitie - walking" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                            HYROX Amsterdam 2024
+                        </div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <h3 class="text-2xl font-bold text-white uppercase">Athlete Mindset</h3>
+                            <p class="text-[#c4ff00] font-semibold uppercase tracking-wider text-sm">Never Give Up</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-[#a0a0a0] max-w-2xl mx-auto">
+                    Door zelf aan wedstrijden mee te doen, begrijpen wij wat het betekent om te presteren onder druk.
+                    Deze ervaring delen wij met onze leden om hen te helpen hun eigen doelen te bereiken.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Mission & Vision -->
     <section class="py-32 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -219,6 +272,55 @@
                     <p class="text-[#a0a0a0] text-sm">
                         We geloven in de kracht van buiten zijn en de positieve effecten daarvan.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Training Method Section -->
+    <section class="py-32 bg-[#141414]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-left">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img src="/images/20241007_093350.jpg" alt="Outdoor training op mat" class="w-full h-auto">
+                    </div>
+                </div>
+                
+                <div class="fade-in-right">
+                    <h2 class="text-4xl md:text-5xl font-black uppercase text-white mb-6">
+                        Onze <span class="text-[#c4ff00]">Trainingsmethode</span>
+                    </h2>
+                    <p class="text-[#a0a0a0] text-lg mb-6">
+                        Elke training bij BCN Sports is zorgvuldig ontworpen om maximale resultaten te behalen.
+                        We combineren functionele oefeningen, cardio en kracht in een dynamische workout die
+                        geschikt is voor alle niveaus.
+                    </p>
+                    <p class="text-[#a0a0a0] text-lg mb-8">
+                        Of je nu traint op gras, op een mat, of op het strand - onze trainingen passen zich aan
+                        aan de omgeving en maken gebruik van de natuurlijke elementen om je sterker te maken.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-white">
+                            <svg class="w-6 h-6 text-[#c4ff00] mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Functionele bewegingen voor alledaagse kracht
+                        </li>
+                        <li class="flex items-center text-white">
+                            <svg class="w-6 h-6 text-[#c4ff00] mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            HIIT training voor maximale vetverbranding
+                        </li>
+                        <li class="flex items-center text-white">
+                            <svg class="w-6 h-6 text-[#c4ff00] mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Scaleerbare oefeningen voor elk niveau
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -6,10 +6,17 @@
 @section('content')
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Image -->
+        <!-- Background Video -->
         <div class="absolute inset-0">
-            <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/70 via-[#0a0a0a]/50 to-[#0a0a0a]"></div>
+            <!-- Video for desktop -->
+            <video autoplay muted loop playsinline class="hidden md:block absolute inset-0 w-full h-full object-cover">
+                <source src="/images/VN20240906_193223-1920.mp4" type="video/mp4">
+            </video>
+            <!-- Fallback image for mobile/slow connections -->
+            <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="md:hidden w-full h-full object-cover">
+            <!-- Dark overlay -->
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]"></div>
         </div>
 
         <!-- Content -->
@@ -69,6 +76,67 @@
         </div>
     </section>
 
+    <!-- HYROX & Events Section -->
+    <section class="py-32 bg-[#141414]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
+                    BCN Sports <span class="text-[#c4ff00]">In Actie</span>
+                </h2>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
+                    Onze trainers en leden nemen deel aan professionele fitness evenementen zoals HYROX Amsterdam.
+                    Wij trainen niet alleen, wij presteren!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- HYROX Photo 1 -->
+                <div class="fade-in-left dark-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-80 overflow-hidden">
+                        <img src="/images/13234_20241013_111118_415132811_socialmedia.jpg" alt="BCN Sports trainer bij HYROX Amsterdam" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                            HYROX Amsterdam
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white uppercase mb-2">Competitie Ready</h3>
+                        <p class="text-[#a0a0a0]">
+                            Onze trainers zijn niet alleen coaches, maar ook actieve atleten die zelf aan wedstrijden deelnemen.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- HYROX Photo 2 -->
+                <div class="fade-in-right dark-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-80 overflow-hidden">
+                        <img src="/images/13234_20241013_111559_415165870_socialmedia.jpg" alt="BCN Sports trainer HYROX competitie" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
+                        <div class="absolute top-4 left-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                            HYROX Amsterdam
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white uppercase mb-2">Professionele Aanpak</h3>
+                        <p class="text-[#a0a0a0]">
+                            De kennis en ervaring van wedstrijden brengen wij mee naar onze trainingen voor jou.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-[#a0a0a0] mb-6">Wil jij ook meedoen aan fitness evenementen? Wij trainen je ervoor!</p>
+                <a href="{{ route('contact') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase tracking-wider hover:text-white transition">
+                    Neem contact op voor meer info
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="py-32 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -85,7 +153,7 @@
                 <!-- Bootcamp Card -->
                 <div class="fade-in-left dark-card rounded-2xl overflow-hidden group">
                     <div class="relative h-64 overflow-hidden">
-                        <img src="/images/20240902_195039.jpg" alt="Outdoor Bootcamp" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="/images/20241007_093350.jpg" alt="Outdoor Bootcamp Training" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
                     </div>
                     <div class="p-8">
@@ -170,6 +238,62 @@
         </div>
     </section>
 
+
+    <!-- Community Section -->
+    <section class="py-32 bg-[#141414]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-left">
+                    <h2 class="text-4xl md:text-5xl font-black uppercase text-white mb-6">
+                        Word Onderdeel Van De <span class="text-[#c4ff00]">BCN Familie</span>
+                    </h2>
+                    <p class="text-[#a0a0a0] text-lg mb-6">
+                        Bij BCN Sports draait het niet alleen om trainen, maar ook om de connectie met elkaar.
+                        Onze community is een hechte groep mensen die elkaar motiveren, steunen en samen plezier maken.
+                    </p>
+                    <p class="text-[#a0a0a0] text-lg mb-8">
+                        Van gezamenlijke evenementen tot spontane social gatherings - bij ons vind je meer dan alleen een training.
+                        Je vindt een tweede familie.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-white">
+                            <svg class="w-6 h-6 text-[#c4ff00] mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Regelmatige team events en uitjes
+                        </li>
+                        <li class="flex items-center text-white">
+                            <svg class="w-6 h-6 text-[#c4ff00] mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Actieve social media community
+                        </li>
+                        <li class="flex items-center text-white">
+                            <svg class="w-6 h-6 text-[#c4ff00] mr-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            Samen naar fitness evenementen
+                        </li>
+                    </ul>
+                    <a href="{{ route('contact') }}" class="btn-neon px-8 py-4 rounded-full text-lg inline-block">
+                        Sluit Je Aan
+                    </a>
+                </div>
+
+                <div class="fade-in-right">
+                    <div class="relative">
+                        <div class="rounded-2xl overflow-hidden">
+                            <img src="/images/IMG-20240616-WA0066.jpg" alt="BCN Sports Community Event" class="w-full h-auto">
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 bg-[#c4ff00] text-[#0a0a0a] px-6 py-4 rounded-xl font-bold uppercase">
+                            #BCNFamily
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Gallery Section -->
     <section class="py-32 bg-[#141414]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -184,13 +308,18 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="fade-in img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+                    <!-- Video for desktop -->
+            <video autoplay muted loop playsinline class="hidden md:block absolute inset-0 w-full h-full object-cover">
+                <source src="/images/VN20240906_193223-1920.mp4" type="video/mp4">
+            </video>
+            <!-- Fallback image for mobile/slow connections -->
+            <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="md:hidden w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-1 img-zoom rounded-xl overflow-hidden aspect-square">
                     <img src="/images/P1210932.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-2 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/20240904_091803.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+                    <img src="/images/20241007_093350.jpg" alt="Outdoor Training op Mat" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-3 img-zoom rounded-xl overflow-hidden aspect-square">
                     <img src="/images/P1270912.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover">

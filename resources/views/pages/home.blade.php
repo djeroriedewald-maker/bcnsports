@@ -6,14 +6,9 @@
 @section('content')
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Video -->
+        <!-- Background Image -->
         <div class="absolute inset-0">
-            <!-- Video for desktop -->
-            <video autoplay muted loop playsinline class="hidden md:block absolute inset-0 w-full h-full object-cover">
-                <source src="/images/VN20240906_193223-1920.mp4" type="video/mp4">
-            </video>
-            <!-- Fallback image for mobile/slow connections -->
-            <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="md:hidden w-full h-full object-cover">
+            <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
             <!-- Dark overlay -->
             <div class="absolute inset-0 bg-black/60"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]"></div>
@@ -55,20 +50,16 @@
     <!-- Stats Section -->
     <section class="py-20 bg-[#0a0a0a] border-y border-white/5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="grid grid-cols-3 gap-8 text-center max-w-3xl mx-auto">
                 <div class="fade-in">
-                    <div class="stat-number mb-2">500+</div>
-                    <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Leden</div>
-                </div>
-                <div class="fade-in stagger-1">
                     <div class="stat-number mb-2">1000+</div>
                     <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Sessies</div>
                 </div>
-                <div class="fade-in stagger-2">
+                <div class="fade-in stagger-1">
                     <div class="stat-number mb-2">5+</div>
                     <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Jaar Ervaring</div>
                 </div>
-                <div class="fade-in stagger-3">
+                <div class="fade-in stagger-2">
                     <div class="stat-number mb-2">100%</div>
                     <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Passie</div>
                 </div>
@@ -238,9 +229,38 @@
         </div>
     </section>
 
+    <!-- Training Video Section -->
+    <section class="py-32 bg-[#141414]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
+                    Bekijk Ons <span class="text-[#c4ff00]">In Actie</span>
+                </h2>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
+                    Ervaar de energie van onze outdoor bootcamp trainingen
+                </p>
+            </div>
+
+            <div class="fade-in">
+                <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        controls
+                        playsinline
+                        class="w-full h-auto"
+                    >
+                        <source src="/images/VN20240906_193223-1920.mp4" type="video/mp4">
+                        Je browser ondersteunt geen video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Community Section -->
-    <section class="py-32 bg-[#141414]">
+    <section class="py-32 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="fade-in-left">
@@ -308,12 +328,7 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="fade-in img-zoom rounded-xl overflow-hidden aspect-square">
-                    <!-- Video for desktop -->
-            <video autoplay muted loop playsinline class="hidden md:block absolute inset-0 w-full h-full object-cover">
-                <source src="/images/VN20240906_193223-1920.mp4" type="video/mp4">
-            </video>
-            <!-- Fallback image for mobile/slow connections -->
-            <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="md:hidden w-full h-full object-cover">
+                    <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-1 img-zoom rounded-xl overflow-hidden aspect-square">
                     <img src="/images/P1210932.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover">

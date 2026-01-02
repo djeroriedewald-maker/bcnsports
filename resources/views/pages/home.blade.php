@@ -333,6 +333,48 @@
         </div>
     </section>
 
+    <!-- Free Trial Booking Section -->
+    <section class="py-32 bg-[#0a0a0a]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
+                    Boek Je <span class="text-[#c4ff00]">Gratis Proefles</span>
+                </h2>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
+                    Ervaar zelf hoe onze bootcamp trainingen jou kunnen helpen fitter te worden. Je eerste les is altijd gratis!
+                </p>
+            </div>
+
+            <div class="fade-in glass-card rounded-2xl p-8 md:p-12">
+                <!-- Gratis Proefles Badge -->
+                <div class="flex justify-center mb-8">
+                    <div class="inline-flex items-center bg-[#c4ff00] text-[#0a0a0a] px-8 py-4 rounded-full font-black uppercase text-xl">
+                        <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+                        </svg>
+                        Gratis Proefles
+                    </div>
+                </div>
+
+                <!-- BCN Sports Booking Widget -->
+                <div class="bg-[#141414] rounded-xl p-8">
+                    <script src="https://app.bcnsports.nl/js/widget-loader.js"></script>
+                    <div
+                        data-bcn-widget="booking-button"
+                        data-api-key="bcn_nIwguf4E1cVWYYEX8xgOqWC8lmjmQawR819Zg3Qd"
+                        style="width: 100%; max-width: 100%; box-sizing: border-box;">
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-[#a0a0a0]">
+                        Geen verplichtingen - Kom kijken en ervaar het zelf!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="relative py-32 overflow-hidden">
         <div class="absolute inset-0">

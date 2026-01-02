@@ -30,14 +30,24 @@
                     <p class="text-[#a0a0a0]">Selecteer een les en boek direct je plek</p>
                 </div>
 
-                <!-- Placeholder for booking widget -->
-                <div class="bg-[#141414] rounded-xl p-12 text-center border border-dashed border-white/10">
-                    <svg class="w-16 h-16 text-[#c4ff00] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                    </svg>
-                    <h3 class="text-xl font-bold text-white uppercase mb-2">Boekingswidget</h3>
-                    <p class="text-[#a0a0a0] mb-4">Hier komt het boekingssysteem waar je direct lessen kunt reserveren.</p>
-                    <p class="text-[#6b6b6b] text-sm">Integratie met boekingssysteem volgt binnenkort.</p>
+                <!-- Gratis Proefles Badge -->
+                <div class="flex justify-center mb-8">
+                    <div class="inline-flex items-center bg-[#c4ff00] text-[#0a0a0a] px-6 py-3 rounded-full font-black uppercase text-lg">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+                        </svg>
+                        Gratis Proefles
+                    </div>
+                </div>
+
+                <!-- BCN Sports Booking Widget -->
+                <div class="bg-[#141414] rounded-xl p-8">
+                    <script src="https://app.bcnsports.nl/js/widget-loader.js"></script>
+                    <div
+                        data-bcn-widget="booking-button"
+                        data-api-key="bcn_nIwguf4E1cVWYYEX8xgOqWC8lmjmQawR819Zg3Qd"
+                        style="width: 100%; max-width: 100%; box-sizing: border-box;">
+                    </div>
                 </div>
 
                 <!-- Weekly schedule -->

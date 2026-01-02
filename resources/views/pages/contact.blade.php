@@ -21,6 +21,42 @@
         </div>
     </section>
 
+    <!-- Direct Booking Section -->
+    <section class="py-24 bg-[#141414]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="fade-in text-3xl md:text-4xl font-black uppercase text-white mb-4">
+                    Direct Een <span class="text-[#c4ff00]">Proefles</span> Boeken?
+                </h2>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
+                    Boek direct je gratis proefles via ons boekingssysteem - geen wachttijd!
+                </p>
+            </div>
+
+            <div class="fade-in glass-card rounded-2xl p-8 md:p-12">
+                <!-- Gratis Proefles Badge -->
+                <div class="flex justify-center mb-8">
+                    <div class="inline-flex items-center bg-[#c4ff00] text-[#0a0a0a] px-6 py-3 rounded-full font-black uppercase text-lg">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
+                        </svg>
+                        Gratis Proefles
+                    </div>
+                </div>
+
+                <!-- BCN Sports Booking Widget -->
+                <div class="bg-[#141414] rounded-xl p-8">
+                    <script src="https://app.bcnsports.nl/js/widget-loader.js"></script>
+                    <div
+                        data-bcn-widget="booking-button"
+                        data-api-key="bcn_nIwguf4E1cVWYYEX8xgOqWC8lmjmQawR819Zg3Qd"
+                        style="width: 100%; max-width: 100%; box-sizing: border-box;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="py-24 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -243,7 +279,7 @@
                         </svg>
                     </button>
                     <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">Vul het contactformulier in en selecteer "Proefles aanvragen" als onderwerp. We nemen binnen 24 uur contact met je op om een geschikte les in te plannen.</p>
+                        <p class="text-[#a0a0a0]">Je kunt direct een gratis proefles boeken via de boekingswidget bovenaan deze pagina. Kies een geschikte datum en tijd, en je bent klaar! Je eerste proefles is altijd gratis.</p>
                     </div>
                 </div>
 

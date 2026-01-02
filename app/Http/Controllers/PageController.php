@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactFormMail;
 
 class PageController extends Controller
 {
@@ -37,8 +39,8 @@ class PageController extends Controller
             'privacy' => 'required|accepted',
         ]);
 
-        // Here you could send an email or store in database
-        // For now, we just redirect with success message
+        // Send email to BCN Sports
+        Mail::to('info@bcnsports.nl')->send(new ContactFormMail($validated));
 
         return redirect()->route('contact')->with('success', 'Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.');
     }

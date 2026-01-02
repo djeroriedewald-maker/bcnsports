@@ -7,6 +7,7 @@ Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/prijzen', [PageController::class, 'prijzen'])->name('prijzen');
 Route::get('/rooster', [PageController::class, 'rooster'])->name('rooster');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
+Route::post('/contact', [PageController::class, 'contactSubmit'])->name('contact.submit');
 Route::get('/over-ons', [PageController::class, 'overOns'])->name('over-ons');
 Route::get('/privacy', [PageController::class, 'privacy'])->name('privacy');
 Route::get('/voorwaarden', [PageController::class, 'voorwaarden'])->name('voorwaarden');

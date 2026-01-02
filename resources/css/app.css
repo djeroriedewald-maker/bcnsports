@@ -8,11 +8,310 @@
 @theme {
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
 
-    /* BCN Sports Brand Colors */
-    --color-primary: #e63946;
-    --color-primary-dark: #c1121f;
-    --color-secondary: #1d3557;
-    --color-accent: #f4a261;
-    --color-light: #f1faee;
-    --color-dark: #0d1b2a;
+    /* BCN Sports Dark Athletic Theme */
+    --color-bg-primary: #0a0a0a;
+    --color-bg-secondary: #141414;
+    --color-bg-card: #1a1a1a;
+    --color-bg-card-hover: #222222;
+
+    /* Accent Colors */
+    --color-neon: #c4ff00;
+    --color-neon-dark: #a8d900;
+    --color-neon-glow: rgba(196, 255, 0, 0.3);
+    --color-red: #ff3333;
+    --color-red-dark: #cc2929;
+
+    /* Text Colors */
+    --color-text-white: #ffffff;
+    --color-text-gray: #a0a0a0;
+    --color-text-muted: #6b6b6b;
+
+    /* Legacy compatibility */
+    --color-primary: #c4ff00;
+    --color-primary-dark: #a8d900;
+    --color-secondary: #0a0a0a;
+    --color-secondary-light: #141414;
+    --color-accent: #ff3333;
+    --color-light: #1a1a1a;
+    --color-dark: #0a0a0a;
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-white);
+}
+
+/* Neon Glow Button Effect */
+.btn-neon {
+    background-color: var(--color-neon);
+    color: #0a0a0a;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.btn-neon:hover {
+    background-color: var(--color-neon-dark);
+    box-shadow: 0 0 30px var(--color-neon-glow), 0 0 60px var(--color-neon-glow);
+    transform: translateY(-2px);
+}
+
+.btn-neon-outline {
+    background-color: transparent;
+    border: 2px solid var(--color-neon);
+    color: var(--color-neon);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+
+.btn-neon-outline:hover {
+    background-color: var(--color-neon);
+    color: #0a0a0a;
+    box-shadow: 0 0 30px var(--color-neon-glow);
+}
+
+/* Glass Card Effect */
+.glass-card {
+    background: rgba(26, 26, 26, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-dark {
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Neon Border Glow */
+.neon-border {
+    border: 1px solid var(--color-neon);
+    box-shadow: 0 0 10px var(--color-neon-glow);
+}
+
+.neon-border:hover {
+    box-shadow: 0 0 20px var(--color-neon-glow), 0 0 40px var(--color-neon-glow);
+}
+
+/* Dark Cards */
+.dark-card {
+    background-color: var(--color-bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.dark-card:hover {
+    background-color: var(--color-bg-card-hover);
+    border-color: rgba(196, 255, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Gradient Overlays */
+.gradient-overlay {
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.95));
+}
+
+.gradient-overlay-left {
+    background: linear-gradient(to right, rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.3));
+}
+
+/* Fade In Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Stagger Animation Delays */
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+
+/* Athletic Typography */
+.heading-athletic {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+}
+
+.subheading-athletic {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Stats Counter Style */
+.stat-number {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: var(--color-neon);
+}
+
+/* Pricing Card Featured */
+.pricing-featured {
+    background: linear-gradient(135deg, var(--color-neon) 0%, #a8d900 100%);
+    position: relative;
+}
+
+.pricing-featured::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(135deg, var(--color-neon), transparent, var(--color-neon));
+    border-radius: inherit;
+    z-index: -1;
+    opacity: 0.5;
+    filter: blur(10px);
+}
+
+/* Image Hover Zoom */
+.img-zoom {
+    overflow: hidden;
+}
+
+.img-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.img-zoom:hover img {
+    transform: scale(1.05);
+}
+
+/* Navigation Active State */
+.nav-link-active {
+    color: var(--color-neon) !important;
+    position: relative;
+}
+
+.nav-link-active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--color-neon);
+}
+
+/* Form Inputs Dark Theme */
+.input-dark {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.input-dark:focus {
+    border-color: var(--color-neon);
+    box-shadow: 0 0 0 3px var(--color-neon-glow);
+    outline: none;
+}
+
+.input-dark::placeholder {
+    color: var(--color-text-muted);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-bg-card);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-muted);
+}
+
+/* Hero Section Parallax Effect */
+.hero-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    .hero-parallax {
+        background-attachment: scroll;
+    }
+}
+
+/* Pulse Animation for CTA */
+@keyframes pulse-neon {
+    0%, 100% {
+        box-shadow: 0 0 20px var(--color-neon-glow);
+    }
+    50% {
+        box-shadow: 0 0 40px var(--color-neon-glow), 0 0 60px var(--color-neon-glow);
+    }
+}
+
+.pulse-neon {
+    animation: pulse-neon 2s infinite;
+}
+
+/* Red Accent Styles */
+.text-red-accent {
+    color: var(--color-red);
+}
+
+.bg-red-accent {
+    background-color: var(--color-red);
+}
+
+.bg-red-accent:hover {
+    background-color: var(--color-red-dark);
+}
+
+/* Section Divider */
+.section-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(196, 255, 0, 0.3), transparent);
 }

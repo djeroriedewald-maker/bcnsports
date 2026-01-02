@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bcnsports.nl/sitemap.xml
+
+# Disallow admin and internal paths
+Disallow: /storage/
+Disallow: /_debugbar/

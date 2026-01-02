@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    /* BCN Sports Brand Colors */
+    --color-primary: #e63946;
+    --color-primary-dark: #c1121f;
+    --color-secondary: #1d3557;
+    --color-accent: #f4a261;
+    --color-light: #f1faee;
+    --color-dark: #0d1b2a;
+}

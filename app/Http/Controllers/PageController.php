@@ -50,6 +50,11 @@ class PageController extends Controller
         return view('pages.over-ons');
     }
 
+    public function ondernemers()
+    {
+        return view('pages.ondernemers');
+    }
+
     public function privacy()
     {
         return view('pages.privacy');

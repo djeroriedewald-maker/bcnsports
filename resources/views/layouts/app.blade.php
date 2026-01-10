@@ -42,6 +42,7 @@
                     <a href="{{ route('home') }}" class="text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] transition {{ request()->routeIs('home') ? 'text-[#c4ff00]' : 'text-white' }}">Home</a>
                     <a href="{{ route('prijzen') }}" class="text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] transition {{ request()->routeIs('prijzen') ? 'text-[#c4ff00]' : 'text-white' }}">Prijzen</a>
                     <a href="{{ route('rooster') }}" class="text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] transition {{ request()->routeIs('rooster') ? 'text-[#c4ff00]' : 'text-white' }}">Rooster</a>
+                    <a href="{{ route('ondernemers') }}" class="text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] transition {{ request()->routeIs('ondernemers') ? 'text-[#c4ff00]' : 'text-white' }}">Ondernemers</a>
                     <a href="{{ route('over-ons') }}" class="text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] transition {{ request()->routeIs('over-ons') ? 'text-[#c4ff00]' : 'text-white' }}">Over Ons</a>
                     <a href="{{ route('contact') }}" class="text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] transition {{ request()->routeIs('contact') ? 'text-[#c4ff00]' : 'text-white' }}">Contact</a>
                 </div>
@@ -63,6 +64,7 @@
                 <a href="{{ route('home') }}" class="block py-3 text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] {{ request()->routeIs('home') ? 'text-[#c4ff00]' : '' }}">Home</a>
                 <a href="{{ route('prijzen') }}" class="block py-3 text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] {{ request()->routeIs('prijzen') ? 'text-[#c4ff00]' : '' }}">Prijzen</a>
                 <a href="{{ route('rooster') }}" class="block py-3 text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] {{ request()->routeIs('rooster') ? 'text-[#c4ff00]' : '' }}">Rooster</a>
+                <a href="{{ route('ondernemers') }}" class="block py-3 text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] {{ request()->routeIs('ondernemers') ? 'text-[#c4ff00]' : '' }}">Ondernemers</a>
                 <a href="{{ route('over-ons') }}" class="block py-3 text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] {{ request()->routeIs('over-ons') ? 'text-[#c4ff00]' : '' }}">Over Ons</a>
                 <a href="{{ route('contact') }}" class="block py-3 text-sm font-semibold uppercase tracking-wider hover:text-[#c4ff00] {{ request()->routeIs('contact') ? 'text-[#c4ff00]' : '' }}">Contact</a>
                 <a href="{{ route('prijzen') }}" class="inline-block mt-4 btn-neon px-6 py-3 rounded-full text-sm">Start Nu</a>

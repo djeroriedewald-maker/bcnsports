@@ -29,11 +29,11 @@
                 <!-- Solo Bootcamp Pass - Featured -->
                 <div class="fade-in relative rounded-2xl overflow-hidden lg:scale-105 z-10">
                     <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00]/20 to-transparent"></div>
+                    <div class="absolute -top-0 left-1/2 transform -translate-x-1/2 bg-[#0a0a0a] text-[#c4ff00] text-xs font-bold uppercase px-4 py-1 rounded-b-lg border-x border-b border-[#c4ff00] z-20">
+                        Populair
+                    </div>
                     <div class="neon-border rounded-2xl overflow-hidden relative">
-                        <div class="bg-[#c4ff00] p-6 text-center relative">
-                            <span class="absolute top-2 right-2 bg-[#0a0a0a] text-[#c4ff00] text-xs font-bold uppercase px-3 py-1 rounded-full">
-                                Populair
-                            </span>
+                        <div class="bg-[#c4ff00] p-6 pt-8 text-center">
                             <h3 class="text-xl font-bold text-[#0a0a0a] uppercase">Solo Bootcamp Pass</h3>
                             <p class="text-[#0a0a0a]/70 text-sm mt-2">Onbeperkt trainen</p>
                         </div>

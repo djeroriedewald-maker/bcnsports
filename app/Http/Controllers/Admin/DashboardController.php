@@ -27,20 +27,24 @@ class DashboardController extends Controller
         $repliedMessages = ContactMessage::where('status', 'replied')->count();
         $responseRate = $totalMessages > 0 ? round(($repliedMessages / $totalMessages) * 100) : 0;
 
-        // Average response time (time from creation to read_at)
-        $avgResponseTime = ContactMessage::whereNotNull('read_at')
-            ->selectRaw('AVG(TIMESTAMPDIFF(HOUR, created_at, read_at)) as avg_hours')
-            ->first()
-            ->avg_hours;
+        // Average response time (calculate in PHP to be database-agnostic)
+        $messagesWithReadTime = ContactMessage::whereNotNull('read_at')->get(['created_at', 'read_at']);
+        $avgResponseTimeText = '-';
 
-        if ($avgResponseTime === null) {
-            $avgResponseTimeText = '-';
-        } elseif ($avgResponseTime < 1) {
-            $avgResponseTimeText = '< 1 uur';
-        } elseif ($avgResponseTime < 24) {
-            $avgResponseTimeText = round($avgResponseTime) . ' uur';
-        } else {
-            $avgResponseTimeText = round($avgResponseTime / 24, 1) . ' dagen';
+        if ($messagesWithReadTime->count() > 0) {
+            $totalHours = 0;
+            foreach ($messagesWithReadTime as $msg) {
+                $totalHours += $msg->created_at->diffInHours($msg->read_at);
+            }
+            $avgHours = $totalHours / $messagesWithReadTime->count();
+
+            if ($avgHours < 1) {
+                $avgResponseTimeText = '< 1 uur';
+            } elseif ($avgHours < 24) {
+                $avgResponseTimeText = round($avgHours) . ' uur';
+            } else {
+                $avgResponseTimeText = round($avgHours / 24, 1) . ' dagen';
+            }
         }
 
         $stats = [
@@ -51,7 +55,8 @@ class DashboardController extends Controller
         ];
 
         // Subject breakdown
-        $subjectCounts = ContactMessage::selectRaw('subject, COUNT(*) as count')
+        $subjectCounts = ContactMessage::select('subject')
+            ->selectRaw('COUNT(*) as count')
             ->groupBy('subject')
             ->orderByDesc('count')
             ->limit(6)
@@ -62,18 +67,19 @@ class DashboardController extends Controller
             'data' => $subjectCounts->pluck('count')->toArray(),
         ];
 
-        // Messages by day of week
-        $weekdayCounts = ContactMessage::selectRaw('DAYOFWEEK(created_at) as day, COUNT(*) as count')
-            ->groupBy('day')
-            ->orderBy('day')
-            ->get()
-            ->pluck('count', 'day')
-            ->toArray();
+        // Messages by day of week (calculate in PHP to be database-agnostic)
+        $allMessages = ContactMessage::select('created_at')->get();
+        $weekdayCounts = [0, 0, 0, 0, 0, 0, 0]; // Sun to Sat
+
+        foreach ($allMessages as $msg) {
+            $dayOfWeek = $msg->created_at->dayOfWeek; // 0 = Sunday, 6 = Saturday
+            $weekdayCounts[$dayOfWeek]++;
+        }
 
         $weekdays = ['Zo', 'Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za'];
         $weekdayData = [
             'labels' => $weekdays,
-            'data' => array_map(fn($i) => $weekdayCounts[$i] ?? 0, range(1, 7)),
+            'data' => $weekdayCounts,
         ];
 
         return view('admin.analytics', compact('stats', 'subjectData', 'weekdayData'));

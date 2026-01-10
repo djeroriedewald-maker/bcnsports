@@ -61,11 +61,11 @@
                             id="bcn-widget-schedule"
                             src="https://app.bcnsports.nl/widget/render/wgt_tLYL2X42djEoxflqnkTCJ7zDTsGrTP2mcShNzATM"
                             width="100%"
-                            height="600"
+                            height="1000"
                             frameborder="0"
-                            scrolling="no"
+                            scrolling="auto"
                             allow="fullscreen"
-                            style="border: none; width: 100% !important; max-width: 100% !important; min-height: 400px; display: block; box-sizing: border-box; transition: height 0.3s ease; opacity: 0;"
+                            style="border: none; width: 100% !important; max-width: 100% !important; min-height: 800px; display: block; box-sizing: border-box; transition: height 0.3s ease; opacity: 0;"
                             onload="document.getElementById('bcn-widget-loader-schedule').style.display='none'; this.style.opacity='1';">
                         </iframe>
                     </div>

@@ -45,45 +45,17 @@
                 </div>
 
                 <!-- BCN Sports Booking Widget -->
-                <div class="bg-[#141414] rounded-xl p-8">
-                    <div id="bcn-widget-container-contact" style="position: relative; width: 100% !important; max-width: 100% !important; min-height: 400px; box-sizing: border-box;">
-                        <!-- Loading Spinner -->
-                        <div id="bcn-widget-loader-contact" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; background: #141414;">
-                            <div style="text-align: center;">
-                                <div style="width: 48px; height: 48px; border: 4px solid #e5e7eb; border-top-color: #c4ff00; border-radius: 50%; animation: bcn-spin-contact 0.8s linear infinite; margin: 0 auto 12px;"></div>
-                                <div style="color: #6b7280; font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">Widget laden...</div>
-                            </div>
-                        </div>
-                        <!-- Widget iframe -->
-                        <iframe
-                            id="bcn-widget-contact"
-                            src="https://app.bcnsports.nl/widget/render/wgt_5g5jCyu9g6LR2yMgKULO86OztFqUdyygKhaeB7cc"
-                            width="100%"
-                            height="600"
-                            frameborder="0"
-                            scrolling="no"
-                            allow="fullscreen"
-                            style="border: none; width: 100% !important; max-width: 100% !important; min-height: 400px; display: block; box-sizing: border-box; transition: height 0.3s ease; opacity: 0;"
-                            onload="document.getElementById('bcn-widget-loader-contact').style.display='none'; this.style.opacity='1';">
-                        </iframe>
-                    </div>
-                    <style>
-                        @keyframes bcn-spin-contact {
-                            to { transform: rotate(360deg); }
-                        }
-                    </style>
-                    <script>
-                        (function() {
-                            window.addEventListener('message', function(e) {
-                                if (e.data && e.data.type === 'widget-resize' && e.data.source === 'bcn-widget') {
-                                    var iframe = document.getElementById('bcn-widget-contact');
-                                    if (iframe && e.data.height) {
-                                        iframe.style.height = e.data.height + 'px';
-                                    }
-                                }
-                            });
-                        })();
-                    </script>
+                <div class="bg-[#141414] rounded-xl p-8 text-center">
+                    <a href="https://app.bcnsports.nl/widget/render/wgt_5g5jCyu9g6LR2yMgKULO86OztFqUdyygKhaeB7cc"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center bg-[#c4ff00] text-[#0a0a0a] px-8 py-4 rounded-full font-black uppercase text-lg hover:bg-[#d4ff33] transition-colors">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        Boek Nu Je Proefles
+                    </a>
+                    <p class="text-[#a0a0a0] mt-4 text-sm">Opent in een nieuw venster</p>
                 </div>
             </div>
         </div>

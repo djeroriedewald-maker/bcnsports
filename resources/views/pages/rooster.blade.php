@@ -42,10 +42,11 @@
 
                 <!-- BCN Sports Booking Widget -->
                 <div class="bg-[#141414] rounded-xl p-8">
-                    <script src="https://app.bcnsports.nl/js/widget-loader.js"></script>
+                    <script src="https://app.bcnsports.nl/widget.js"></script>
                     <div
                         data-bcn-widget="booking-button"
-                        data-api-key="bcn_nIwguf4E1cVWYYEX8xgOqWC8lmjmQawR819Zg3Qd"
+                        data-api-key="wgt_5g5jCyu9g6LR2yMgKULO86OztFqUdyygKhaeB7cc"
+                        data-server="https://app.bcnsports.nl"
                         style="width: 100%; max-width: 100%; box-sizing: border-box;">
                     </div>
                 </div>

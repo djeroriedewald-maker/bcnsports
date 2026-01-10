@@ -8,6 +8,77 @@ use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
+    public function analytics()
+    {
+        // Messages this month vs last month
+        $messagesThisMonth = ContactMessage::whereMonth('created_at', now()->month)
+            ->whereYear('created_at', now()->year)
+            ->count();
+        $messagesLastMonth = ContactMessage::whereMonth('created_at', now()->subMonth()->month)
+            ->whereYear('created_at', now()->subMonth()->year)
+            ->count();
+
+        $messagesChange = $messagesLastMonth > 0
+            ? round((($messagesThisMonth - $messagesLastMonth) / $messagesLastMonth) * 100)
+            : ($messagesThisMonth > 0 ? 100 : 0);
+
+        // Response rate
+        $totalMessages = ContactMessage::count();
+        $repliedMessages = ContactMessage::where('status', 'replied')->count();
+        $responseRate = $totalMessages > 0 ? round(($repliedMessages / $totalMessages) * 100) : 0;
+
+        // Average response time (time from creation to read_at)
+        $avgResponseTime = ContactMessage::whereNotNull('read_at')
+            ->selectRaw('AVG(TIMESTAMPDIFF(HOUR, created_at, read_at)) as avg_hours')
+            ->first()
+            ->avg_hours;
+
+        if ($avgResponseTime === null) {
+            $avgResponseTimeText = '-';
+        } elseif ($avgResponseTime < 1) {
+            $avgResponseTimeText = '< 1 uur';
+        } elseif ($avgResponseTime < 24) {
+            $avgResponseTimeText = round($avgResponseTime) . ' uur';
+        } else {
+            $avgResponseTimeText = round($avgResponseTime / 24, 1) . ' dagen';
+        }
+
+        $stats = [
+            'messages_this_month' => $messagesThisMonth,
+            'messages_change' => $messagesChange,
+            'response_rate' => $responseRate,
+            'avg_response_time' => $avgResponseTimeText,
+        ];
+
+        // Subject breakdown
+        $subjectCounts = ContactMessage::selectRaw('subject, COUNT(*) as count')
+            ->groupBy('subject')
+            ->orderByDesc('count')
+            ->limit(6)
+            ->get();
+
+        $subjectData = [
+            'labels' => $subjectCounts->pluck('subject')->toArray(),
+            'data' => $subjectCounts->pluck('count')->toArray(),
+        ];
+
+        // Messages by day of week
+        $weekdayCounts = ContactMessage::selectRaw('DAYOFWEEK(created_at) as day, COUNT(*) as count')
+            ->groupBy('day')
+            ->orderBy('day')
+            ->get()
+            ->pluck('count', 'day')
+            ->toArray();
+
+        $weekdays = ['Zo', 'Ma', 'Di', 'Wo', 'Do', 'Vr', 'Za'];
+        $weekdayData = [
+            'labels' => $weekdays,
+            'data' => array_map(fn($i) => $weekdayCounts[$i] ?? 0, range(1, 7)),
+        ];
+
+        return view('admin.analytics', compact('stats', 'subjectData', 'weekdayData'));
+    }
+
     public function index()
     {
         $stats = [
@@ -19,7 +90,30 @@ class DashboardController extends Controller
 
         $recentMessages = ContactMessage::latest()->take(5)->get();
 
-        return view('admin.dashboard', compact('stats', 'recentMessages'));
+        // Chart data - messages per day for last 30 days
+        $chartData = ContactMessage::selectRaw('DATE(created_at) as date, COUNT(*) as count')
+            ->where('created_at', '>=', now()->subDays(30))
+            ->groupBy('date')
+            ->orderBy('date')
+            ->get()
+            ->pluck('count', 'date')
+            ->toArray();
+
+        // Fill in missing days with 0
+        $dates = [];
+        $counts = [];
+        for ($i = 29; $i >= 0; $i--) {
+            $date = now()->subDays($i)->format('Y-m-d');
+            $dates[] = now()->subDays($i)->format('d M');
+            $counts[] = $chartData[$date] ?? 0;
+        }
+
+        $chartData = [
+            'labels' => $dates,
+            'data' => $counts,
+        ];
+
+        return view('admin.dashboard', compact('stats', 'recentMessages', 'chartData'));
     }
 
     public function messages(Request $request)
@@ -30,7 +124,17 @@ class DashboardController extends Controller
             $query->where('status', $request->status);
         }
 
-        $messages = $query->paginate(15);
+        if ($request->filled('search')) {
+            $search = $request->search;
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                  ->orWhere('email', 'like', "%{$search}%")
+                  ->orWhere('subject', 'like', "%{$search}%")
+                  ->orWhere('message', 'like', "%{$search}%");
+            });
+        }
+
+        $messages = $query->paginate(15)->withQueryString();
 
         return view('admin.messages.index', compact('messages'));
     }
@@ -64,12 +168,50 @@ class DashboardController extends Controller
         return redirect()->route('admin.messages')->with('success', 'Bericht verwijderd.');
     }
 
+    public function bulkAction(Request $request)
+    {
+        $validated = $request->validate([
+            'action' => 'required|in:delete,mark_read,mark_replied',
+            'ids' => 'required|array',
+            'ids.*' => 'exists:contact_messages,id',
+        ]);
+
+        $count = count($validated['ids']);
+
+        switch ($validated['action']) {
+            case 'delete':
+                ContactMessage::whereIn('id', $validated['ids'])->delete();
+                $message = "{$count} berichten verwijderd.";
+                break;
+            case 'mark_read':
+                ContactMessage::whereIn('id', $validated['ids'])->update(['status' => 'read', 'read_at' => now()]);
+                $message = "{$count} berichten gemarkeerd als gelezen.";
+                break;
+            case 'mark_replied':
+                ContactMessage::whereIn('id', $validated['ids'])->update(['status' => 'replied']);
+                $message = "{$count} berichten gemarkeerd als beantwoord.";
+                break;
+        }
+
+        return back()->with('success', $message);
+    }
+
     public function exportMessages(Request $request)
     {
         $query = ContactMessage::latest();
 
         if ($request->has('status') && $request->status !== 'all') {
             $query->where('status', $request->status);
+        }
+
+        if ($request->filled('search')) {
+            $search = $request->search;
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                  ->orWhere('email', 'like', "%{$search}%")
+                  ->orWhere('subject', 'like', "%{$search}%")
+                  ->orWhere('message', 'like', "%{$search}%");
+            });
         }
 
         $messages = $query->get();

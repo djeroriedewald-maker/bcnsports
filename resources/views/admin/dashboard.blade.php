@@ -67,6 +67,16 @@
         </div>
     </div>
 
+    <!-- Messages Chart -->
+    <div class="bg-bcn-gray rounded-xl border border-white/10 mb-8">
+        <div class="p-6 border-b border-white/10">
+            <h2 class="text-xl font-bold text-white">Berichten (laatste 30 dagen)</h2>
+        </div>
+        <div class="p-6">
+            <canvas id="messagesChart" height="100"></canvas>
+        </div>
+    </div>
+
     <!-- Recent Messages -->
     <div class="bg-bcn-gray rounded-xl border border-white/10">
         <div class="p-6 border-b border-white/10 flex justify-between items-center">
@@ -107,4 +117,58 @@
             </div>
         @endif
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('messagesChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: @json($chartData['labels']),
+                datasets: [{
+                    label: 'Berichten',
+                    data: @json($chartData['data']),
+                    borderColor: '#c4ff00',
+                    backgroundColor: 'rgba(196, 255, 0, 0.1)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.4,
+                    pointBackgroundColor: '#c4ff00',
+                    pointBorderColor: '#c4ff00',
+                    pointRadius: 4,
+                    pointHoverRadius: 6,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.05)'
+                        },
+                        ticks: {
+                            color: '#6b7280',
+                            maxTicksLimit: 10
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.05)'
+                        },
+                        ticks: {
+                            color: '#6b7280',
+                            stepSize: 1
+                        }
+                    }
+                }
+            }
+        });
+    </script>
 @endsection

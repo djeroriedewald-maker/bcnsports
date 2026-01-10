@@ -43,7 +43,9 @@ Route::prefix('admin')->group(function () {
     Route::middleware('auth')->group(function () {
         Route::post('/logout', [AuthController::class, 'logout'])->name('admin.logout');
         Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard');
+        Route::get('/analytics', [DashboardController::class, 'analytics'])->name('admin.analytics');
         Route::get('/messages', [DashboardController::class, 'messages'])->name('admin.messages');
+        Route::post('/messages/bulk', [DashboardController::class, 'bulkAction'])->name('admin.messages.bulk');
         Route::get('/messages/export', [DashboardController::class, 'exportMessages'])->name('admin.messages.export');
         Route::get('/messages/{message}', [DashboardController::class, 'showMessage'])->name('admin.messages.show');
         Route::put('/messages/{message}', [DashboardController::class, 'updateMessageStatus'])->name('admin.messages.update');

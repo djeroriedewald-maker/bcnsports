@@ -45,6 +45,12 @@
                     <span class="ml-auto bg-bcn-green text-bcn-dark text-xs font-bold px-2 py-1 rounded-full">{{ $newCount }}</span>
                 @endif
             </a>
+            <a href="{{ route('admin.analytics') }}" class="flex items-center px-6 py-3 text-sm {{ request()->routeIs('admin.analytics') ? 'text-bcn-green bg-bcn-green/10 border-r-2 border-bcn-green' : 'text-gray-400 hover:text-white hover:bg-white/5' }}">
+                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+                Analytics
+            </a>
 
             <div class="mt-6 px-6 py-2">
                 <p class="text-xs font-medium text-gray-600 uppercase tracking-wider">Instellingen</p>

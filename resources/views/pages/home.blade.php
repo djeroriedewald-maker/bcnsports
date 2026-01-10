@@ -502,13 +502,44 @@
 
                 <!-- BCN Sports Booking Widget -->
                 <div class="bg-[#141414] rounded-xl p-8">
-                    <script src="https://app.bcnsports.nl/widget.js"></script>
-                    <div
-                        data-bcn-widget="booking-button"
-                        data-api-key="wgt_5g5jCyu9g6LR2yMgKULO86OztFqUdyygKhaeB7cc"
-                        data-server="https://app.bcnsports.nl"
-                        style="width: 100%; max-width: 100%; box-sizing: border-box;">
+                    <div id="bcn-widget-container-home" style="position: relative; width: 100% !important; max-width: 100% !important; min-height: 400px; box-sizing: border-box;">
+                        <!-- Loading Spinner -->
+                        <div id="bcn-widget-loader-home" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; background: #141414;">
+                            <div style="text-align: center;">
+                                <div style="width: 48px; height: 48px; border: 4px solid #e5e7eb; border-top-color: #c4ff00; border-radius: 50%; animation: bcn-spin-home 0.8s linear infinite; margin: 0 auto 12px;"></div>
+                                <div style="color: #6b7280; font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">Widget laden...</div>
+                            </div>
+                        </div>
+                        <!-- Widget iframe -->
+                        <iframe
+                            id="bcn-widget-home"
+                            src="https://app.bcnsports.nl/widget/render/wgt_5g5jCyu9g6LR2yMgKULO86OztFqUdyygKhaeB7cc"
+                            width="100%"
+                            height="600"
+                            frameborder="0"
+                            scrolling="no"
+                            allow="fullscreen"
+                            style="border: none; width: 100% !important; max-width: 100% !important; min-height: 400px; display: block; box-sizing: border-box; transition: height 0.3s ease; opacity: 0;"
+                            onload="document.getElementById('bcn-widget-loader-home').style.display='none'; this.style.opacity='1';">
+                        </iframe>
                     </div>
+                    <style>
+                        @keyframes bcn-spin-home {
+                            to { transform: rotate(360deg); }
+                        }
+                    </style>
+                    <script>
+                        (function() {
+                            window.addEventListener('message', function(e) {
+                                if (e.data && e.data.type === 'widget-resize' && e.data.source === 'bcn-widget') {
+                                    var iframe = document.getElementById('bcn-widget-home');
+                                    if (iframe && e.data.height) {
+                                        iframe.style.height = e.data.height + 'px';
+                                    }
+                                }
+                            });
+                        })();
+                    </script>
                 </div>
 
                 <div class="mt-8 text-center">

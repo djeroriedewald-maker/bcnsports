@@ -30,16 +30,6 @@
                     <p class="text-[#a0a0a0]">Selecteer een les en boek direct je plek</p>
                 </div>
 
-                <!-- Gratis Proefles Badge -->
-                <div class="flex justify-center mb-8">
-                    <div class="inline-flex items-center bg-[#c4ff00] text-[#0a0a0a] px-6 py-3 rounded-full font-black uppercase text-lg">
-                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
-                        </svg>
-                        Gratis Proefles
-                    </div>
-                </div>
-
                 <!-- BCN Sports Booking Widget -->
                 <div class="bg-[#141414] rounded-xl p-8 text-center">
                     <a href="https://app.bcnsports.nl/widget/render/wgt_5g5jCyu9g6LR2yMgKULO86OztFqUdyygKhaeB7cc"

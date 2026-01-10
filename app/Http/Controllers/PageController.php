@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactFormMail;
+use App\Models\ContactMessage;
 
 class PageController extends Controller
 {
@@ -39,8 +40,22 @@ class PageController extends Controller
             'privacy' => 'required|accepted',
         ]);
 
+        // Save to database
+        ContactMessage::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'phone' => $validated['phone'] ?? null,
+            'subject' => $validated['subject'],
+            'message' => $validated['message'],
+        ]);
+
         // Send email to BCN Sports
-        Mail::to('info@bcnsports.nl')->send(new ContactFormMail($validated));
+        try {
+            Mail::to('info@bcnsports.nl')->send(new ContactFormMail($validated));
+        } catch (\Exception $e) {
+            // Email failed but message is saved in database
+            \Log::error('Contact form email failed: ' . $e->getMessage());
+        }
 
         return redirect()->route('contact')->with('success', 'Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.');
     }

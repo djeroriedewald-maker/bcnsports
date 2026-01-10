@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -26,4 +28,23 @@ Route::get('/sitemap.xml', function () {
         ->add(\Spatie\Sitemap\Tags\Url::create('/voorwaarden')->setPriority(0.3)->setChangeFrequency('yearly'));
 
     return $sitemap->toResponse(request());
+});
+
+// Admin Routes
+Route::prefix('admin')->group(function () {
+    // Auth routes (guest only)
+    Route::middleware('guest')->group(function () {
+        Route::get('/login', [AuthController::class, 'showLogin'])->name('admin.login');
+        Route::post('/login', [AuthController::class, 'login']);
+    });
+
+    // Protected routes (auth required)
+    Route::middleware('auth')->group(function () {
+        Route::post('/logout', [AuthController::class, 'logout'])->name('admin.logout');
+        Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard');
+        Route::get('/messages', [DashboardController::class, 'messages'])->name('admin.messages');
+        Route::get('/messages/{message}', [DashboardController::class, 'showMessage'])->name('admin.messages.show');
+        Route::put('/messages/{message}', [DashboardController::class, 'updateMessageStatus'])->name('admin.messages.update');
+        Route::delete('/messages/{message}', [DashboardController::class, 'deleteMessage'])->name('admin.messages.delete');
+    });
 });

@@ -365,50 +365,41 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Solo Pass - Featured -->
-                <div class="fade-in relative rounded-2xl overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00] to-[#a8d900] opacity-10"></div>
-                    <div class="neon-border rounded-2xl p-8 text-center relative">
-                        <div class="absolute -top-px left-1/2 transform -translate-x-1/2 bg-[#0a0a0a] text-[#c4ff00] text-xs font-bold uppercase px-4 py-1 rounded-b-lg border border-[#c4ff00]">
-                            Populair
+                @foreach($packages as $index => $package)
+                    @if($package->is_popular)
+                        <!-- Popular Package -->
+                        <div class="fade-in relative rounded-2xl overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00] to-[#a8d900] opacity-10"></div>
+                            <div class="neon-border rounded-2xl p-8 text-center relative">
+                                <div class="absolute -top-px left-1/2 transform -translate-x-1/2 bg-[#0a0a0a] text-[#c4ff00] text-xs font-bold uppercase px-4 py-1 rounded-b-lg border border-[#c4ff00]">
+                                    Populair
+                                </div>
+                                <h3 class="text-xl font-bold text-white uppercase mb-2 mt-4">{{ $package->name }}</h3>
+                                <p class="text-[#a0a0a0] text-sm mb-6">{{ $package->description }}</p>
+                                <div class="mb-8">
+                                    <span class="text-5xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
+                                    <span class="text-[#a0a0a0]">/{{ $package->period }}</span>
+                                </div>
+                                <a href="{{ route('prijzen') }}" class="btn-neon block w-full py-4 rounded-full text-sm">
+                                    Meer Info
+                                </a>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold text-white uppercase mb-2 mt-4">Solo Bootcamp Pass</h3>
-                        <p class="text-[#a0a0a0] text-sm mb-6">Onbeperkt trainen</p>
-                        <div class="mb-8">
-                            <span class="text-5xl font-black text-[#c4ff00]">€39,95</span>
-                            <span class="text-[#a0a0a0]">/maand</span>
+                    @else
+                        <!-- Regular Package -->
+                        <div class="fade-in stagger-{{ $index }} dark-card rounded-2xl p-8 text-center">
+                            <h3 class="text-xl font-bold text-white uppercase mb-2">{{ $package->name }}</h3>
+                            <p class="text-[#a0a0a0] text-sm mb-6">{{ $package->description }}</p>
+                            <div class="mb-8">
+                                <span class="text-5xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
+                                <span class="text-[#a0a0a0]">/{{ $package->period }}</span>
+                            </div>
+                            <a href="{{ route('prijzen') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
+                                Meer Info
+                            </a>
                         </div>
-                        <a href="{{ route('prijzen') }}" class="btn-neon block w-full py-4 rounded-full text-sm">
-                            Meer Info
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Family Package -->
-                <div class="fade-in stagger-1 dark-card rounded-2xl p-8 text-center">
-                    <h3 class="text-xl font-bold text-white uppercase mb-2">Family Package</h3>
-                    <p class="text-[#a0a0a0] text-sm mb-6">Tot 4 personen</p>
-                    <div class="mb-8">
-                        <span class="text-5xl font-black text-[#c4ff00]">€59,95</span>
-                        <span class="text-[#a0a0a0]">/maand</span>
-                    </div>
-                    <a href="{{ route('prijzen') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
-                        Meer Info
-                    </a>
-                </div>
-
-                <!-- 10-Rittenkaart -->
-                <div class="fade-in stagger-2 dark-card rounded-2xl p-8 text-center">
-                    <h3 class="text-xl font-bold text-white uppercase mb-2">10-Rittenkaart</h3>
-                    <p class="text-[#a0a0a0] text-sm mb-6">Flexibel trainen</p>
-                    <div class="mb-8">
-                        <span class="text-5xl font-black text-[#c4ff00]">€99</span>
-                        <span class="text-[#a0a0a0]">/10 lessen</span>
-                    </div>
-                    <a href="{{ route('prijzen') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
-                        Meer Info
-                    </a>
-                </div>
+                    @endif
+                @endforeach
             </div>
 
             <div class="text-center mt-12">
@@ -432,47 +423,33 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="fade-in glass-card rounded-2xl p-8">
-                    <div class="flex mb-4">
-                        @for ($i = 0; $i < 5; $i++)
-                            <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                            </svg>
-                        @endfor
+                @forelse($testimonials as $index => $testimonial)
+                    <div class="fade-in {{ $index > 0 ? 'stagger-' . $index : '' }} glass-card rounded-2xl p-8">
+                        <div class="flex mb-4">
+                            @for ($i = 0; $i < $testimonial->rating; $i++)
+                                <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            @endfor
+                            @for ($i = $testimonial->rating; $i < 5; $i++)
+                                <svg class="w-5 h-5 text-[#3a3a3a]" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            @endfor
+                        </div>
+                        <p class="text-[#a0a0a0] mb-6 italic">
+                            "{{ $testimonial->content }}"
+                        </p>
+                        <p class="font-bold text-white">- {{ $testimonial->name }}</p>
+                        @if($testimonial->role)
+                            <p class="text-[#a0a0a0] text-sm">{{ $testimonial->role }}</p>
+                        @endif
                     </div>
-                    <p class="text-[#a0a0a0] mb-6 italic">
-                        "BCN Sports heeft mijn leven veranderd! De trainingen zijn uitdagend maar toegankelijk, en de sfeer is geweldig."
-                    </p>
-                    <p class="font-bold text-white">- Marieke V.</p>
-                </div>
-
-                <div class="fade-in stagger-1 glass-card rounded-2xl p-8">
-                    <div class="flex mb-4">
-                        @for ($i = 0; $i < 5; $i++)
-                            <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                            </svg>
-                        @endfor
+                @empty
+                    <div class="col-span-3 text-center text-[#a0a0a0]">
+                        <p>Nog geen testimonials beschikbaar.</p>
                     </div>
-                    <p class="text-[#a0a0a0] mb-6 italic">
-                        "Het family pakket is perfect voor ons gezin. We trainen samen en het is een geweldige manier om quality time door te brengen."
-                    </p>
-                    <p class="font-bold text-white">- Familie De Jong</p>
-                </div>
-
-                <div class="fade-in stagger-2 glass-card rounded-2xl p-8">
-                    <div class="flex mb-4">
-                        @for ($i = 0; $i < 5; $i++)
-                            <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                            </svg>
-                        @endfor
-                    </div>
-                    <p class="text-[#a0a0a0] mb-6 italic">
-                        "Na 3 maanden bootcamp ben ik 8 kilo afgevallen en voel ik me fitter dan ooit. Bedankt BCN Sports!"
-                    </p>
-                    <p class="font-bold text-white">- Thomas K.</p>
-                </div>
+                @endforelse
             </div>
         </div>
     </section>

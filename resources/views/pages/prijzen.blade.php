@@ -25,191 +25,73 @@
     <section class="py-24 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-                <!-- Solo Bootcamp Pass - Featured -->
-                <div class="fade-in relative rounded-2xl overflow-hidden lg:scale-105 z-10">
-                    <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00]/20 to-transparent"></div>
-                    <div class="absolute -top-0 left-1/2 transform -translate-x-1/2 bg-[#0a0a0a] text-[#c4ff00] text-xs font-bold uppercase px-4 py-1 rounded-b-lg border-x border-b border-[#c4ff00] z-20">
-                        Populair
-                    </div>
-                    <div class="neon-border rounded-2xl overflow-hidden relative">
-                        <div class="bg-[#c4ff00] p-6 pt-8 text-center">
-                            <h3 class="text-xl font-bold text-[#0a0a0a] uppercase">Solo Bootcamp Pass</h3>
-                            <p class="text-[#0a0a0a]/70 text-sm mt-2">Onbeperkt trainen</p>
-                        </div>
-                        <div class="p-8 bg-[#1a1a1a]">
-                            <div class="text-center mb-8">
-                                <span class="text-5xl font-black text-[#c4ff00]">€39,95</span>
-                                <span class="text-[#a0a0a0] block mt-2">per maand</span>
+                @foreach($packages as $index => $package)
+                    @if($package->is_popular)
+                        <!-- Popular Package -->
+                        <div class="fade-in relative rounded-2xl overflow-hidden lg:scale-105 z-10">
+                            <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00]/20 to-transparent"></div>
+                            <div class="absolute -top-0 left-1/2 transform -translate-x-1/2 bg-[#0a0a0a] text-[#c4ff00] text-xs font-bold uppercase px-4 py-1 rounded-b-lg border-x border-b border-[#c4ff00] z-20">
+                                Populair
                             </div>
-                            <ul class="space-y-4 mb-8">
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span class="text-[#a0a0a0] text-sm">Onbeperkt bootcamp lessen</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span class="text-[#a0a0a0] text-sm">Professionele begeleiding</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span class="text-[#a0a0a0] text-sm">Flexibel opzegbaar</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span class="text-[#a0a0a0] text-sm">Toegang tot alle locaties</span>
-                                </li>
-                            </ul>
-                            <a href="{{ route('contact') }}" class="btn-neon block w-full text-center py-4 rounded-full text-sm">
-                                Aanmelden
-                            </a>
+                            <div class="neon-border rounded-2xl overflow-hidden relative">
+                                <div class="bg-[#c4ff00] p-6 pt-8 text-center">
+                                    <h3 class="text-xl font-bold text-[#0a0a0a] uppercase">{{ $package->name }}</h3>
+                                    <p class="text-[#0a0a0a]/70 text-sm mt-2">{{ $package->description }}</p>
+                                </div>
+                                <div class="p-8 bg-[#1a1a1a]">
+                                    <div class="text-center mb-8">
+                                        <span class="text-5xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
+                                        <span class="text-[#a0a0a0] block mt-2">per {{ $package->period }}</span>
+                                    </div>
+                                    @if($package->features)
+                                        <ul class="space-y-4 mb-8">
+                                            @foreach($package->features as $feature)
+                                                <li class="flex items-start">
+                                                    <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                    </svg>
+                                                    <span class="text-[#a0a0a0] text-sm">{{ $feature }}</span>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    @endif
+                                    <a href="{{ route('contact') }}" class="btn-neon block w-full text-center py-4 rounded-full text-sm">
+                                        Aanmelden
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Family Package -->
-                <div class="fade-in stagger-1 dark-card rounded-2xl overflow-hidden">
-                    <div class="bg-[#141414] p-6 text-center border-b border-white/5">
-                        <h3 class="text-xl font-bold text-white uppercase">Family Package</h3>
-                        <p class="text-[#a0a0a0] text-sm mt-2">Tot 4 personen</p>
-                    </div>
-                    <div class="p-8">
-                        <div class="text-center mb-8">
-                            <span class="text-5xl font-black text-[#c4ff00]">€59,95</span>
-                            <span class="text-[#a0a0a0] block mt-2">per maand</span>
+                    @else
+                        <!-- Regular Package -->
+                        <div class="fade-in stagger-{{ $index }} dark-card rounded-2xl overflow-hidden">
+                            <div class="bg-[#141414] p-6 text-center border-b border-white/5">
+                                <h3 class="text-xl font-bold text-white uppercase">{{ $package->name }}</h3>
+                                <p class="text-[#a0a0a0] text-sm mt-2">{{ $package->description }}</p>
+                            </div>
+                            <div class="p-8">
+                                <div class="text-center mb-8">
+                                    <span class="text-5xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
+                                    <span class="text-[#a0a0a0] block mt-2">per {{ $package->period }}</span>
+                                </div>
+                                @if($package->features)
+                                    <ul class="space-y-4 mb-8">
+                                        @foreach($package->features as $feature)
+                                            <li class="flex items-start">
+                                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                                </svg>
+                                                <span class="text-[#a0a0a0] text-sm">{{ $feature }}</span>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                                <a href="{{ $package->name === 'Losse Les' ? route('rooster') : route('contact') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white text-center py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
+                                    {{ $package->name === 'Losse Les' ? 'Boek Nu' : 'Aanmelden' }}
+                                </a>
+                            </div>
                         </div>
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Tot 4 personen onbeperkt</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Alle bootcamp lessen</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Professionele begeleiding</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Samen sporten, samen groeien</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Beste prijs per persoon!</span>
-                            </li>
-                        </ul>
-                        <a href="{{ route('contact') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white text-center py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
-                            Aanmelden
-                        </a>
-                    </div>
-                </div>
-
-                <!-- 10-Rittenkaart -->
-                <div class="fade-in stagger-2 dark-card rounded-2xl overflow-hidden">
-                    <div class="bg-[#141414] p-6 text-center border-b border-white/5">
-                        <h3 class="text-xl font-bold text-white uppercase">10-Rittenkaart</h3>
-                        <p class="text-[#a0a0a0] text-sm mt-2">Flexibel trainen</p>
-                    </div>
-                    <div class="p-8">
-                        <div class="text-center mb-8">
-                            <span class="text-5xl font-black text-[#c4ff00]">€99</span>
-                            <span class="text-[#a0a0a0] block mt-2">per 10 lessen</span>
-                        </div>
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">10 bootcamp lessen</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">6 maanden geldig</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Ideaal voor beginners</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">€9,90 per les</span>
-                            </li>
-                        </ul>
-                        <a href="{{ route('contact') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white text-center py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
-                            Aanmelden
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Losse Les -->
-                <div class="fade-in stagger-3 dark-card rounded-2xl overflow-hidden">
-                    <div class="bg-[#141414] p-6 text-center border-b border-white/5">
-                        <h3 class="text-xl font-bold text-white uppercase">Losse Les</h3>
-                        <p class="text-[#a0a0a0] text-sm mt-2">Probeer vrijblijvend</p>
-                    </div>
-                    <div class="p-8">
-                        <div class="text-center mb-8">
-                            <span class="text-5xl font-black text-[#c4ff00]">€12,50</span>
-                            <span class="text-[#a0a0a0] block mt-2">per les</span>
-                        </div>
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">1 bootcamp les</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Geen verplichtingen</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Perfect om te proberen</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Reserveer online</span>
-                            </li>
-                        </ul>
-                        <a href="{{ route('rooster') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white text-center py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
-                            Boek Nu
-                        </a>
-                    </div>
-                </div>
-
+                    @endif
+                @endforeach
             </div>
         </div>
     </section>
@@ -312,65 +194,19 @@
             </div>
 
             <div class="space-y-4">
-                <div class="fade-in dark-card rounded-xl overflow-hidden">
-                    <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-                        <span>Kan ik eerst een proefles doen?</span>
-                        <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">Ja, je eerste proefles is helemaal gratis! Meld je aan via ons lesrooster en maak een profiel aan - je ontvangt automatisch een gratis credit voor je eerste les. Zo kun je vrijblijvend ervaren of BCN Sports bij je past.</p>
+                @foreach($faqs as $index => $faq)
+                    <div class="fade-in {{ $index > 0 ? 'stagger-' . $index : '' }} dark-card rounded-xl overflow-hidden">
+                        <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                            <span>{{ $faq->question }}</span>
+                            <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="px-6 pb-5 hidden">
+                            <p class="text-[#a0a0a0]">{{ $faq->answer }}</p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="fade-in stagger-1 dark-card rounded-xl overflow-hidden">
-                    <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-                        <span>Hoe werkt het Family pakket?</span>
-                        <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">Met het Family pakket kunnen tot 4 personen (gezinsleden of vrienden) onbeperkt deelnemen aan alle bootcamp lessen. Iedereen traint onder hetzelfde abonnement maar kan op eigen tijden reserveren.</p>
-                    </div>
-                </div>
-
-                <div class="fade-in stagger-2 dark-card rounded-xl overflow-hidden">
-                    <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-                        <span>Hoe lang is de 10-rittenkaart geldig?</span>
-                        <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">De 10-rittenkaart is 6 maanden geldig vanaf de datum van aankoop. Dit geeft je voldoende flexibiliteit om de lessen in te plannen.</p>
-                    </div>
-                </div>
-
-                <div class="fade-in stagger-3 dark-card rounded-xl overflow-hidden">
-                    <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-                        <span>Kan ik mijn abonnement pauzeren?</span>
-                        <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">Ja, bij langere afwezigheid (vakantie, blessure) kun je je abonnement tijdelijk pauzeren. Neem contact met ons op om de mogelijkheden te bespreken.</p>
-                    </div>
-                </div>
-
-                <div class="fade-in stagger-4 dark-card rounded-xl overflow-hidden">
-                    <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-                        <span>Wat is de opzegtermijn?</span>
-                        <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">Onze abonnementen zijn flexibel opzegbaar met een opzegtermijn van 1 maand. Je kunt opzeggen per de eerste van de volgende maand.</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

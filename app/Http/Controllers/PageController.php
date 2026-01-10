@@ -6,17 +6,26 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactFormMail;
 use App\Models\ContactMessage;
+use App\Models\Faq;
+use App\Models\PricingPackage;
+use App\Models\Testimonial;
 
 class PageController extends Controller
 {
     public function home()
     {
-        return view('pages.home');
+        $testimonials = Testimonial::active()->ordered()->get();
+        $packages = PricingPackage::active()->ordered()->take(3)->get();
+
+        return view('pages.home', compact('testimonials', 'packages'));
     }
 
     public function prijzen()
     {
-        return view('pages.prijzen');
+        $packages = PricingPackage::active()->ordered()->get();
+        $faqs = Faq::active()->ordered()->get();
+
+        return view('pages.prijzen', compact('packages', 'faqs'));
     }
 
     public function rooster()

@@ -54,111 +54,48 @@
                     <p class="text-[#a0a0a0] mt-4 text-sm">Opent in een nieuw venster</p>
                 </div>
 
-                <!-- Weekly schedule -->
+                <!-- Weekly schedule widget -->
                 <div class="mt-12">
                     <h3 class="text-2xl font-bold text-white uppercase mb-8 text-center">Wekelijks Schema</h3>
 
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <!-- Maandag -->
-                        <div class="dark-card rounded-xl p-6">
-                            <h4 class="font-bold text-white uppercase flex items-center mb-4">
-                                <span class="w-3 h-3 bg-[#c4ff00] rounded-full mr-3"></span>
-                                Maandag
-                            </h4>
-                            <ul class="space-y-3">
-                                <li class="flex justify-between items-center py-2 border-b border-white/5">
-                                    <span class="text-[#a0a0a0]">Ochtend Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">07:00</span>
-                                </li>
-                                <li class="flex justify-between items-center py-2">
-                                    <span class="text-[#a0a0a0]">Avond Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">19:00</span>
-                                </li>
-                            </ul>
+                    <div id="bcn-widget-container-schedule" style="position: relative; width: 100% !important; max-width: 100% !important; min-height: 400px; box-sizing: border-box;">
+                        <!-- Loading Spinner -->
+                        <div id="bcn-widget-loader-schedule" style="position: absolute; top: 0; left: 0; width: 100%; height: 400px; display: flex; align-items: center; justify-content: center; background: #0a0a0a;">
+                            <div style="text-align: center;">
+                                <div style="width: 48px; height: 48px; border: 4px solid #e5e7eb; border-top-color: #c4ff00; border-radius: 50%; animation: bcn-spin-schedule 0.8s linear infinite; margin: 0 auto 12px;"></div>
+                                <div style="color: #6b7280; font-size: 14px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">Schema laden...</div>
+                            </div>
                         </div>
-
-                        <!-- Dinsdag -->
-                        <div class="dark-card rounded-xl p-6">
-                            <h4 class="font-bold text-white uppercase flex items-center mb-4">
-                                <span class="w-3 h-3 bg-[#c4ff00] rounded-full mr-3"></span>
-                                Dinsdag
-                            </h4>
-                            <ul class="space-y-3">
-                                <li class="flex justify-between items-center py-2 border-b border-white/5">
-                                    <span class="text-[#a0a0a0]">Ochtend Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">09:00</span>
-                                </li>
-                                <li class="flex justify-between items-center py-2">
-                                    <span class="text-[#a0a0a0]">Avond Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">18:30</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Woensdag -->
-                        <div class="dark-card rounded-xl p-6">
-                            <h4 class="font-bold text-white uppercase flex items-center mb-4">
-                                <span class="w-3 h-3 bg-[#c4ff00] rounded-full mr-3"></span>
-                                Woensdag
-                            </h4>
-                            <ul class="space-y-3">
-                                <li class="flex justify-between items-center py-2 border-b border-white/5">
-                                    <span class="text-[#a0a0a0]">Ochtend Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">07:00</span>
-                                </li>
-                                <li class="flex justify-between items-center py-2">
-                                    <span class="text-[#a0a0a0]">Avond Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">19:00</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Donderdag -->
-                        <div class="dark-card rounded-xl p-6">
-                            <h4 class="font-bold text-white uppercase flex items-center mb-4">
-                                <span class="w-3 h-3 bg-[#c4ff00] rounded-full mr-3"></span>
-                                Donderdag
-                            </h4>
-                            <ul class="space-y-3">
-                                <li class="flex justify-between items-center py-2 border-b border-white/5">
-                                    <span class="text-[#a0a0a0]">Ochtend Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">09:00</span>
-                                </li>
-                                <li class="flex justify-between items-center py-2">
-                                    <span class="text-[#a0a0a0]">Avond Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">18:30</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Vrijdag -->
-                        <div class="dark-card rounded-xl p-6">
-                            <h4 class="font-bold text-white uppercase flex items-center mb-4">
-                                <span class="w-3 h-3 bg-[#c4ff00] rounded-full mr-3"></span>
-                                Vrijdag
-                            </h4>
-                            <ul class="space-y-3">
-                                <li class="flex justify-between items-center py-2">
-                                    <span class="text-[#a0a0a0]">Ochtend Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">07:00</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <!-- Zaterdag -->
-                        <div class="dark-card rounded-xl p-6">
-                            <h4 class="font-bold text-white uppercase flex items-center mb-4">
-                                <span class="w-3 h-3 bg-[#c4ff00] rounded-full mr-3"></span>
-                                Zaterdag
-                            </h4>
-                            <ul class="space-y-3">
-                                <li class="flex justify-between items-center py-2">
-                                    <span class="text-[#a0a0a0]">Weekend Bootcamp</span>
-                                    <span class="text-[#c4ff00] font-bold">09:00</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- Widget iframe -->
+                        <iframe
+                            id="bcn-widget-schedule"
+                            src="https://app.bcnsports.nl/widget/render/wgt_tLYL2X42djEoxflqnkTCJ7zDTsGrTP2mcShNzATM"
+                            width="100%"
+                            height="600"
+                            frameborder="0"
+                            scrolling="no"
+                            allow="fullscreen"
+                            style="border: none; width: 100% !important; max-width: 100% !important; min-height: 400px; display: block; box-sizing: border-box; transition: height 0.3s ease; opacity: 0;"
+                            onload="document.getElementById('bcn-widget-loader-schedule').style.display='none'; this.style.opacity='1';">
+                        </iframe>
                     </div>
+                    <style>
+                        @keyframes bcn-spin-schedule {
+                            to { transform: rotate(360deg); }
+                        }
+                    </style>
+                    <script>
+                        (function() {
+                            window.addEventListener('message', function(e) {
+                                if (e.data && e.data.type === 'widget-resize' && e.data.source === 'bcn-widget') {
+                                    var iframe = document.getElementById('bcn-widget-schedule');
+                                    if (iframe && e.data.height) {
+                                        iframe.style.height = e.data.height + 'px';
+                                    }
+                                }
+                            });
+                        })();
+                    </script>
                 </div>
             </div>
         </div>

@@ -365,36 +365,36 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <!-- Solo Pass -->
-                <div class="fade-in dark-card rounded-2xl p-8 text-center">
-                    <h3 class="text-xl font-bold text-white uppercase mb-2">Solo Bootcamp Pass</h3>
-                    <p class="text-[#a0a0a0] text-sm mb-6">Onbeperkt trainen</p>
-                    <div class="mb-8">
-                        <span class="text-5xl font-black text-[#c4ff00]">€39,95</span>
-                        <span class="text-[#a0a0a0]">/maand</span>
-                    </div>
-                    <a href="{{ route('prijzen') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
-                        Meer Info
-                    </a>
-                </div>
-
-                <!-- Family Package - Featured -->
-                <div class="fade-in stagger-1 relative rounded-2xl overflow-hidden">
+                <!-- Solo Pass - Featured -->
+                <div class="fade-in relative rounded-2xl overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00] to-[#a8d900] opacity-10"></div>
                     <div class="neon-border rounded-2xl p-8 text-center relative">
                         <div class="absolute -top-px left-1/2 transform -translate-x-1/2 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-4 py-1 rounded-b-lg">
                             Populair
                         </div>
-                        <h3 class="text-xl font-bold text-white uppercase mb-2 mt-4">Family Package</h3>
-                        <p class="text-[#a0a0a0] text-sm mb-6">Tot 4 personen</p>
+                        <h3 class="text-xl font-bold text-white uppercase mb-2 mt-4">Solo Bootcamp Pass</h3>
+                        <p class="text-[#a0a0a0] text-sm mb-6">Onbeperkt trainen</p>
                         <div class="mb-8">
-                            <span class="text-5xl font-black text-[#c4ff00]">€59,95</span>
+                            <span class="text-5xl font-black text-[#c4ff00]">€39,95</span>
                             <span class="text-[#a0a0a0]">/maand</span>
                         </div>
                         <a href="{{ route('prijzen') }}" class="btn-neon block w-full py-4 rounded-full text-sm">
                             Meer Info
                         </a>
                     </div>
+                </div>
+
+                <!-- Family Package -->
+                <div class="fade-in stagger-1 dark-card rounded-2xl p-8 text-center">
+                    <h3 class="text-xl font-bold text-white uppercase mb-2">Family Package</h3>
+                    <p class="text-[#a0a0a0] text-sm mb-6">Tot 4 personen</p>
+                    <div class="mb-8">
+                        <span class="text-5xl font-black text-[#c4ff00]">€59,95</span>
+                        <span class="text-[#a0a0a0]">/maand</span>
+                    </div>
+                    <a href="{{ route('prijzen') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
+                        Meer Info
+                    </a>
                 </div>
 
                 <!-- 10-Rittenkaart -->

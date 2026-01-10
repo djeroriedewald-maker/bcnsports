@@ -26,63 +26,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                <!-- Solo Bootcamp Pass -->
-                <div class="fade-in dark-card rounded-2xl overflow-hidden">
-                    <div class="bg-[#141414] p-6 text-center border-b border-white/5">
-                        <h3 class="text-xl font-bold text-white uppercase">Solo Bootcamp Pass</h3>
-                        <p class="text-[#a0a0a0] text-sm mt-2">Onbeperkt trainen</p>
-                    </div>
-                    <div class="p-8">
-                        <div class="text-center mb-8">
-                            <span class="text-5xl font-black text-[#c4ff00]">€39,95</span>
-                            <span class="text-[#a0a0a0] block mt-2">per maand</span>
-                        </div>
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Onbeperkt bootcamp lessen</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Professionele begeleiding</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Flexibel opzegbaar</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                </svg>
-                                <span class="text-[#a0a0a0] text-sm">Toegang tot alle locaties</span>
-                            </li>
-                        </ul>
-                        <a href="{{ route('contact') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white text-center py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
-                            Aanmelden
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Family Package - Featured -->
-                <div class="fade-in stagger-1 relative rounded-2xl overflow-hidden lg:scale-105 z-10">
+                <!-- Solo Bootcamp Pass - Featured -->
+                <div class="fade-in relative rounded-2xl overflow-hidden lg:scale-105 z-10">
                     <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00]/20 to-transparent"></div>
                     <div class="absolute top-4 right-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full z-20">
                         Populair
                     </div>
                     <div class="neon-border rounded-2xl overflow-hidden relative">
                         <div class="bg-[#c4ff00] p-6 text-center">
-                            <h3 class="text-xl font-bold text-[#0a0a0a] uppercase">Family Package</h3>
-                            <p class="text-[#0a0a0a]/70 text-sm mt-2">Tot 4 personen</p>
+                            <h3 class="text-xl font-bold text-[#0a0a0a] uppercase">Solo Bootcamp Pass</h3>
+                            <p class="text-[#0a0a0a]/70 text-sm mt-2">Onbeperkt trainen</p>
                         </div>
                         <div class="p-8 bg-[#1a1a1a]">
                             <div class="text-center mb-8">
-                                <span class="text-5xl font-black text-[#c4ff00]">€59,95</span>
+                                <span class="text-5xl font-black text-[#c4ff00]">€39,95</span>
                                 <span class="text-[#a0a0a0] block mt-2">per maand</span>
                             </div>
                             <ul class="space-y-4 mb-8">
@@ -90,13 +47,7 @@
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-[#a0a0a0] text-sm">Tot 4 personen onbeperkt</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                                    </svg>
-                                    <span class="text-[#a0a0a0] text-sm">Alle bootcamp lessen</span>
+                                    <span class="text-[#a0a0a0] text-sm">Onbeperkt bootcamp lessen</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -108,19 +59,68 @@
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-[#a0a0a0] text-sm">Samen sporten, samen groeien</span>
+                                    <span class="text-[#a0a0a0] text-sm">Flexibel opzegbaar</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-[#a0a0a0] text-sm">Beste prijs per persoon!</span>
+                                    <span class="text-[#a0a0a0] text-sm">Toegang tot alle locaties</span>
                                 </li>
                             </ul>
                             <a href="{{ route('contact') }}" class="btn-neon block w-full text-center py-4 rounded-full text-sm">
                                 Aanmelden
                             </a>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Family Package -->
+                <div class="fade-in stagger-1 dark-card rounded-2xl overflow-hidden">
+                    <div class="bg-[#141414] p-6 text-center border-b border-white/5">
+                        <h3 class="text-xl font-bold text-white uppercase">Family Package</h3>
+                        <p class="text-[#a0a0a0] text-sm mt-2">Tot 4 personen</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="text-center mb-8">
+                            <span class="text-5xl font-black text-[#c4ff00]">€59,95</span>
+                            <span class="text-[#a0a0a0] block mt-2">per maand</span>
+                        </div>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-[#a0a0a0] text-sm">Tot 4 personen onbeperkt</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-[#a0a0a0] text-sm">Alle bootcamp lessen</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-[#a0a0a0] text-sm">Professionele begeleiding</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-[#a0a0a0] text-sm">Samen sporten, samen groeien</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-[#c4ff00] mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <span class="text-[#a0a0a0] text-sm">Beste prijs per persoon!</span>
+                            </li>
+                        </ul>
+                        <a href="{{ route('contact') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white text-center py-4 rounded-full font-bold uppercase text-sm tracking-wider transition">
+                            Aanmelden
+                        </a>
                     </div>
                 </div>
 

@@ -29,11 +29,11 @@
                 <!-- Solo Bootcamp Pass - Featured -->
                 <div class="fade-in relative rounded-2xl overflow-hidden lg:scale-105 z-10">
                     <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00]/20 to-transparent"></div>
-                    <div class="absolute top-4 right-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full z-20">
-                        Populair
-                    </div>
                     <div class="neon-border rounded-2xl overflow-hidden relative">
-                        <div class="bg-[#c4ff00] p-6 text-center">
+                        <div class="bg-[#c4ff00] p-6 text-center relative">
+                            <span class="absolute top-2 right-2 bg-[#0a0a0a] text-[#c4ff00] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                                Populair
+                            </span>
                             <h3 class="text-xl font-bold text-[#0a0a0a] uppercase">Solo Bootcamp Pass</h3>
                             <p class="text-[#0a0a0a]/70 text-sm mt-2">Onbeperkt trainen</p>
                         </div>
@@ -320,7 +320,7 @@
                         </svg>
                     </button>
                     <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">Ja, je kunt altijd een losse les boeken voor €12,50 om te ervaren of BCN Sports bij je past. Neem contact met ons op om je eerste les te plannen!</p>
+                        <p class="text-[#a0a0a0]">Ja, je eerste proefles is helemaal gratis! Meld je aan via ons lesrooster en maak een profiel aan - je ontvangt automatisch een gratis credit voor je eerste les. Zo kun je vrijblijvend ervaren of BCN Sports bij je past.</p>
                     </div>
                 </div>
 

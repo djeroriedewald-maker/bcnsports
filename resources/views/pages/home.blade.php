@@ -369,7 +369,7 @@
                 <div class="fade-in relative rounded-2xl overflow-hidden">
                     <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00] to-[#a8d900] opacity-10"></div>
                     <div class="neon-border rounded-2xl p-8 text-center relative">
-                        <div class="absolute -top-px left-1/2 transform -translate-x-1/2 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-4 py-1 rounded-b-lg">
+                        <div class="absolute -top-px left-1/2 transform -translate-x-1/2 bg-[#0a0a0a] text-[#c4ff00] text-xs font-bold uppercase px-4 py-1 rounded-b-lg border border-[#c4ff00]">
                             Populair
                         </div>
                         <h3 class="text-xl font-bold text-white uppercase mb-2 mt-4">Solo Bootcamp Pass</h3>

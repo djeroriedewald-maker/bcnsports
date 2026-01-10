@@ -14,16 +14,28 @@ class PageController extends Controller
 {
     public function home()
     {
-        $testimonials = Testimonial::active()->ordered()->get();
-        $packages = PricingPackage::active()->ordered()->take(3)->get();
+        try {
+            $testimonials = Testimonial::active()->ordered()->get();
+            $packages = PricingPackage::active()->ordered()->take(3)->get();
+        } catch (\Exception $e) {
+            \Log::error('Home page database error: ' . $e->getMessage());
+            $testimonials = collect([]);
+            $packages = collect([]);
+        }
 
         return view('pages.home', compact('testimonials', 'packages'));
     }
 
     public function prijzen()
     {
-        $packages = PricingPackage::active()->ordered()->get();
-        $faqs = Faq::active()->ordered()->get();
+        try {
+            $packages = PricingPackage::active()->ordered()->get();
+            $faqs = Faq::active()->ordered()->get();
+        } catch (\Exception $e) {
+            \Log::error('Prijzen page database error: ' . $e->getMessage());
+            $packages = collect([]);
+            $faqs = collect([]);
+        }
 
         return view('pages.prijzen', compact('packages', 'faqs'));
     }

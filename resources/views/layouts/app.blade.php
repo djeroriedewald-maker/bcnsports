@@ -4,25 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="@yield('meta_description', 'BCN Sports - Outdoor Bootcamp Training in Almere. Sluit je aan bij onze fitness community voor intensieve groepstrainingen in de buitenlucht.')">
-    <meta name="keywords" content="bootcamp, fitness, Almere, outdoor training, groepstraining, personal training">
+    <meta name="keywords" content="bootcamp, fitness, Almere, outdoor training, groepstraining, personal training, HYROX, functionele training">
     <meta name="author" content="BCN Sports">
     <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="NL-FL">
+    <meta name="geo.placename" content="Almere">
 
     <!-- Open Graph -->
     <meta property="og:title" content="@yield('title', 'BCN Sports - Outdoor Bootcamp Almere')">
-    <meta property="og:description" content="@yield('meta_description', 'Outdoor Bootcamp Training in Almere')">
+    <meta property="og:description" content="@yield('meta_description', 'Outdoor Bootcamp Training in Almere. Word fitter, sterker en gezonder met onze professionele groepstrainingen in de buitenlucht.')">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:locale" content="nl_NL">
+    <meta property="og:site_name" content="BCN Sports">
+    <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="BCN Sports - Outdoor Bootcamp Training Almere">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title', 'BCN Sports - Outdoor Bootcamp Almere')">
+    <meta name="twitter:description" content="@yield('meta_description', 'Outdoor Bootcamp Training in Almere')">
+    <meta name="twitter:image" content="{{ asset('images/og-image.jpg') }}">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ url()->current() }}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon.png') }}">
 
     <title>@yield('title', 'BCN Sports - Outdoor Bootcamp Almere')</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <!-- Schema.org LocalBusiness Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SportsActivityLocation",
+        "@id": "https://bcnsports.nl/#organization",
+        "name": "BCN Sports",
+        "alternateName": "Bootcamp Nation Almere",
+        "description": "Outdoor Bootcamp Training in Almere. Professionele groepstrainingen in de buitenlucht voor alle fitnessniveaus.",
+        "url": "https://bcnsports.nl",
+        "logo": "https://bcnsports.nl/images/BCN_LOGO_2024_WHITE.png",
+        "image": "https://bcnsports.nl/images/og-image.jpg",
+        "telephone": "",
+        "email": "info@bcnsports.nl",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Almere",
+            "addressRegion": "Flevoland",
+            "addressCountry": "NL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 52.3508,
+            "longitude": 5.2647
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Almere"
+        },
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Cash, Credit Card, iDEAL",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "06:00",
+                "closes": "21:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
+                "opens": "08:00",
+                "closes": "12:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.instagram.com/bootcamp_nation/",
+            "https://www.facebook.com/bootcampnationalmere/"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Bootcamp Abonnementen",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Solo Bootcamp Pass",
+                        "description": "Onbeperkt bootcamp lessen"
+                    },
+                    "price": "39.95",
+                    "priceCurrency": "EUR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "39.95",
+                        "priceCurrency": "EUR",
+                        "unitText": "maand"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Family Package",
+                        "description": "Onbeperkt trainen voor maximaal 4 personen"
+                    },
+                    "price": "59.95",
+                    "priceCurrency": "EUR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "59.95",
+                        "priceCurrency": "EUR",
+                        "unitText": "maand"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 

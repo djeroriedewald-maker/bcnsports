@@ -4,6 +4,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\SettingsController;
+use App\Http\Controllers\Admin\ContentController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -62,5 +63,37 @@ Route::prefix('admin')->group(function () {
         Route::get('/users/{user}/edit', [SettingsController::class, 'editUser'])->name('admin.users.edit');
         Route::put('/users/{user}', [SettingsController::class, 'updateUser'])->name('admin.users.update');
         Route::delete('/users/{user}', [SettingsController::class, 'deleteUser'])->name('admin.users.delete');
+
+        // Content Management - FAQs
+        Route::get('/faqs', [ContentController::class, 'faqs'])->name('admin.faqs');
+        Route::get('/faqs/create', [ContentController::class, 'createFaq'])->name('admin.faqs.create');
+        Route::post('/faqs', [ContentController::class, 'storeFaq'])->name('admin.faqs.store');
+        Route::get('/faqs/{faq}/edit', [ContentController::class, 'editFaq'])->name('admin.faqs.edit');
+        Route::put('/faqs/{faq}', [ContentController::class, 'updateFaq'])->name('admin.faqs.update');
+        Route::delete('/faqs/{faq}', [ContentController::class, 'deleteFaq'])->name('admin.faqs.delete');
+
+        // Content Management - Testimonials
+        Route::get('/testimonials', [ContentController::class, 'testimonials'])->name('admin.testimonials');
+        Route::get('/testimonials/create', [ContentController::class, 'createTestimonial'])->name('admin.testimonials.create');
+        Route::post('/testimonials', [ContentController::class, 'storeTestimonial'])->name('admin.testimonials.store');
+        Route::get('/testimonials/{testimonial}/edit', [ContentController::class, 'editTestimonial'])->name('admin.testimonials.edit');
+        Route::put('/testimonials/{testimonial}', [ContentController::class, 'updateTestimonial'])->name('admin.testimonials.update');
+        Route::delete('/testimonials/{testimonial}', [ContentController::class, 'deleteTestimonial'])->name('admin.testimonials.delete');
+
+        // Content Management - Pricing Packages
+        Route::get('/packages', [ContentController::class, 'packages'])->name('admin.packages');
+        Route::get('/packages/create', [ContentController::class, 'createPackage'])->name('admin.packages.create');
+        Route::post('/packages', [ContentController::class, 'storePackage'])->name('admin.packages.store');
+        Route::get('/packages/{package}/edit', [ContentController::class, 'editPackage'])->name('admin.packages.edit');
+        Route::put('/packages/{package}', [ContentController::class, 'updatePackage'])->name('admin.packages.update');
+        Route::delete('/packages/{package}', [ContentController::class, 'deletePackage'])->name('admin.packages.delete');
+
+        // Content Management - Blog Posts
+        Route::get('/posts', [ContentController::class, 'posts'])->name('admin.posts');
+        Route::get('/posts/create', [ContentController::class, 'createPost'])->name('admin.posts.create');
+        Route::post('/posts', [ContentController::class, 'storePost'])->name('admin.posts.store');
+        Route::get('/posts/{post}/edit', [ContentController::class, 'editPost'])->name('admin.posts.edit');
+        Route::put('/posts/{post}', [ContentController::class, 'updatePost'])->name('admin.posts.update');
+        Route::delete('/posts/{post}', [ContentController::class, 'deletePost'])->name('admin.posts.delete');
     });
 });

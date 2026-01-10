@@ -3,6 +3,7 @@
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -43,8 +44,21 @@ Route::prefix('admin')->group(function () {
         Route::post('/logout', [AuthController::class, 'logout'])->name('admin.logout');
         Route::get('/', [DashboardController::class, 'index'])->name('admin.dashboard');
         Route::get('/messages', [DashboardController::class, 'messages'])->name('admin.messages');
+        Route::get('/messages/export', [DashboardController::class, 'exportMessages'])->name('admin.messages.export');
         Route::get('/messages/{message}', [DashboardController::class, 'showMessage'])->name('admin.messages.show');
         Route::put('/messages/{message}', [DashboardController::class, 'updateMessageStatus'])->name('admin.messages.update');
         Route::delete('/messages/{message}', [DashboardController::class, 'deleteMessage'])->name('admin.messages.delete');
+
+        // Settings
+        Route::get('/password', [SettingsController::class, 'password'])->name('admin.password');
+        Route::put('/password', [SettingsController::class, 'updatePassword'])->name('admin.password.update');
+
+        // User management
+        Route::get('/users', [SettingsController::class, 'users'])->name('admin.users');
+        Route::get('/users/create', [SettingsController::class, 'createUser'])->name('admin.users.create');
+        Route::post('/users', [SettingsController::class, 'storeUser'])->name('admin.users.store');
+        Route::get('/users/{user}/edit', [SettingsController::class, 'editUser'])->name('admin.users.edit');
+        Route::put('/users/{user}', [SettingsController::class, 'updateUser'])->name('admin.users.update');
+        Route::delete('/users/{user}', [SettingsController::class, 'deleteUser'])->name('admin.users.delete');
     });
 });

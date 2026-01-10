@@ -63,4 +63,51 @@ class DashboardController extends Controller
 
         return redirect()->route('admin.messages')->with('success', 'Bericht verwijderd.');
     }
+
+    public function exportMessages(Request $request)
+    {
+        $query = ContactMessage::latest();
+
+        if ($request->has('status') && $request->status !== 'all') {
+            $query->where('status', $request->status);
+        }
+
+        $messages = $query->get();
+
+        $filename = 'berichten-' . now()->format('Y-m-d-His') . '.csv';
+
+        $headers = [
+            'Content-Type' => 'text/csv; charset=UTF-8',
+            'Content-Disposition' => "attachment; filename=\"$filename\"",
+        ];
+
+        $callback = function () use ($messages) {
+            $file = fopen('php://output', 'w');
+
+            // Add BOM for Excel UTF-8 compatibility
+            fprintf($file, chr(0xEF).chr(0xBB).chr(0xBF));
+
+            // Header row
+            fputcsv($file, ['ID', 'Naam', 'Email', 'Telefoon', 'Onderwerp', 'Bericht', 'Status', 'Admin Notities', 'Ontvangen op', 'Gelezen op'], ';');
+
+            foreach ($messages as $message) {
+                fputcsv($file, [
+                    $message->id,
+                    $message->name,
+                    $message->email,
+                    $message->phone ?? '',
+                    $message->subject,
+                    $message->message,
+                    $message->status,
+                    $message->admin_notes ?? '',
+                    $message->created_at->format('d-m-Y H:i'),
+                    $message->read_at ? $message->read_at->format('d-m-Y H:i') : '',
+                ], ';');
+            }
+
+            fclose($file);
+        };
+
+        return response()->stream($callback, 200, $headers);
+    }
 }

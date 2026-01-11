@@ -16,7 +16,13 @@
       "Bash(gh repo edit:*)",
       "Bash(cat:*)",
       "Bash(git push:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(Get-Content storage/logs/laravel.log -Tail 200)",
+      "Bash(Select-String -Pattern \"ERROR\" -Context 0,15)",
+      "Bash(Select-Object -Last 50)",
+      "Bash(ls:*)",
+      "Bash(curl:*)",
+      "Bash(xxd:*)"
     ]
   }
 }

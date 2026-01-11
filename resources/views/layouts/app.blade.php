@@ -253,6 +253,11 @@
                     <button id="cookie-settings-btn" class="hover:text-[#c4ff00] transition">Cookie Instellingen</button>
                 </div>
             </div>
+
+            <!-- Credits -->
+            <div class="mt-6 text-center text-[#6b6b6b] text-xs">
+                <p>Website gemaakt door <a href="https://budgetpixels.nl" target="_blank" rel="noopener noreferrer" class="text-[#c4ff00] hover:underline">BudgetPixels</a></p>
+            </div>
         </div>
     </footer>
 

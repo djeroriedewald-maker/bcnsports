@@ -44,9 +44,9 @@
     <!-- Schema.org LocalBusiness Structured Data -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "SportsActivityLocation",
-        "@id": "https://bcnsports.nl/#organization",
+        "@@context": "https://schema.org",
+        "@@type": "SportsActivityLocation",
+        "@@id": "https://bcnsports.nl/#organization",
         "name": "BCN Sports",
         "alternateName": "Bootcamp Nation Almere",
         "description": "Outdoor Bootcamp Training in Almere. Professionele groepstrainingen in de buitenlucht voor alle fitnessniveaus.",
@@ -56,18 +56,18 @@
         "telephone": "",
         "email": "info@bcnsports.nl",
         "address": {
-            "@type": "PostalAddress",
+            "@@type": "PostalAddress",
             "addressLocality": "Almere",
             "addressRegion": "Flevoland",
             "addressCountry": "NL"
         },
         "geo": {
-            "@type": "GeoCoordinates",
+            "@@type": "GeoCoordinates",
             "latitude": 52.3508,
             "longitude": 5.2647
         },
         "areaServed": {
-            "@type": "City",
+            "@@type": "City",
             "name": "Almere"
         },
         "priceRange": "€€",
@@ -75,13 +75,13 @@
         "paymentAccepted": "Cash, Credit Card, iDEAL",
         "openingHoursSpecification": [
             {
-                "@type": "OpeningHoursSpecification",
+                "@@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                 "opens": "06:00",
                 "closes": "21:00"
             },
             {
-                "@type": "OpeningHoursSpecification",
+                "@@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Saturday"],
                 "opens": "08:00",
                 "closes": "12:00"
@@ -92,36 +92,36 @@
             "https://www.facebook.com/bootcampnationalmere/"
         ],
         "hasOfferCatalog": {
-            "@type": "OfferCatalog",
+            "@@type": "OfferCatalog",
             "name": "Bootcamp Abonnementen",
             "itemListElement": [
                 {
-                    "@type": "Offer",
+                    "@@type": "Offer",
                     "itemOffered": {
-                        "@type": "Service",
+                        "@@type": "Service",
                         "name": "Solo Bootcamp Pass",
                         "description": "Onbeperkt bootcamp lessen"
                     },
                     "price": "39.95",
                     "priceCurrency": "EUR",
                     "priceSpecification": {
-                        "@type": "UnitPriceSpecification",
+                        "@@type": "UnitPriceSpecification",
                         "price": "39.95",
                         "priceCurrency": "EUR",
                         "unitText": "maand"
                     }
                 },
                 {
-                    "@type": "Offer",
+                    "@@type": "Offer",
                     "itemOffered": {
-                        "@type": "Service",
+                        "@@type": "Service",
                         "name": "Family Package",
                         "description": "Onbeperkt trainen voor maximaal 4 personen"
                     },
                     "price": "59.95",
                     "priceCurrency": "EUR",
                     "priceSpecification": {
-                        "@type": "UnitPriceSpecification",
+                        "@@type": "UnitPriceSpecification",
                         "price": "59.95",
                         "priceCurrency": "EUR",
                         "unitText": "maand"

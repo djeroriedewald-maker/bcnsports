@@ -306,12 +306,17 @@
 
     <script>
         // Cookie Consent Management
-        (function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const COOKIE_CONSENT_KEY = 'bcn_cookie_consent';
             const banner = document.getElementById('cookie-banner');
             const acceptBtn = document.getElementById('cookie-accept');
             const declineBtn = document.getElementById('cookie-decline');
             const settingsBtn = document.getElementById('cookie-settings-btn');
+
+            if (!banner || !acceptBtn || !declineBtn || !settingsBtn) {
+                console.error('Cookie banner elements not found');
+                return;
+            }
 
             // Check if consent was already given
             function getConsent() {
@@ -331,10 +336,12 @@
             // Show banner
             function showBanner() {
                 banner.classList.remove('translate-y-full');
+                banner.classList.add('translate-y-0');
             }
 
             // Hide banner
             function hideBanner() {
+                banner.classList.remove('translate-y-0');
                 banner.classList.add('translate-y-full');
             }
 
@@ -368,15 +375,16 @@
                 setConsent('declined');
             });
 
-            settingsBtn.addEventListener('click', function() {
+            settingsBtn.addEventListener('click', function(e) {
+                e.preventDefault();
                 // Reset consent and show banner again
                 localStorage.removeItem(COOKIE_CONSENT_KEY);
                 showBanner();
             });
 
-            // Run on page load
+            // Run initialization
             init();
-        })();
+        });
     </script>
 </body>
 </html>

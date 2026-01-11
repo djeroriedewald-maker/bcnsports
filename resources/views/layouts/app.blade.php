@@ -250,6 +250,7 @@
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="{{ route('privacy') }}" class="hover:text-[#c4ff00] transition">Privacy Policy</a>
                     <a href="{{ route('voorwaarden') }}" class="hover:text-[#c4ff00] transition">Algemene Voorwaarden</a>
+                    <button id="cookie-settings-btn" class="hover:text-[#c4ff00] transition">Cookie Instellingen</button>
                 </div>
             </div>
         </div>
@@ -276,6 +277,106 @@
         });
 
         fadeElements.forEach(el => fadeObserver.observe(el));
+    </script>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-[#141414] border-t border-white/10 p-4 md:p-6 z-50 transform translate-y-full transition-transform duration-300">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                <div class="flex-1">
+                    <h3 class="text-white font-bold mb-2">Cookie Instellingen</h3>
+                    <p class="text-[#a0a0a0] text-sm">
+                        Wij gebruiken functionele cookies om de website te laten werken.
+                        Daarnaast willen we analytische cookies plaatsen om onze website te verbeteren.
+                        Hiervoor vragen wij je toestemming.
+                        <a href="{{ route('privacy') }}" class="text-[#c4ff00] hover:underline">Meer informatie</a>
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <button id="cookie-decline" class="px-6 py-3 bg-[#1a1a1a] hover:bg-[#252525] text-white rounded-full text-sm font-semibold uppercase tracking-wider transition border border-white/10">
+                        Alleen Functioneel
+                    </button>
+                    <button id="cookie-accept" class="px-6 py-3 bg-[#c4ff00] hover:bg-[#d4ff33] text-[#0a0a0a] rounded-full text-sm font-semibold uppercase tracking-wider transition">
+                        Alles Accepteren
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie Consent Management
+        (function() {
+            const COOKIE_CONSENT_KEY = 'bcn_cookie_consent';
+            const banner = document.getElementById('cookie-banner');
+            const acceptBtn = document.getElementById('cookie-accept');
+            const declineBtn = document.getElementById('cookie-decline');
+            const settingsBtn = document.getElementById('cookie-settings-btn');
+
+            // Check if consent was already given
+            function getConsent() {
+                return localStorage.getItem(COOKIE_CONSENT_KEY);
+            }
+
+            // Save consent
+            function setConsent(value) {
+                localStorage.setItem(COOKIE_CONSENT_KEY, value);
+                hideBanner();
+
+                if (value === 'accepted') {
+                    loadAnalytics();
+                }
+            }
+
+            // Show banner
+            function showBanner() {
+                banner.classList.remove('translate-y-full');
+            }
+
+            // Hide banner
+            function hideBanner() {
+                banner.classList.add('translate-y-full');
+            }
+
+            // Load analytics scripts (only after consent)
+            function loadAnalytics() {
+                // Voeg hier je analytics scripts toe, bijvoorbeeld:
+                // Google Analytics, Facebook Pixel, etc.
+                // Deze worden alleen geladen na expliciete toestemming
+                console.log('Analytics cookies toegestaan');
+            }
+
+            // Initialize
+            function init() {
+                const consent = getConsent();
+
+                if (!consent) {
+                    // No consent yet, show banner after short delay
+                    setTimeout(showBanner, 1000);
+                } else if (consent === 'accepted') {
+                    // Already accepted, load analytics
+                    loadAnalytics();
+                }
+            }
+
+            // Event listeners
+            acceptBtn.addEventListener('click', function() {
+                setConsent('accepted');
+            });
+
+            declineBtn.addEventListener('click', function() {
+                setConsent('declined');
+            });
+
+            settingsBtn.addEventListener('click', function() {
+                // Reset consent and show banner again
+                localStorage.removeItem(COOKIE_CONSENT_KEY);
+                showBanner();
+            });
+
+            // Run on page load
+            init();
+        })();
     </script>
 </body>
 </html>

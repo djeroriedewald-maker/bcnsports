@@ -72,57 +72,6 @@
         </div>
     </section>
 
-    <!-- Trainer Section -->
-    <section class="py-32 bg-[#141414]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20">
-                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Ons <span class="text-[#c4ff00]">Team</span>
-                </h2>
-                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Gemotiveerde professionals die klaarstaan om je te inspireren
-                </p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="fade-in-left dark-card rounded-2xl overflow-hidden group">
-                    <div class="relative h-80 overflow-hidden">
-                        <img src="/images/P1210932.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <h3 class="text-2xl font-bold text-white uppercase">Hoofd Trainer</h3>
-                            <p class="text-[#c4ff00] font-semibold uppercase tracking-wider text-sm">I Will Inspire You</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-[#a0a0a0]">
-                            Met jarenlange ervaring in fitness en een passie voor outdoor training,
-                            leidt onze hoofd trainer elke sessie met energie en professionaliteit.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="fade-in-right dark-card rounded-2xl overflow-hidden group">
-                    <div class="relative h-80 overflow-hidden">
-                        <img src="/images/P1270912.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6">
-                            <h3 class="text-2xl font-bold text-white uppercase">Trainer</h3>
-                            <p class="text-[#c4ff00] font-semibold uppercase tracking-wider text-sm">Push Your Limits</p>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <p class="text-[#a0a0a0]">
-                            Gespecialiseerd in functionele training en groepsdynamiek.
-                            Altijd klaar om je te motiveren en te helpen je grenzen te verleggen.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- HYROX & Competitie Credentials Section -->
     <section class="py-32 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

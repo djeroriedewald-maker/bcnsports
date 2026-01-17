@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Over Ons - BCN Sports Personal Training Outdoor Almere')
-@section('meta_description', 'Maak kennis met Kevin Berkhout en BCN Sports Personal Training Outdoor in Almere. Persoonlijke training buiten met een unieke aanpak.')
+@section('meta_description', 'BCN Sports Personal Training Outdoor in Almere. Persoonlijke training buiten met een unieke aanpak. Ontdek waarom outdoor fitness werkt.')
 
 @section('content')
     <!-- Hero Section -->
@@ -64,69 +64,6 @@
                             <div class="stat-number mb-2">Op Maat</div>
                             <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Trainingsplan</div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trainer Section - Kevin -->
-    <section class="py-32 bg-[#141414]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Jouw <span class="text-[#c4ff00]">Trainer</span>
-                </h2>
-            </div>
-
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="fade-in-left order-2 lg:order-1">
-                    <h3 class="text-3xl font-bold text-white mb-4">Kevin Berkhout</h3>
-                    <p class="text-[#c4ff00] font-semibold uppercase tracking-wider mb-6">Personal Trainer & Oprichter BCN Sports</p>
-
-                    <div class="space-y-6 text-[#a0a0a0] text-lg">
-                        <p>
-                            Naast mijn werk als brandweerman heb ik mijn passie voor fitness omgezet in BCN Sports.
-                            Als brandweerman weet ik hoe belangrijk een goede conditie en kracht zijn - niet alleen
-                            voor mijn werk, maar voor het dagelijks leven.
-                        </p>
-                        <p>
-                            Die ervaring neem ik mee in mijn trainingen. Functionele fitness die je helpt in het
-                            dagelijks leven, of je nu fitter wilt worden, sterker wilt zijn of je gewoon lekker
-                            wilt voelen in je eigen lichaam.
-                        </p>
-                        <p>
-                            Ik geloof niet in one-size-fits-all oplossingen. Iedereen is anders en verdient een
-                            aanpak die past bij zijn of haar situatie. Daarom bied ik Personal Training Outdoor -
-                            volledig op jou afgestemd, in de buitenlucht.
-                        </p>
-                    </div>
-
-                    <div class="mt-8 flex flex-wrap gap-4">
-                        <div class="flex items-center gap-2 text-[#a0a0a0]">
-                            <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Gecertificeerd Personal Trainer</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-[#a0a0a0]">
-                            <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>Brandweerman</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-[#a0a0a0]">
-                            <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            <span>HYROX Deelnemer</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="fade-in-right order-1 lg:order-2">
-                    <div class="rounded-2xl overflow-hidden">
-                        <img src="/images/P1210932.jpg" alt="Kevin Berkhout - Personal Trainer BCN Sports" class="w-full h-auto">
                     </div>
                 </div>
             </div>

@@ -22,15 +22,23 @@
 <!-- Database Info -->
 <div class="bg-bcn-gray rounded-xl border border-white/10 p-6 mb-8">
     <div class="flex items-center gap-4">
-        <div class="w-12 h-12 bg-{{ $databaseExists ? 'bcn-green' : 'red-500' }}/10 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-{{ $databaseExists ? 'bcn-green' : 'red-500' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="w-12 h-12 bg-{{ $databaseInfo['exists'] ? 'bcn-green' : 'red-500' }}/10 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-{{ $databaseInfo['exists'] ? 'bcn-green' : 'red-500' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
             </svg>
         </div>
         <div>
             <h2 class="text-lg font-semibold text-white">Database Informatie</h2>
-            <p class="text-gray-400 text-sm">Type: SQLite | Huidige grootte: <span class="text-bcn-green font-medium">{{ $databaseSize }}</span></p>
-            <p class="text-gray-600 text-xs mt-1 font-mono">{{ $databasePath }}</p>
+            <p class="text-gray-400 text-sm">
+                Type: {{ $databaseInfo['driver'] }} |
+                Database: <span class="text-white">{{ $databaseInfo['name'] }}</span>
+                @if($databaseInfo['size'] !== 'N/A')
+                    | Grootte: <span class="text-bcn-green font-medium">{{ $databaseInfo['size'] }}</span>
+                @endif
+            </p>
+            @if(isset($databaseInfo['host']))
+                <p class="text-gray-600 text-xs mt-1">Host: {{ $databaseInfo['host'] }}</p>
+            @endif
         </div>
     </div>
 </div>

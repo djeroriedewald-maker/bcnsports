@@ -21,8 +21,8 @@
 </head>
 <body class="bg-bcn-dark min-h-screen">
     <!-- Sidebar -->
-    <aside class="fixed left-0 top-0 h-full w-64 bg-bcn-gray border-r border-white/10">
-        <div class="p-6">
+    <aside class="fixed left-0 top-0 h-full w-64 bg-bcn-gray border-r border-white/10 flex flex-col">
+        <div class="p-6 flex-shrink-0">
             <a href="{{ route('admin.dashboard') }}" class="flex items-center">
                 <img src="/images/BCN_LOGO_2024_WHITE.png" alt="BCN Sports" class="h-10 w-auto">
             </a>
@@ -34,7 +34,7 @@
             </a>
         </div>
 
-        <nav class="mt-6 pb-40">
+        <nav class="mt-2 flex-1 overflow-y-auto">
             <a href="{{ route('admin.dashboard') }}" class="flex items-center px-6 py-3 text-sm {{ request()->routeIs('admin.dashboard') ? 'text-bcn-green bg-bcn-green/10 border-r-2 border-bcn-green' : 'text-gray-400 hover:text-white hover:bg-white/5' }}">
                 <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
@@ -109,7 +109,7 @@
             </a>
         </nav>
 
-        <div class="absolute bottom-0 left-0 right-0 p-6 border-t border-white/10">
+        <div class="flex-shrink-0 p-6 border-t border-white/10">
             <div class="flex items-center mb-4">
                 <div class="w-10 h-10 bg-bcn-green rounded-full flex items-center justify-center text-bcn-dark font-bold">
                     {{ substr(Auth::user()->name, 0, 1) }}

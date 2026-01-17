@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Setting;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -11,6 +12,24 @@ use Illuminate\Validation\Rules\Password;
 
 class SettingsController extends Controller
 {
+    public function site()
+    {
+        $maintenanceMode = Setting::isMaintenanceMode();
+        return view('admin.settings.site', compact('maintenanceMode'));
+    }
+
+    public function toggleMaintenance(Request $request)
+    {
+        $enabled = $request->boolean('maintenance_mode');
+        Setting::set('maintenance_mode', $enabled ? '1' : '0');
+
+        $message = $enabled
+            ? 'Website staat nu in onderhoudsmodus. Bezoekers zien de "Under Construction" pagina.'
+            : 'Website is weer zichtbaar voor bezoekers.';
+
+        return back()->with('success', $message);
+    }
+
     public function password()
     {
         return view('admin.settings.password');

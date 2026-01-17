@@ -64,6 +64,10 @@ Route::prefix('admin')->group(function () {
         Route::put('/users/{user}', [SettingsController::class, 'updateUser'])->name('admin.users.update');
         Route::delete('/users/{user}', [SettingsController::class, 'deleteUser'])->name('admin.users.delete');
 
+        // Site settings
+        Route::get('/site', [SettingsController::class, 'site'])->name('admin.site');
+        Route::post('/site/maintenance', [SettingsController::class, 'toggleMaintenance'])->name('admin.site.maintenance');
+
         // Content Management - FAQs
         Route::get('/faqs', [ContentController::class, 'faqs'])->name('admin.faqs');
         Route::get('/faqs/create', [ContentController::class, 'createFaq'])->name('admin.faqs.create');

@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - BCN Sports Outdoor Bootcamp Almere')
-@section('meta_description', 'Neem contact op met BCN Sports voor vragen over onze outdoor bootcamp trainingen in Almere. We staan klaar om je te helpen!')
+@section('title', 'Contact - BCN Sports Personal Training Outdoor Almere')
+@section('meta_description', 'Neem contact op met BCN Sports voor vragen over Personal Training Outdoor in Almere. Plan een gratis kennismakingsgesprek!')
 
 @section('content')
     <!-- Hero Section -->
     <section class="relative py-32 overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/images/20240309_102438.jpg" alt="BCN Sports Training" class="w-full h-full object-cover opacity-50">
+            <img src="/images/20240309_102438.jpg" alt="BCN Sports Personal Training" class="w-full h-full object-cover opacity-50">
             <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/70 via-[#0a0a0a]/80 to-[#0a0a0a]"></div>
         </div>
 
@@ -16,37 +16,64 @@
                 Neem <span class="text-[#c4ff00]">Contact</span> Op
             </h1>
             <p class="fade-in stagger-1 text-xl text-[#a0a0a0] max-w-2xl mx-auto">
-                Heb je vragen of wil je meer informatie? We horen graag van je!
+                Heb je vragen over Personal Training Outdoor of wil je een kennismakingsgesprek plannen? We horen graag van je!
             </p>
         </div>
     </section>
 
-    <!-- Direct Booking Section -->
+    <!-- Kennismaking Section -->
     <section class="py-24 bg-[#141414]">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="fade-in text-3xl md:text-4xl font-black uppercase text-white mb-4">
-                    Direct Een <span class="text-[#c4ff00]">Proefles</span> Boeken?
+                    Gratis <span class="text-[#c4ff00]">Kennismakingsgesprek</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Boek direct je gratis proefles via ons boekingssysteem - geen wachttijd!
+                    Benieuwd wat Personal Training Outdoor voor jou kan betekenen? Plan een vrijblijvend kennismakingsgesprek en ontdek de mogelijkheden.
                 </p>
             </div>
 
-            <div class="fade-in glass-card rounded-2xl p-8 md:p-12">
-                <!-- BCN Sports Booking Widget -->
-                <div class="bg-[#141414] rounded-xl p-8 text-center">
-                    <a href="https://app.bcnsports.nl/widget/render/wgt_5g5jCyu9g6LR2yMgKULO86OztFqUdyygKhaeB7cc"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="inline-flex items-center bg-[#c4ff00] text-[#0a0a0a] px-8 py-4 rounded-full font-black uppercase text-lg hover:bg-[#d4ff33] transition-colors">
-                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                        </svg>
-                        Boek Nu Je Proefles
-                    </a>
-                    <p class="text-[#a0a0a0] mt-4 text-sm">Opent in een nieuw venster</p>
+            <div class="fade-in glass-card rounded-2xl p-8 md:p-12 text-center">
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <div class="w-14 h-14 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-7 h-7 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">1. Gesprek</h3>
+                        <p class="text-[#6b6b6b] text-sm">We bespreken jouw doelen en wensen</p>
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-7 h-7 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">2. Plan op maat</h3>
+                        <p class="text-[#6b6b6b] text-sm">Ik stel een persoonlijk plan voor</p>
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-7 h-7 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">3. Start</h3>
+                        <p class="text-[#6b6b6b] text-sm">We beginnen met trainen!</p>
+                    </div>
                 </div>
+
+                <p class="text-[#a0a0a0] mb-6">
+                    Neem contact op via het formulier hieronder of bel direct.
+                </p>
+
+                <a href="tel:+31612345678" class="btn-neon inline-flex items-center px-8 py-4 rounded-full text-lg">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    Bel Nu
+                </a>
             </div>
         </div>
     </section>
@@ -58,7 +85,7 @@
 
                 <!-- Contact Form -->
                 <div class="fade-in-left glass-card rounded-2xl p-8 md:p-12">
-                    <h2 class="text-2xl font-bold text-white uppercase mb-8">Stuur ons een bericht</h2>
+                    <h2 class="text-2xl font-bold text-white uppercase mb-8">Stuur een bericht</h2>
 
                     @if(session('success'))
                         <div class="bg-[#c4ff00]/10 border border-[#c4ff00] text-[#c4ff00] px-4 py-3 rounded-lg mb-6">
@@ -124,9 +151,10 @@
                                 required
                             >
                                 <option value="">Selecteer een onderwerp</option>
-                                <option value="proefles" {{ old('subject') == 'proefles' ? 'selected' : '' }}>Proefles aanvragen</option>
-                                <option value="abonnement" {{ old('subject') == 'abonnement' ? 'selected' : '' }}>Vraag over abonnement</option>
-                                <option value="rooster" {{ old('subject') == 'rooster' ? 'selected' : '' }}>Vraag over rooster</option>
+                                <option value="kennismaking" {{ old('subject') == 'kennismaking' ? 'selected' : '' }}>Gratis kennismakingsgesprek</option>
+                                <option value="personal-training" {{ old('subject') == 'personal-training' ? 'selected' : '' }}>Vraag over Personal Training</option>
+                                <option value="duo-training" {{ old('subject') == 'duo-training' ? 'selected' : '' }}>Vraag over Duo / Small Group</option>
+                                <option value="bedrijf" {{ old('subject') == 'bedrijf' ? 'selected' : '' }}>Bedrijfs-bootcamp / Zakelijk</option>
                                 <option value="algemeen" {{ old('subject') == 'algemeen' ? 'selected' : '' }}>Algemene vraag</option>
                                 <option value="anders" {{ old('subject') == 'anders' ? 'selected' : '' }}>Anders</option>
                             </select>
@@ -189,7 +217,7 @@
                                 <div class="ml-4">
                                     <h3 class="font-bold text-white uppercase text-sm">Locatie</h3>
                                     <p class="text-[#a0a0a0]">Almere, Nederland</p>
-                                    <p class="text-[#6b6b6b] text-sm">Exacte trainingslocatie wordt gedeeld na inschrijving</p>
+                                    <p class="text-[#6b6b6b] text-sm">Training op een locatie in Almere naar keuze</p>
                                 </div>
                             </div>
 
@@ -213,7 +241,7 @@
                                 </div>
                                 <div class="ml-4">
                                     <h3 class="font-bold text-white uppercase text-sm">Reactietijd</h3>
-                                    <p class="text-[#a0a0a0]">Binnen 24 uur op werkdagen</p>
+                                    <p class="text-[#a0a0a0]">Binnen 24 uur</p>
                                 </div>
                             </div>
                         </div>
@@ -221,8 +249,8 @@
 
                     <!-- Social Media -->
                     <div class="dark-card rounded-2xl p-8">
-                        <h2 class="text-2xl font-bold text-white uppercase mb-6">Volg Ons</h2>
-                        <p class="text-[#a0a0a0] mb-6">Blijf op de hoogte van onze trainingen, tips en community updates!</p>
+                        <h2 class="text-2xl font-bold text-white uppercase mb-6">Volg BCN Sports</h2>
+                        <p class="text-[#a0a0a0] mb-6">Blijf op de hoogte van trainingen, tips en updates!</p>
 
                         <div class="flex space-x-4">
                             <a href="https://www.instagram.com/bootcamp_nation/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-[#141414] hover:bg-[#c4ff00] rounded-full flex items-center justify-center transition group">
@@ -240,12 +268,12 @@
 
                     <!-- Quick Help -->
                     <div class="neon-border rounded-2xl p-8">
-                        <h2 class="text-2xl font-bold text-white uppercase mb-4">Snel starten?</h2>
+                        <h2 class="text-2xl font-bold text-white uppercase mb-4">Bekijk het aanbod</h2>
                         <p class="text-[#a0a0a0] mb-6">
-                            Wil je direct beginnen met trainen? Bekijk ons rooster en boek je eerste les!
+                            Benieuwd naar de mogelijkheden en prijzen? Bekijk het volledige aanbod.
                         </p>
-                        <a href="{{ route('rooster') }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
-                            Bekijk Rooster
+                        <a href="{{ route('prijzen') }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
+                            Bekijk Aanbod
                         </a>
                     </div>
                 </div>
@@ -267,13 +295,13 @@
             <div class="space-y-4">
                 <div class="fade-in dark-card rounded-xl overflow-hidden">
                     <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-                        <span>Hoe meld ik me aan voor een proefles?</span>
+                        <span>Hoe werkt het kennismakingsgesprek?</span>
                         <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
                     </button>
                     <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">Je kunt direct een gratis proefles boeken via de boekingswidget bovenaan deze pagina. Kies een geschikte datum en tijd, en je bent klaar! Je eerste proefles is altijd gratis.</p>
+                        <p class="text-[#a0a0a0]">Het kennismakingsgesprek is gratis en vrijblijvend. We bespreken jouw doelen, huidige situatie en wat je zou willen bereiken. Op basis daarvan stel ik een passend traject voor.</p>
                     </div>
                 </div>
 
@@ -285,19 +313,19 @@
                         </svg>
                     </button>
                     <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">Onze outdoor bootcamp trainingen vinden plaats op verschillende locaties in Almere. Na inschrijving ontvang je de exacte locatiegegevens.</p>
+                        <p class="text-[#a0a0a0]">De trainingen vinden buiten plaats in Almere. We kunnen samen een locatie kiezen die voor jou het beste werkt - bijvoorbeeld in een park of sportveldje bij jou in de buurt.</p>
                     </div>
                 </div>
 
                 <div class="fade-in stagger-2 dark-card rounded-xl overflow-hidden">
                     <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
-                        <span>Kan ik ook als beginner meedoen?</span>
+                        <span>Is Personal Training ook iets voor beginners?</span>
                         <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
                     </button>
                     <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">Absoluut! Onze trainingen zijn geschikt voor alle niveaus. De trainer past de oefeningen aan op jouw niveau en zorgt ervoor dat je veilig en effectief traint.</p>
+                        <p class="text-[#a0a0a0]">Absoluut! Personal Training is juist ideaal voor beginners. Je krijgt persoonlijke begeleiding en alle oefeningen worden aangepast aan jouw niveau. Je leert de juiste techniek vanaf het begin.</p>
                     </div>
                 </div>
             </div>

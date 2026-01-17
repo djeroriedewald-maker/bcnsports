@@ -29,15 +29,17 @@ class PageController extends Controller
     public function prijzen()
     {
         try {
-            $packages = PricingPackage::active()->ordered()->get();
+            $packages = PricingPackage::active()->ordered()->get()->groupBy('category');
             $faqs = Faq::active()->ordered()->get();
+            $categories = PricingPackage::$categories;
         } catch (\Exception $e) {
             \Log::error('Prijzen page database error: ' . $e->getMessage());
             $packages = collect([]);
             $faqs = collect([]);
+            $categories = [];
         }
 
-        return view('pages.prijzen', compact('packages', 'faqs'));
+        return view('pages.prijzen', compact('packages', 'faqs', 'categories'));
     }
 
     public function rooster()

@@ -146,9 +146,11 @@ class ContentController extends Controller
     public function storePackage(Request $request)
     {
         $validated = $request->validate([
+            'category' => 'required|string|in:' . implode(',', array_keys(PricingPackage::$categories)),
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'price' => 'required|numeric|min:0',
+            'price_per_session' => 'nullable|numeric|min:0',
             'period' => 'required|string|max:50',
             'features' => 'nullable|string',
             'is_popular' => 'boolean',
@@ -174,9 +176,11 @@ class ContentController extends Controller
     public function updatePackage(Request $request, PricingPackage $package)
     {
         $validated = $request->validate([
+            'category' => 'required|string|in:' . implode(',', array_keys(PricingPackage::$categories)),
             'name' => 'required|string|max:255',
             'description' => 'nullable|string',
             'price' => 'required|numeric|min:0',
+            'price_per_session' => 'nullable|numeric|min:0',
             'period' => 'required|string|max:50',
             'features' => 'nullable|string',
             'is_popular' => 'boolean',

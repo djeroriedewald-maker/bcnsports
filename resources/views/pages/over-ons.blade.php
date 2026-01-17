@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
-@section('title', 'Over Ons - BCN Sports Outdoor Bootcamp Almere')
-@section('meta_description', 'Leer meer over BCN Sports, het team achter de outdoor bootcamp trainingen in Almere. Onze missie is om mensen fitter en gezonder te maken in de buitenlucht.')
+@section('title', 'Over Ons - BCN Sports Personal Training Outdoor Almere')
+@section('meta_description', 'Maak kennis met Kevin Berkhout en BCN Sports Personal Training Outdoor in Almere. Persoonlijke training buiten met een unieke aanpak.')
 
 @section('content')
     <!-- Hero Section -->
     <section class="relative py-32 overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/images/P1210932.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover opacity-50">
+            <img src="/images/P1210932.jpg" alt="BCN Sports Personal Training" class="w-full h-full object-cover opacity-50">
             <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/70 via-[#0a0a0a]/80 to-[#0a0a0a]"></div>
         </div>
 
@@ -16,34 +16,32 @@
                 Over <span class="text-[#c4ff00]">BCN Sports</span>
             </h1>
             <p class="fade-in stagger-1 text-xl text-[#a0a0a0] max-w-2xl mx-auto">
-                Passie voor fitness, liefde voor de buitenlucht, en toewijding aan jouw gezondheid.
+                Persoonlijke aandacht, professionele begeleiding en de kracht van buiten trainen.
             </p>
         </div>
     </section>
 
-    <!-- Story Section -->
+    <!-- About BCN Sports Section -->
     <section class="py-32 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="fade-in-left">
                     <h2 class="text-4xl md:text-5xl font-black uppercase text-white mb-8">
-                        Ons <span class="text-[#c4ff00]">Verhaal</span>
+                        Personal Training <span class="text-[#c4ff00]">Outdoor</span>
                     </h2>
                     <div class="space-y-6 text-[#a0a0a0] text-lg">
                         <p>
-                            BCN Sports is geboren uit een simpele overtuiging: sporten hoort buiten te gebeuren.
-                            In een wereld waar we steeds meer binnen zitten, bieden wij een verfrissend alternatief
-                            voor de traditionele sportschool.
+                            BCN Sports staat voor persoonlijke training in de buitenlucht. Geen overvolle sportschool,
+                            geen wachten op apparaten, maar volledig op jou afgestemde sessies in de frisse lucht van Almere.
                         </p>
                         <p>
-                            Wat begon als een kleine groep enthousiastelingen die samen in het park trainden,
-                            is uitgegroeid tot een hechte fitness community in Almere. We combineren de kracht
-                            van groepstraining met de voordelen van buiten sporten.
+                            Bij BCN Sports geloof ik dat effectieve training begint met persoonlijke aandacht.
+                            Elke sessie wordt afgestemd op jouw doelen, niveau en wensen. Of je nu wilt afvallen,
+                            sterker worden of je conditie wilt verbeteren - samen werken we aan jouw resultaat.
                         </p>
                         <p>
-                            Onze bootcamp trainingen zijn ontworpen om uitdagend te zijn, maar tegelijkertijd
-                            toegankelijk voor iedereen. Of je nu een ervaren atleet bent of net begint met sporten,
-                            bij BCN Sports vind je een plek waar je jezelf kunt uitdagen en groeien.
+                            De combinatie van persoonlijke begeleiding en de voordelen van buiten trainen
+                            zorgt voor een unieke trainervaring die je nergens anders vindt.
                         </p>
                     </div>
                 </div>
@@ -51,21 +49,84 @@
                 <div class="fade-in-right">
                     <div class="grid grid-cols-2 gap-6">
                         <div class="dark-card rounded-2xl p-8 text-center">
-                            <div class="stat-number mb-2">500+</div>
-                            <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Tevreden Sporters</div>
-                        </div>
-                        <div class="dark-card rounded-2xl p-8 text-center">
-                            <div class="stat-number mb-2">5+</div>
-                            <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Jaar Ervaring</div>
-                        </div>
-                        <div class="dark-card rounded-2xl p-8 text-center">
-                            <div class="stat-number mb-2">1000+</div>
-                            <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Trainingen Gegeven</div>
-                        </div>
-                        <div class="dark-card rounded-2xl p-8 text-center">
                             <div class="stat-number mb-2">100%</div>
-                            <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Passie & Toewijding</div>
+                            <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Persoonlijke Aandacht</div>
                         </div>
+                        <div class="dark-card rounded-2xl p-8 text-center">
+                            <div class="stat-number mb-2">1:1</div>
+                            <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Training Focus</div>
+                        </div>
+                        <div class="dark-card rounded-2xl p-8 text-center">
+                            <div class="stat-number mb-2">Flex</div>
+                            <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Locatie & Tijd</div>
+                        </div>
+                        <div class="dark-card rounded-2xl p-8 text-center">
+                            <div class="stat-number mb-2">Op Maat</div>
+                            <div class="text-[#a0a0a0] text-sm uppercase tracking-wider">Trainingsplan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainer Section - Kevin -->
+    <section class="py-32 bg-[#141414]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
+                    Jouw <span class="text-[#c4ff00]">Trainer</span>
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-left order-2 lg:order-1">
+                    <h3 class="text-3xl font-bold text-white mb-4">Kevin Berkhout</h3>
+                    <p class="text-[#c4ff00] font-semibold uppercase tracking-wider mb-6">Personal Trainer & Oprichter BCN Sports</p>
+
+                    <div class="space-y-6 text-[#a0a0a0] text-lg">
+                        <p>
+                            Naast mijn werk als brandweerman heb ik mijn passie voor fitness omgezet in BCN Sports.
+                            Als brandweerman weet ik hoe belangrijk een goede conditie en kracht zijn - niet alleen
+                            voor mijn werk, maar voor het dagelijks leven.
+                        </p>
+                        <p>
+                            Die ervaring neem ik mee in mijn trainingen. Functionele fitness die je helpt in het
+                            dagelijks leven, of je nu fitter wilt worden, sterker wilt zijn of je gewoon lekker
+                            wilt voelen in je eigen lichaam.
+                        </p>
+                        <p>
+                            Ik geloof niet in one-size-fits-all oplossingen. Iedereen is anders en verdient een
+                            aanpak die past bij zijn of haar situatie. Daarom bied ik Personal Training Outdoor -
+                            volledig op jou afgestemd, in de buitenlucht.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2 text-[#a0a0a0]">
+                            <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Gecertificeerd Personal Trainer</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-[#a0a0a0]">
+                            <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Brandweerman</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-[#a0a0a0]">
+                            <svg class="w-5 h-5 text-[#c4ff00]" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>HYROX Deelnemer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fade-in-right order-1 lg:order-2">
+                    <div class="rounded-2xl overflow-hidden">
+                        <img src="/images/P1210932.jpg" alt="Kevin Berkhout - Personal Trainer BCN Sports" class="w-full h-auto">
                     </div>
                 </div>
             </div>
@@ -80,8 +141,8 @@
                     Bewezen In <span class="text-[#c4ff00]">Competitie</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Onze trainers nemen actief deel aan professionele fitness competities zoals HYROX.
-                    De kennis en ervaring die wij opdoen, brengen wij direct naar onze trainingen.
+                    De kennis en ervaring die ik opdoe bij professionele fitness competities zoals HYROX,
+                    breng ik direct naar de trainingen.
                 </p>
             </div>
 
@@ -117,60 +178,22 @@
 
             <div class="mt-12 text-center">
                 <p class="text-[#a0a0a0] max-w-2xl mx-auto">
-                    Door zelf aan wedstrijden mee te doen, begrijpen wij wat het betekent om te presteren onder druk.
-                    Deze ervaring delen wij met onze leden om hen te helpen hun eigen doelen te bereiken.
+                    Door zelf aan wedstrijden mee te doen, begrijp ik wat het betekent om te presteren onder druk.
+                    Deze ervaring deel ik om jou te helpen jouw eigen doelen te bereiken.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Mission & Vision -->
-    <section class="py-32 bg-[#0a0a0a]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Mission -->
-                <div class="fade-in glass-card rounded-2xl p-10">
-                    <div class="w-16 h-16 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mb-8">
-                        <svg class="w-8 h-8 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white uppercase mb-4">Onze Missie</h3>
-                    <p class="text-[#a0a0a0]">
-                        Wij maken fitness toegankelijk en leuk voor iedereen. Door outdoor trainingen aan te bieden,
-                        helpen we mensen niet alleen fysiek fitter te worden, maar ook mentaal sterker.
-                        We geloven dat beweging in de natuur een positieve impact heeft op lichaam en geest.
-                    </p>
-                </div>
-
-                <!-- Vision -->
-                <div class="fade-in stagger-1 glass-card rounded-2xl p-10">
-                    <div class="w-16 h-16 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mb-8">
-                        <svg class="w-8 h-8 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white uppercase mb-4">Onze Visie</h3>
-                    <p class="text-[#a0a0a0]">
-                        Wij zien een toekomst waarin outdoor fitness de norm is. Een community waar mensen
-                        elkaar motiveren, ondersteunen en samen groeien. BCN Sports wil de grootste en
-                        meest inspirerende outdoor fitness community van Almere worden.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Values Section -->
+    <!-- Why BCN Sports Section -->
     <section class="py-32 bg-[#141414]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-20">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Onze <span class="text-[#c4ff00]">Waarden</span>
+                    Waarom <span class="text-[#c4ff00]">BCN Sports</span>?
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Deze kernwaarden vormen de basis van alles wat we doen bij BCN Sports.
+                    Wat maakt Personal Training Outdoor bij BCN Sports anders?
                 </p>
             </div>
 
@@ -178,98 +201,49 @@
                 <div class="fade-in text-center">
                     <div class="w-20 h-20 bg-[#c4ff00] rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-10 h-10 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white uppercase mb-3">Community</h3>
+                    <h3 class="text-xl font-bold text-white uppercase mb-3">Persoonlijk</h3>
                     <p class="text-[#a0a0a0] text-sm">
-                        Samen sta je sterker. We bouwen aan een hechte gemeenschap waar iedereen welkom is.
+                        Geen groepslessen waar je een nummer bent. Volledige focus op jouw doelen en progressie.
                     </p>
                 </div>
 
                 <div class="fade-in stagger-1 text-center">
                     <div class="w-20 h-20 bg-[#c4ff00] rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-10 h-10 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white uppercase mb-3">Kwaliteit</h3>
+                    <h3 class="text-xl font-bold text-white uppercase mb-3">Buiten</h3>
                     <p class="text-[#a0a0a0] text-sm">
-                        Professionele trainers en doordachte programma's voor optimale resultaten.
+                        Verse lucht, daglicht en de natuurlijke omgeving van Almere als jouw sportschool.
                     </p>
                 </div>
 
                 <div class="fade-in stagger-2 text-center">
                     <div class="w-20 h-20 bg-[#c4ff00] rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-10 h-10 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white uppercase mb-3">Passie</h3>
+                    <h3 class="text-xl font-bold text-white uppercase mb-3">Flexibel</h3>
                     <p class="text-[#a0a0a0] text-sm">
-                        We doen wat we doen omdat we ervan houden en die energie willen delen.
+                        Training wanneer het jou uitkomt. Geen vaste groepstijden of verplichte roosters.
                     </p>
                 </div>
 
                 <div class="fade-in stagger-3 text-center">
                     <div class="w-20 h-20 bg-[#c4ff00] rounded-full flex items-center justify-center mx-auto mb-6">
                         <svg class="w-10 h-10 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white uppercase mb-3">Natuur</h3>
+                    <h3 class="text-xl font-bold text-white uppercase mb-3">Resultaat</h3>
                     <p class="text-[#a0a0a0] text-sm">
-                        We geloven in de kracht van buiten zijn en de positieve effecten daarvan.
+                        Meetbare progressie en aanpassingen op basis van jouw ontwikkeling.
                     </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Training Method Section -->
-    <section class="py-32 bg-[#141414]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="fade-in-left">
-                    <div class="rounded-2xl overflow-hidden">
-                        <img src="/images/20241007_093350.jpg" alt="Outdoor training op mat" class="w-full h-auto">
-                    </div>
-                </div>
-                
-                <div class="fade-in-right">
-                    <h2 class="text-4xl md:text-5xl font-black uppercase text-white mb-6">
-                        Onze <span class="text-[#c4ff00]">Trainingsmethode</span>
-                    </h2>
-                    <p class="text-[#a0a0a0] text-lg mb-6">
-                        Elke training bij BCN Sports is zorgvuldig ontworpen om maximale resultaten te behalen.
-                        We combineren functionele oefeningen, cardio en kracht in een dynamische workout die
-                        geschikt is voor alle niveaus.
-                    </p>
-                    <p class="text-[#a0a0a0] text-lg mb-8">
-                        Of je nu traint op gras, op een mat, of op het strand - onze trainingen passen zich aan
-                        aan de omgeving en maken gebruik van de natuurlijke elementen om je sterker te maken.
-                    </p>
-                    <ul class="space-y-4">
-                        <li class="flex items-center text-white">
-                            <svg class="w-6 h-6 text-[#c4ff00] mr-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Functionele bewegingen voor alledaagse kracht
-                        </li>
-                        <li class="flex items-center text-white">
-                            <svg class="w-6 h-6 text-[#c4ff00] mr-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            HIIT training voor maximale vetverbranding
-                        </li>
-                        <li class="flex items-center text-white">
-                            <svg class="w-6 h-6 text-[#c4ff00] mr-4" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                            </svg>
-                            Scaleerbare oefeningen voor elk niveau
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -325,18 +299,17 @@
     <section class="py-24 bg-[#141414]">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-6">
-                Word onderdeel van <span class="text-[#c4ff00]">BCN Sports</span>
+                Klaar om te <span class="text-[#c4ff00]">starten</span>?
             </h2>
             <p class="fade-in stagger-1 text-xl text-[#a0a0a0] mb-10">
-                Sluit je aan bij onze community en ontdek de kracht van outdoor fitness.
-                Je eerste stap naar een fitter en gezonder leven begint hier.
+                Plan een gratis kennismakingsgesprek en ontdek hoe Personal Training Outdoor jou kan helpen jouw doelen te bereiken.
             </p>
             <div class="fade-in stagger-2 flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="{{ route('contact') }}" class="btn-neon px-10 py-4 rounded-full text-lg">
-                    Neem Contact Op
+                    Gratis Kennismaking
                 </a>
                 <a href="{{ route('prijzen') }}" class="btn-neon-outline px-10 py-4 rounded-full text-lg">
-                    Bekijk Prijzen
+                    Bekijk Aanbod
                 </a>
             </div>
         </div>

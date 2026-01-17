@@ -29,8 +29,9 @@
                 @foreach($packages as $package)
                     <div class="p-6 flex items-start justify-between">
                         <div class="flex-1">
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center gap-3 flex-wrap">
                                 <h3 class="font-medium text-white">{{ $package->name }}</h3>
+                                <span class="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded-full font-medium">{{ $package->category_label }}</span>
                                 @if($package->is_popular)
                                     <span class="px-2 py-1 bg-bcn-green/10 text-bcn-green text-xs rounded-full font-medium">Populair</span>
                                 @endif

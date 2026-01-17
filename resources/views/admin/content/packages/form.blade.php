@@ -26,6 +26,25 @@
                     @endif
 
                     <div class="mb-6">
+                        <label for="category" class="block text-sm font-medium text-gray-400 mb-2">Categorie</label>
+                        <select
+                            id="category"
+                            name="category"
+                            required
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-bcn-green transition @error('category') border-red-500 @enderror"
+                        >
+                            @foreach(\App\Models\PricingPackage::$categories as $value => $label)
+                                <option value="{{ $value }}" {{ old('category', $package->category ?? 'personal_1on1') === $value ? 'selected' : '' }}>
+                                    {{ $label }}
+                                </option>
+                            @endforeach
+                        </select>
+                        @error('category')
+                            <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <div class="mb-6">
                         <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Naam</label>
                         <input
                             type="text"
@@ -34,7 +53,7 @@
                             value="{{ old('name', $package->name ?? '') }}"
                             required
                             class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition @error('name') border-red-500 @enderror"
-                            placeholder="Bijv: Unlimited Maandpas"
+                            placeholder="Bijv: 10x Strippenkaart"
                         >
                         @error('name')
                             <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
@@ -48,7 +67,7 @@
                             name="description"
                             rows="2"
                             class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
-                            placeholder="Korte beschrijving van het pakket..."
+                            placeholder="Bijv: Bespaar €100"
                         >{{ old('description', $package->description ?? '') }}</textarea>
                     </div>
 
@@ -64,24 +83,41 @@
                                 min="0"
                                 required
                                 class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition @error('price') border-red-500 @enderror"
-                                placeholder="99.00"
+                                placeholder="649.00"
                             >
                             @error('price')
                                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
                             @enderror
+                            <p class="text-gray-600 text-xs mt-1">Gebruik 0 voor "Op aanvraag"</p>
                         </div>
                         <div>
-                            <label for="period" class="block text-sm font-medium text-gray-400 mb-2">Periode</label>
+                            <label for="price_per_session" class="block text-sm font-medium text-gray-400 mb-2">Prijs per sessie (€)</label>
                             <input
-                                type="text"
-                                id="period"
-                                name="period"
-                                value="{{ old('period', $package->period ?? 'maand') }}"
-                                required
+                                type="number"
+                                id="price_per_session"
+                                name="price_per_session"
+                                value="{{ old('price_per_session', $package->price_per_session ?? '') }}"
+                                step="0.01"
+                                min="0"
                                 class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
-                                placeholder="maand, jaar, eenmalig"
+                                placeholder="64.90"
                             >
+                            <p class="text-gray-600 text-xs mt-1">Optioneel, voor strippenkaarten</p>
                         </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="period" class="block text-sm font-medium text-gray-400 mb-2">Periode / Eenheid</label>
+                        <input
+                            type="text"
+                            id="period"
+                            name="period"
+                            value="{{ old('period', $package->period ?? 'sessie') }}"
+                            required
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
+                            placeholder="sessie, persoon / sessie, maand"
+                        >
+                        <p class="text-gray-600 text-xs mt-1">Bijv: "sessie", "persoon / sessie", "maand"</p>
                     </div>
 
                     <div class="mb-6">
@@ -91,7 +127,7 @@
                             name="features"
                             rows="5"
                             class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
-                            placeholder="Onbeperkt trainen&#10;Toegang tot alle locaties&#10;Gratis handdoek service"
+                            placeholder="10 sessies van 60 min&#10;6 maanden geldig&#10;Voortgangsgesprekken"
                         >{{ old('features', isset($package) && $package->features ? implode("\n", $package->features) : '') }}</textarea>
                         <p class="text-gray-600 text-sm mt-1">Elke regel wordt een feature item</p>
                     </div>
@@ -105,6 +141,7 @@
                             value="{{ old('sort_order', $package->sort_order ?? 0) }}"
                             class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
                         >
+                        <p class="text-gray-600 text-xs mt-1">Lagere nummers verschijnen eerst</p>
                     </div>
 
                     <div class="mb-6 space-y-3">

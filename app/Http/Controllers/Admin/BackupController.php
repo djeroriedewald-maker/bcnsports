@@ -14,7 +14,7 @@ class BackupController extends Controller
 
     public function __construct()
     {
-        $this->backupPath = storage_path('app/backups');
+        $this->backupPath = storage_path('app' . DIRECTORY_SEPARATOR . 'backups');
         $this->databasePath = database_path('database.sqlite');
 
         // Ensure backup directory exists
@@ -41,7 +41,7 @@ class BackupController extends Controller
             }
 
             $filename = 'backup_' . date('Y-m-d_H-i-s') . '.sqlite';
-            $destination = $this->backupPath . '/' . $filename;
+            $destination = $this->backupPath . DIRECTORY_SEPARATOR . $filename;
 
             File::copy($this->databasePath, $destination);
 
@@ -53,7 +53,7 @@ class BackupController extends Controller
 
     public function download(string $filename)
     {
-        $filepath = $this->backupPath . '/' . $filename;
+        $filepath = $this->backupPath . DIRECTORY_SEPARATOR . $filename;
 
         if (!File::exists($filepath) || !$this->isValidBackupFile($filename)) {
             return back()->with('error', 'Backup bestand niet gevonden.');
@@ -64,7 +64,7 @@ class BackupController extends Controller
 
     public function restore(string $filename)
     {
-        $filepath = $this->backupPath . '/' . $filename;
+        $filepath = $this->backupPath . DIRECTORY_SEPARATOR . $filename;
 
         if (!File::exists($filepath) || !$this->isValidBackupFile($filename)) {
             return back()->with('error', 'Backup bestand niet gevonden.');
@@ -73,7 +73,7 @@ class BackupController extends Controller
         try {
             // Create a backup of current database before restoring
             $preRestoreBackup = 'pre_restore_' . date('Y-m-d_H-i-s') . '.sqlite';
-            File::copy($this->databasePath, $this->backupPath . '/' . $preRestoreBackup);
+            File::copy($this->databasePath, $this->backupPath . DIRECTORY_SEPARATOR . $preRestoreBackup);
 
             // Restore the backup
             File::copy($filepath, $this->databasePath);
@@ -86,7 +86,7 @@ class BackupController extends Controller
 
     public function delete(string $filename)
     {
-        $filepath = $this->backupPath . '/' . $filename;
+        $filepath = $this->backupPath . DIRECTORY_SEPARATOR . $filename;
 
         if (!File::exists($filepath) || !$this->isValidBackupFile($filename)) {
             return back()->with('error', 'Backup bestand niet gevonden.');

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\BackupController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\Admin\ContentController;
@@ -67,6 +68,13 @@ Route::prefix('admin')->group(function () {
         // Site settings
         Route::get('/site', [SettingsController::class, 'site'])->name('admin.site');
         Route::post('/site/maintenance', [SettingsController::class, 'toggleMaintenance'])->name('admin.site.maintenance');
+
+        // Backups
+        Route::get('/backups', [BackupController::class, 'index'])->name('admin.backups');
+        Route::post('/backups', [BackupController::class, 'create'])->name('admin.backups.create');
+        Route::get('/backups/{filename}/download', [BackupController::class, 'download'])->name('admin.backups.download');
+        Route::post('/backups/{filename}/restore', [BackupController::class, 'restore'])->name('admin.backups.restore');
+        Route::delete('/backups/{filename}', [BackupController::class, 'delete'])->name('admin.backups.delete');
 
         // Content Management - FAQs
         Route::get('/faqs', [ContentController::class, 'faqs'])->name('admin.faqs');

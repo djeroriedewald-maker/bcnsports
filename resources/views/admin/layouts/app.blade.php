@@ -107,6 +107,12 @@
                     <span class="ml-auto w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
                 @endif
             </a>
+            <a href="{{ route('admin.backups') }}" class="flex items-center px-6 py-3 text-sm {{ request()->routeIs('admin.backups*') ? 'text-bcn-green bg-bcn-green/10 border-r-2 border-bcn-green' : 'text-gray-400 hover:text-white hover:bg-white/5' }}">
+                <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                </svg>
+                Backups
+            </a>
         </nav>
 
         <div class="flex-shrink-0 p-6 border-t border-white/10">

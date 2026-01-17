@@ -292,7 +292,7 @@
                     </a>
                 </div>
                 <p class="text-[#a0a0a0] text-sm mt-8">
-                    Of bel ons direct: <a href="tel:+31612345678" class="text-[#c4ff00] hover:underline">+31 6 1234 5678</a>
+                    Of bel ons direct: <a href="tel:+31641541751" class="text-[#c4ff00] hover:underline">+31 6 4154 1751</a>
                 </p>
             </div>
         </div>

@@ -393,7 +393,7 @@
                 <a href="{{ route('contact') }}" class="btn-neon px-10 py-4 rounded-full text-lg">
                     Gratis Kennismaking
                 </a>
-                <a href="tel:+31612345678" class="btn-neon-outline px-10 py-4 rounded-full text-lg">
+                <a href="tel:+31641541751" class="btn-neon-outline px-10 py-4 rounded-full text-lg">
                     Bel Direct
                 </a>
             </div>

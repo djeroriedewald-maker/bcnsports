@@ -15,7 +15,7 @@ class BackupController extends Controller
     public function __construct()
     {
         $this->backupPath = storage_path('app' . DIRECTORY_SEPARATOR . 'backups');
-        $this->databasePath = database_path('database.sqlite');
+        $this->databasePath = config('database.connections.sqlite.database');
 
         // Ensure backup directory exists
         if (!File::isDirectory($this->backupPath)) {
@@ -26,11 +26,13 @@ class BackupController extends Controller
     public function index()
     {
         $backups = $this->getBackups();
-        $databaseSize = File::exists($this->databasePath)
+        $databaseExists = File::exists($this->databasePath);
+        $databaseSize = $databaseExists
             ? $this->formatBytes(File::size($this->databasePath))
             : 'N/A';
+        $databasePath = $this->databasePath;
 
-        return view('admin.backups.index', compact('backups', 'databaseSize'));
+        return view('admin.backups.index', compact('backups', 'databaseSize', 'databasePath', 'databaseExists'));
     }
 
     public function create()

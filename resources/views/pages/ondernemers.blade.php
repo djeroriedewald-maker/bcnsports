@@ -7,7 +7,7 @@
     <!-- Hero Section -->
     <section class="relative py-32 lg:py-40 overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/images/events/P1270912.jpg" alt="BCN Sports Zakelijke Training" class="w-full h-full object-cover opacity-50">
+            <img src="/images/P1270912.jpg" alt="BCN Sports Zakelijke Training" class="w-full h-full object-cover opacity-50">
             <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/70 via-[#0a0a0a]/80 to-[#0a0a0a]"></div>
         </div>
 
@@ -52,7 +52,7 @@
                 </div>
                 <div class="fade-in-right">
                     <div class="relative rounded-2xl overflow-hidden">
-                        <img src="/images/events/P1210932.jpg" alt="BCN Sports Bedrijfstraining" class="w-full h-auto">
+                        <img src="/images/P1210932.jpg" alt="BCN Sports Bedrijfstraining" class="w-full h-auto">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                 <!-- Teamuitje -->
                 <div class="fade-in glass-card rounded-2xl overflow-hidden">
                     <div class="relative h-64">
-                        <img src="/images/events/P1270860.jpg" alt="BCN Sports Teamuitje" class="w-full h-full object-cover">
+                        <img src="/images/20240902_195039.jpg" alt="BCN Sports Teamuitje" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
                         <div class="absolute bottom-4 left-4">
                             <span class="bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
@@ -170,7 +170,7 @@
                 <!-- Structureel -->
                 <div class="fade-in stagger-1 glass-card rounded-2xl overflow-hidden">
                     <div class="relative h-64">
-                        <img src="/images/events/P1270832.jpg" alt="BCN Sports Vitaliteitsprogramma" class="w-full h-full object-cover">
+                        <img src="/images/20240904_091803.jpg" alt="BCN Sports Vitaliteitsprogramma" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
                         <div class="absolute bottom-4 left-4">
                             <span class="bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">

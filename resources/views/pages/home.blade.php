@@ -8,7 +8,7 @@
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+            <img src="/images/20240904_091803.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/60"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]"></div>
         </div>
@@ -298,33 +298,6 @@
         </div>
     </section>
 
-    <!-- Training Video Section -->
-    <section class="py-24 bg-[#0a0a0a]">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Bekijk Ons <span class="text-[#c4ff00]">In Actie</span>
-                </h2>
-            </div>
-
-            <div class="fade-in">
-                <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-                    <video
-                        autoplay
-                        muted
-                        loop
-                        controls
-                        playsinline
-                        class="w-full h-auto"
-                    >
-                        <source src="/images/VN20240906_193223-1920.mp4" type="video/mp4">
-                        Je browser ondersteunt geen video.
-                    </video>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Gallery Section -->
     <section class="py-24 bg-[#141414]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -336,7 +309,7 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="fade-in img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/20240902_194435.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+                    <img src="/images/20240904_091803.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-1 img-zoom rounded-xl overflow-hidden aspect-square">
                     <img src="/images/P1210932.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover">
@@ -354,7 +327,7 @@
                     <img src="/images/20231220_085224.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-2 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/20240309_102438.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+                    <img src="/images/IMG-20241003-WA0070.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>

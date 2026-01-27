@@ -120,7 +120,7 @@
         </div>
     </section>
 
-    <!-- HYROX & Events Section -->
+    <!-- Bootcamp Trials & Events Section -->
     <section class="py-24 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -128,22 +128,22 @@
                     Bootcamp Trials <span class="text-[#c4ff00]">& Events</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Onze trainers nemen zelf deel aan de uitdagingen die we organiseren en voorschotelen.
-                    Bootcamp Trials events, trail runs van 50+ kilometer, HYROX-wedstrijden en alles wat uit de comfortzone haalt.
+                    Al onze coaches nemen zelf actief deel aan uitdagingen zoals HYROX, ultra runs van 50+ kilometer,
+                    marathons en tal van andere events waarbij ze mentaal en fysiek op de proef worden gesteld.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="fade-in-left dark-card rounded-2xl overflow-hidden group">
                     <div class="relative h-80 overflow-hidden">
-                        <img src="/images/13234_20241013_111118_415132811_socialmedia.jpg" alt="BCN Sports trainer bij HYROX Amsterdam" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="/images/team%20spirit.jpg" alt="BCN Sports Bootcamp Trials teamwork" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
                         <div class="absolute top-4 left-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
-                            HYROX Amsterdam
+                            Bootcamp Trials
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white uppercase mb-2">Competitie Ready</h3>
+                        <h3 class="text-xl font-bold text-white uppercase mb-2">Team Spirit</h3>
                         <p class="text-[#a0a0a0]">
                             We vragen niks van jou wat we niet eerst zelf hebben gedaan.
                         </p>
@@ -152,16 +152,16 @@
 
                 <div class="fade-in-right dark-card rounded-2xl overflow-hidden group">
                     <div class="relative h-80 overflow-hidden">
-                        <img src="/images/13234_20241013_111559_415165870_socialmedia.jpg" alt="BCN Sports trainer HYROX competitie" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="/images/uitdaging%20aangaan.jpg" alt="BCN Sports uitdaging aangaan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
                         <div class="absolute top-4 left-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
-                            HYROX Amsterdam
+                            Uitdaging Aangaan
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white uppercase mb-2">Event Training</h3>
+                        <h3 class="text-xl font-bold text-white uppercase mb-2">Grenzen Verleggen</h3>
                         <p class="text-[#a0a0a0]">
-                            Obstacle run, marathon of Mud Masters? Wij stomen je klaar.
+                            Obstacle run, marathon of ultra trail? Wij stomen je klaar.
                         </p>
                     </div>
                 </div>
@@ -196,7 +196,7 @@
                     <p class="text-[#a0a0a0] mb-6">
                         Uitdagende outdoor events waar je mentale en fysieke grenzen verlegt. Gebaseerd op onze Defensie-ervaring.
                     </p>
-                    <p class="text-[#c4ff00] font-bold mb-4">Traject op maat</p>
+                    <p class="text-[#c4ff00] font-bold mb-4">Events worden aangekondigd</p>
                     <a href="{{ route('prijzen') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
                         Bekijk aanbod
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -325,7 +325,7 @@
                     <img src="/images/P1270912.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in img-zoom rounded-xl overflow-hidden aspect-square md:col-span-2 md:row-span-2">
-                    <img src="/images/20240421_111132.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+                    <img src="/images/team%20spirit.jpg" alt="BCN Sports Bootcamp Trials teamwork" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-1 img-zoom rounded-xl overflow-hidden aspect-square">
                     <img src="/images/20231220_085224.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">

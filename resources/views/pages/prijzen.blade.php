@@ -77,9 +77,10 @@
                             </ul>
                         </div>
                         <div class="lg:text-right">
-                            <p class="text-xl font-bold text-[#c4ff00] mb-4">Traject op maat</p>
+                            <p class="text-lg font-bold text-white mb-2">Binnenkort beschikbaar</p>
+                            <p class="text-[#a0a0a0] text-sm mb-4">Events worden aangekondigd op deze pagina. Houd de website in de gaten of neem contact op voor meer info.</p>
                             <a href="{{ route('contact') }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
-                                Neem Contact Op
+                                Vraag Info Aan
                             </a>
                         </div>
                     </div>

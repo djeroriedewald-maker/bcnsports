@@ -71,43 +71,43 @@
         </div>
     </section>
 
-    <!-- HYROX & Competitie Credentials Section -->
+    <!-- Onze Coaches Section -->
     <section class="py-32 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Bewezen In <span class="text-[#c4ff00]">Competitie</span>
+                    Onze <span class="text-[#c4ff00]">Coaches</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    De kennis en ervaring die ik opdoe bij competities zoals HYROX en onze eigen Bootcamp Trials events,
-                    breng ik direct naar de trainingen.
+                    Al onze coaches nemen zelf actief deel aan tal van uitdagingen. Van HYROX-wedstrijden en ultra runs
+                    van 50+ kilometer tot marathons en andere events waarbij ze mentaal en fysiek op de proef worden gesteld.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div class="fade-in-left dark-card rounded-2xl overflow-hidden group">
                     <div class="relative h-96 overflow-hidden">
-                        <img src="/images/13234_20241013_111118_415132811_socialmedia.jpg" alt="BCN Sports trainer bij HYROX Amsterdam - rowing" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="/images/team%20spirit.jpg" alt="BCN Sports team spirit" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
                         <div class="absolute top-4 left-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
-                            HYROX Amsterdam 2024
+                            Team Spirit
                         </div>
                         <div class="absolute bottom-6 left-6 right-6">
-                            <h3 class="text-2xl font-bold text-white uppercase">Rowing Station</h3>
-                            <p class="text-[#c4ff00] font-semibold uppercase tracking-wider text-sm">Competition Ready</p>
+                            <h3 class="text-2xl font-bold text-white uppercase">Samen Sterker</h3>
+                            <p class="text-[#c4ff00] font-semibold uppercase tracking-wider text-sm">We doen zelf mee</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="fade-in-right dark-card rounded-2xl overflow-hidden group">
                     <div class="relative h-96 overflow-hidden">
-                        <img src="/images/13234_20241013_111559_415165870_socialmedia.jpg" alt="BCN Sports trainer HYROX competitie - walking" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="/images/uitdaging%20aangaan.jpg" alt="BCN Sports uitdaging aangaan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
                         <div class="absolute top-4 left-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
-                            HYROX Amsterdam 2024
+                            Uitdaging Aangaan
                         </div>
                         <div class="absolute bottom-6 left-6 right-6">
-                            <h3 class="text-2xl font-bold text-white uppercase">Athlete Mindset</h3>
+                            <h3 class="text-2xl font-bold text-white uppercase">Grenzen Verleggen</h3>
                             <p class="text-[#c4ff00] font-semibold uppercase tracking-wider text-sm">Never Give Up</p>
                         </div>
                     </div>
@@ -116,8 +116,9 @@
 
             <div class="mt-12 text-center">
                 <p class="text-[#a0a0a0] max-w-2xl mx-auto">
-                    Door zelf aan wedstrijden mee te doen, begrijp ik wat het betekent om te presteren onder druk.
-                    Deze ervaring deel ik om jou te helpen jouw eigen doelen te bereiken.
+                    We vragen niks van jou wat we niet eerst zelf hebben gedaan. Door zelf deel te nemen aan
+                    uitdagingen begrijpen we wat het betekent om te presteren onder druk. Die ervaring brengen
+                    we direct naar onze Bootcamp Trials events en trainingen.
                 </p>
             </div>
         </div>

@@ -7,8 +7,8 @@
     <!-- Hero Section -->
     <section class="relative py-32 overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/images/canva/forrest%20feel.jpg" alt="BCN Sports Personal Training" class="w-full h-full object-cover opacity-80">
-            <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/40 via-[#0a0a0a]/50 to-[#0a0a0a]"></div>
+            <img src="/images/canva/forrest%20feel.jpg" alt="BCN Sports Personal Training" class="w-full h-full object-cover brightness-150">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/30 via-[#0a0a0a]/40 to-[#0a0a0a]"></div>
         </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

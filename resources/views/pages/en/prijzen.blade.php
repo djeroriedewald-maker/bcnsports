@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Aanbod & Prijzen - BCN Sports Bootcamp Trials & Outdoor Training')
-@section('meta_description', 'Bekijk het aanbod en de prijzen van BCN Sports. Bootcamp Trials events door heel Nederland, 1:1 Personal Training vanaf €59,95, duo-training, small group en meer.')
+@section('title', 'Services & Prices - BCN Sports Bootcamp Trials & Outdoor Training')
+@section('meta_description', 'View the services and prices of BCN Sports. Bootcamp Trials events throughout the Netherlands, 1:1 Personal Training from €59.95, duo training, small group and more.')
 
 @section('content')
     <!-- Hero Section -->
@@ -13,10 +13,10 @@
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="fade-in text-5xl md:text-6xl lg:text-7xl font-black uppercase text-white mb-6">
-                Aanbod & <span class="text-[#c4ff00]">Prijzen</span>
+                Services & <span class="text-[#c4ff00]">Prices</span>
             </h1>
             <p class="fade-in stagger-1 text-xl text-[#a0a0a0] max-w-2xl mx-auto">
-                Van Bootcamp Trials events tot persoonlijke 1-op-1 begeleiding. Kies wat bij jouw doelen past.
+                From Bootcamp Trials events to personal 1-on-1 coaching. Choose what fits your goals.
             </p>
         </div>
     </section>
@@ -38,8 +38,8 @@
                     Bootcamp <span class="text-[#c4ff00]">Trials</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-3xl mx-auto">
-                    Onze uitdagende outdoor events door heel Nederland waar je mentale en fysieke grenzen verlegt.
-                    Ontworpen met 20+ jaar ervaring om het beste uit jezelf te halen.
+                    Our challenging outdoor events throughout the Netherlands where you push your mental and physical limits.
+                    Designed with 20+ years of experience to bring out the best in you.
                 </p>
             </div>
 
@@ -57,39 +57,39 @@
                     <div class="flex flex-col lg:flex-row lg:items-center gap-8">
                         <div class="flex-1">
                             <div class="inline-block bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full mb-4">
-                                Onze Specialiteit
+                                Our Specialty
                             </div>
                             <h3 class="text-3xl font-black text-white uppercase mb-4">Bootcamp Trials Events</h3>
                             <p class="text-white/80 mb-6 text-lg">
-                                Doe mee aan onze Bootcamp Trials events en ontdek waar je grenzen liggen.
-                                Individueel of als team, onder begeleiding van ervaren trainers met een bewezen track record.
+                                Join our Bootcamp Trials events and discover where your limits lie.
+                                Individually or as a team, guided by experienced trainers with a proven track record.
                             </p>
                             <ul class="space-y-3 mb-6 text-sm">
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-white/70">Fysieke en mentale uitdagingen in de buitenlucht</span>
+                                    <span class="text-white/70">Physical and mental challenges in the outdoors</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-white/70">Begeleiding door trainers met 20+ jaar ervaring</span>
+                                    <span class="text-white/70">Guidance by trainers with 20+ years of experience</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-white/70">Individueel of in teamverband</span>
+                                    <span class="text-white/70">Individually or as a team</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="lg:text-right">
-                            <p class="text-xl font-black text-[#c4ff00] uppercase mb-2">Binnenkort beschikbaar</p>
-                            <p class="text-white/60 text-sm mb-6">Events worden aangekondigd op deze pagina. Houd de website in de gaten of neem contact op voor meer info.</p>
-                            <a href="{{ route('contact') }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
-                                Vraag Info Aan
+                            <p class="text-xl font-black text-[#c4ff00] uppercase mb-2">Coming Soon</p>
+                            <p class="text-white/60 text-sm mb-6">Events will be announced on this page. Keep an eye on the website or get in touch for more info.</p>
+                            <a href="{{ route(\App\Helpers\LocaleHelper::localizedRoute('contact')) }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
+                                Request Info
                             </a>
                         </div>
                     </div>
@@ -107,8 +107,8 @@
                     1:1 <span class="text-[#c4ff00]">Personal Training</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-3xl mx-auto">
-                    Volledige focus op jouw doelen. Elke sessie wordt afgestemd op jouw niveau, wensen en progressie.
-                    Of je nu wilt afvallen, sterker worden of je conditie wilt verbeteren.
+                    Full focus on your goals. Every session is tailored to your level, preferences and progression.
+                    Whether you want to lose weight, get stronger or improve your fitness.
                 </p>
             </div>
 
@@ -119,7 +119,7 @@
                         <div class="fade-in stagger-{{ $index }} relative rounded-2xl overflow-hidden lg:scale-105 z-10">
                             <div class="absolute inset-0 bg-gradient-to-b from-[#c4ff00]/20 to-transparent"></div>
                             <div class="absolute -top-0 left-1/2 transform -translate-x-1/2 bg-[#0a0a0a] text-[#c4ff00] text-xs font-bold uppercase px-4 py-1 rounded-b-lg border-x border-b border-[#c4ff00] z-20">
-                                Populair
+                                Popular
                             </div>
                             <div class="neon-border rounded-2xl overflow-hidden relative">
                                 <div class="bg-[#c4ff00] p-6 pt-8 text-center">
@@ -132,7 +132,7 @@
                                     <div class="text-center mb-6">
                                         <span class="text-4xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
                                         @if($package->price_per_session)
-                                            <span class="text-[#a0a0a0] block mt-2">{{ $package->formatted_price_per_session }} per sessie</span>
+                                            <span class="text-[#a0a0a0] block mt-2">{{ $package->formatted_price_per_session }} per session</span>
                                         @else
                                             <span class="text-[#a0a0a0] block mt-2">per {{ $package->localized_period }}</span>
                                         @endif
@@ -149,8 +149,8 @@
                                             @endforeach
                                         </ul>
                                     @endif
-                                    <a href="{{ route('contact') }}" class="btn-neon block w-full text-center py-3 rounded-full text-sm">
-                                        Kies Dit
+                                    <a href="{{ route(\App\Helpers\LocaleHelper::localizedRoute('contact')) }}" class="btn-neon block w-full text-center py-3 rounded-full text-sm">
+                                        Choose This
                                     </a>
                                 </div>
                             </div>
@@ -168,7 +168,7 @@
                                 <div class="text-center mb-6">
                                     <span class="text-4xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
                                     @if($package->price_per_session)
-                                        <span class="text-[#a0a0a0] block mt-2">{{ $package->formatted_price_per_session }} per sessie</span>
+                                        <span class="text-[#a0a0a0] block mt-2">{{ $package->formatted_price_per_session }} per session</span>
                                     @else
                                         <span class="text-[#a0a0a0] block mt-2">per {{ $package->localized_period }}</span>
                                     @endif
@@ -185,8 +185,8 @@
                                         @endforeach
                                     </ul>
                                 @endif
-                                <a href="{{ route('contact') }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white text-center py-3 rounded-full font-bold uppercase text-sm tracking-wider transition">
-                                    Kies Dit
+                                <a href="{{ route(\App\Helpers\LocaleHelper::localizedRoute('contact')) }}" class="block w-full bg-[#141414] hover:bg-[#c4ff00] hover:text-[#0a0a0a] text-white text-center py-3 rounded-full font-bold uppercase text-sm tracking-wider transition">
+                                    Choose This
                                 </a>
                             </div>
                         </div>
@@ -203,10 +203,10 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Meer <span class="text-[#c4ff00]">Opties</span>
+                    More <span class="text-[#c4ff00]">Options</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-3xl mx-auto">
-                    Naast Bootcamp Trials en 1-op-1 training bieden we ook andere mogelijkheden aan.
+                    In addition to Bootcamp Trials and 1-on-1 training, we also offer other options.
                 </p>
             </div>
 
@@ -229,8 +229,8 @@
                         <span class="text-3xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
                         <span class="text-[#6b6b6b]">per {{ $package->localized_period }}</span>
                     </div>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center text-[#c4ff00] font-semibold hover:underline">
-                        Meer info
+                    <a href="{{ route(\App\Helpers\LocaleHelper::localizedRoute('contact')) }}" class="inline-flex items-center text-[#c4ff00] font-semibold hover:underline">
+                        More info
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
@@ -254,8 +254,8 @@
                         <span class="text-3xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
                         <span class="text-[#6b6b6b]">per {{ $package->localized_period }}</span>
                     </div>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center text-[#c4ff00] font-semibold hover:underline">
-                        Meer info
+                    <a href="{{ route(\App\Helpers\LocaleHelper::localizedRoute('contact')) }}" class="inline-flex items-center text-[#c4ff00] font-semibold hover:underline">
+                        More info
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
@@ -279,11 +279,11 @@
                         @if($package->price > 0)
                             <span class="text-3xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
                         @else
-                            <span class="text-xl font-bold text-[#c4ff00]">Traject op maat</span>
+                            <span class="text-xl font-bold text-[#c4ff00]">Custom programme</span>
                         @endif
                     </div>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center text-[#c4ff00] font-semibold hover:underline">
-                        Vraag offerte aan
+                    <a href="{{ route(\App\Helpers\LocaleHelper::localizedRoute('contact')) }}" class="inline-flex items-center text-[#c4ff00] font-semibold hover:underline">
+                        Request a quote
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                         </svg>
@@ -291,7 +291,7 @@
                 </div>
                 @endforeach
 
-                <!-- Bedrijfs-bootcamp -->
+                <!-- Corporate Bootcamp -->
                 @foreach($business as $package)
                 <div class="fade-in stagger-{{ $staggerIndex++ }} dark-card rounded-2xl p-8 md:col-span-2 lg:col-span-2">
                     <div class="flex flex-col lg:flex-row lg:items-center gap-6">
@@ -322,10 +322,10 @@
                             @if($package->price > 0)
                                 <p class="text-xl font-bold text-[#c4ff00] mb-4">{{ $package->formatted_price }}</p>
                             @else
-                                <p class="text-xl font-bold text-[#c4ff00] mb-4">Offerte op maat</p>
+                                <p class="text-xl font-bold text-[#c4ff00] mb-4">Custom quote</p>
                             @endif
-                            <a href="{{ route('contact') }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
-                                Neem Contact Op
+                            <a href="{{ route(\App\Helpers\LocaleHelper::localizedRoute('contact')) }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
+                                Get In Touch
                             </a>
                         </div>
                     </div>
@@ -341,9 +341,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Wat krijg je <span class="text-[#c4ff00]">erbij</span>
+                    What's <span class="text-[#c4ff00]">included</span>
                 </h2>
-                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg">Bij elke training sessie inbegrepen</p>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg">Included with every training session</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -353,8 +353,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-bold mb-2">Trainingsplan</h3>
-                    <p class="text-[#6b6b6b] text-sm">Elke sessie gepland op basis van jouw doelen</p>
+                    <h3 class="text-white font-bold mb-2">Training Plan</h3>
+                    <p class="text-[#6b6b6b] text-sm">Every session planned based on your goals</p>
                 </div>
 
                 <div class="fade-in stagger-1 text-center">
@@ -363,8 +363,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-bold mb-2">Progressie Tracking</h3>
-                    <p class="text-[#6b6b6b] text-sm">We meten en volgen jouw vooruitgang</p>
+                    <h3 class="text-white font-bold mb-2">Progress Tracking</h3>
+                    <p class="text-[#6b6b6b] text-sm">We measure and track your progress</p>
                 </div>
 
                 <div class="fade-in stagger-2 text-center">
@@ -374,7 +374,7 @@
                         </svg>
                     </div>
                     <h3 class="text-white font-bold mb-2">WhatsApp Support</h3>
-                    <p class="text-[#6b6b6b] text-sm">Stel vragen tussen de sessies door</p>
+                    <p class="text-[#6b6b6b] text-sm">Ask questions between sessions</p>
                 </div>
 
                 <div class="fade-in stagger-3 text-center">
@@ -384,8 +384,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-white font-bold mb-2">Flexibele Locatie</h3>
-                    <p class="text-[#6b6b6b] text-sm">Personal training in Almere en omstreken, events door heel Nederland</p>
+                    <h3 class="text-white font-bold mb-2">Flexible Location</h3>
+                    <p class="text-[#6b6b6b] text-sm">Personal training in Almere and surroundings, events throughout the Netherlands</p>
                 </div>
             </div>
         </div>
@@ -397,7 +397,7 @@
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Veelgestelde <span class="text-[#c4ff00]">Vragen</span>
+                    Frequently Asked <span class="text-[#c4ff00]">Questions</span>
                 </h2>
             </div>
 
@@ -424,17 +424,17 @@
     <section class="py-24 bg-[#0a0a0a]">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-6">
-                Klaar om te <span class="text-[#c4ff00]">starten</span>?
+                Ready to <span class="text-[#c4ff00]">start</span>?
             </h2>
             <p class="fade-in stagger-1 text-xl text-[#a0a0a0] mb-10">
-                Plan een gratis kennismakingsgesprek en ontdek wat BCN Sports voor jou kan betekenen.
+                Schedule a free introductory consultation and discover what BCN Sports can do for you.
             </p>
             <div class="fade-in stagger-2 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('contact') }}" class="btn-neon px-10 py-4 rounded-full text-lg">
-                    Gratis Kennismaking
+                <a href="{{ route(\App\Helpers\LocaleHelper::localizedRoute('contact')) }}" class="btn-neon px-10 py-4 rounded-full text-lg">
+                    Free Introduction
                 </a>
                 <a href="tel:+31641541751" class="btn-neon-outline px-10 py-4 rounded-full text-lg">
-                    Bel Direct
+                    Call Directly
                 </a>
             </div>
         </div>

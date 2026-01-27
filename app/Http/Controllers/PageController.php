@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\LocaleHelper;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactFormMail;
@@ -12,6 +13,18 @@ use App\Models\Testimonial;
 
 class PageController extends Controller
 {
+    protected function localizedView(string $view, array $data = [])
+    {
+        if (app()->getLocale() === 'en') {
+            $enView = 'pages.en.' . basename($view);
+            if (view()->exists($enView)) {
+                return view($enView, $data);
+            }
+        }
+
+        return view('pages.' . $view, $data);
+    }
+
     public function home()
     {
         try {
@@ -23,7 +36,7 @@ class PageController extends Controller
             $packages = collect([]);
         }
 
-        return view('pages.home', compact('testimonials', 'packages'));
+        return $this->localizedView('home', compact('testimonials', 'packages'));
     }
 
     public function prijzen()
@@ -39,17 +52,17 @@ class PageController extends Controller
             $categories = [];
         }
 
-        return view('pages.prijzen', compact('packages', 'faqs', 'categories'));
+        return $this->localizedView('prijzen', compact('packages', 'faqs', 'categories'));
     }
 
     public function rooster()
     {
-        return view('pages.rooster');
+        return $this->localizedView('rooster');
     }
 
     public function contact()
     {
-        return view('pages.contact');
+        return $this->localizedView('contact');
     }
 
     public function contactSubmit(Request $request)
@@ -80,26 +93,28 @@ class PageController extends Controller
             \Log::error('Contact form email failed: ' . $e->getMessage());
         }
 
-        return redirect()->route('contact')->with('success', 'Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.');
+        $redirectRoute = LocaleHelper::localizedRoute('contact');
+
+        return redirect()->route($redirectRoute)->with('success', __('ui.contact_form.success'));
     }
 
     public function overOns()
     {
-        return view('pages.over-ons');
+        return $this->localizedView('over-ons');
     }
 
     public function ondernemers()
     {
-        return view('pages.ondernemers');
+        return $this->localizedView('ondernemers');
     }
 
     public function privacy()
     {
-        return view('pages.privacy');
+        return $this->localizedView('privacy');
     }
 
     public function voorwaarden()
     {
-        return view('pages.voorwaarden');
+        return $this->localizedView('voorwaarden');
     }
 }

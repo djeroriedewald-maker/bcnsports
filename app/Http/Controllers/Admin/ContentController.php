@@ -30,6 +30,8 @@ class ContentController extends Controller
         $validated = $request->validate([
             'question' => 'required|string|max:500',
             'answer' => 'required|string',
+            'question_en' => 'nullable|string|max:500',
+            'answer_en' => 'nullable|string',
             'sort_order' => 'nullable|integer',
             'is_active' => 'boolean',
         ]);
@@ -52,6 +54,8 @@ class ContentController extends Controller
         $validated = $request->validate([
             'question' => 'required|string|max:500',
             'answer' => 'required|string',
+            'question_en' => 'nullable|string|max:500',
+            'answer_en' => 'nullable|string',
             'sort_order' => 'nullable|integer',
             'is_active' => 'boolean',
         ]);
@@ -87,7 +91,9 @@ class ContentController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'role' => 'nullable|string|max:255',
+            'role_en' => 'nullable|string|max:255',
             'content' => 'required|string',
+            'content_en' => 'nullable|string',
             'rating' => 'required|integer|min:1|max:5',
             'sort_order' => 'nullable|integer',
             'is_active' => 'boolean',
@@ -111,7 +117,9 @@ class ContentController extends Controller
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'role' => 'nullable|string|max:255',
+            'role_en' => 'nullable|string|max:255',
             'content' => 'required|string',
+            'content_en' => 'nullable|string',
             'rating' => 'required|integer|min:1|max:5',
             'sort_order' => 'nullable|integer',
             'is_active' => 'boolean',
@@ -148,11 +156,15 @@ class ContentController extends Controller
         $validated = $request->validate([
             'category' => 'required|string|in:' . implode(',', array_keys(PricingPackage::$categories)),
             'name' => 'required|string|max:255',
+            'name_en' => 'nullable|string|max:255',
             'description' => 'nullable|string',
+            'description_en' => 'nullable|string',
             'price' => 'required|numeric|min:0',
             'price_per_session' => 'nullable|numeric|min:0',
             'period' => 'required|string|max:50',
+            'period_en' => 'nullable|string|max:50',
             'features' => 'nullable|string',
+            'features_en' => 'nullable|string',
             'is_popular' => 'boolean',
             'sort_order' => 'nullable|integer',
             'is_active' => 'boolean',
@@ -162,6 +174,7 @@ class ContentController extends Controller
         $validated['is_popular'] = $request->has('is_popular');
         $validated['sort_order'] = $validated['sort_order'] ?? 0;
         $validated['features'] = $this->parseFeatures($request->features);
+        $validated['features_en'] = $this->parseFeatures($request->features_en);
 
         PricingPackage::create($validated);
 
@@ -178,11 +191,15 @@ class ContentController extends Controller
         $validated = $request->validate([
             'category' => 'required|string|in:' . implode(',', array_keys(PricingPackage::$categories)),
             'name' => 'required|string|max:255',
+            'name_en' => 'nullable|string|max:255',
             'description' => 'nullable|string',
+            'description_en' => 'nullable|string',
             'price' => 'required|numeric|min:0',
             'price_per_session' => 'nullable|numeric|min:0',
             'period' => 'required|string|max:50',
+            'period_en' => 'nullable|string|max:50',
             'features' => 'nullable|string',
+            'features_en' => 'nullable|string',
             'is_popular' => 'boolean',
             'sort_order' => 'nullable|integer',
             'is_active' => 'boolean',
@@ -192,6 +209,7 @@ class ContentController extends Controller
         $validated['is_popular'] = $request->has('is_popular');
         $validated['sort_order'] = $validated['sort_order'] ?? 0;
         $validated['features'] = $this->parseFeatures($request->features);
+        $validated['features_en'] = $this->parseFeatures($request->features_en);
 
         $package->update($validated);
 

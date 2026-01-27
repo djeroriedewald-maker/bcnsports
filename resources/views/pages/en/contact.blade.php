@@ -1,0 +1,276 @@
+@extends('layouts.app')
+
+@section('title', 'Contact - BCN Sports Bootcamp Trials & Outdoor Training')
+@section('meta_description', 'Get in touch with BCN Sports for questions about Bootcamp Trials and Outdoor Training. Schedule a free introduction meeting!')
+
+@section('content')
+    <!-- Hero Section -->
+    <section class="relative py-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="/images/P1270912.jpg" alt="BCN Sports Personal Training" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/70 via-[#0a0a0a]/80 to-[#0a0a0a]"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="fade-in text-5xl md:text-6xl lg:text-7xl font-black uppercase text-white mb-6">
+                Get In <span class="text-[#c4ff00]">Touch</span>
+            </h1>
+            <p class="fade-in stagger-1 text-xl text-[#a0a0a0] max-w-2xl mx-auto">
+                Have questions about Bootcamp Trials, Personal Training, or would you like to schedule an introduction meeting? We'd love to hear from you!
+            </p>
+        </div>
+    </section>
+
+    <!-- Free Introduction Section -->
+    <section class="py-24 bg-[#141414]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="fade-in text-3xl md:text-4xl font-black uppercase text-white mb-4">
+                    Free <span class="text-[#c4ff00]">Introduction</span>
+                </h2>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
+                    Curious about what BCN Sports can do for you? Schedule a free, no-obligation introduction meeting and discover the possibilities of Bootcamp Trials and outdoor training.
+                </p>
+            </div>
+
+            <div class="fade-in glass-card rounded-2xl p-8 md:p-12 text-center">
+                <div class="grid md:grid-cols-3 gap-8 mb-8">
+                    <div>
+                        <div class="w-14 h-14 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-7 h-7 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">1. Conversation</h3>
+                        <p class="text-[#6b6b6b] text-sm">We discuss your goals and wishes</p>
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-7 h-7 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">2. Custom Plan</h3>
+                        <p class="text-[#6b6b6b] text-sm">I propose a personal plan</p>
+                    </div>
+                    <div>
+                        <div class="w-14 h-14 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-7 h-7 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-white font-bold mb-2">3. Start</h3>
+                        <p class="text-[#6b6b6b] text-sm">We start training!</p>
+                    </div>
+                </div>
+
+                <p class="text-[#a0a0a0] mb-6">
+                    Get in touch via the form below or call us directly.
+                </p>
+
+                <a href="tel:+31641541751" class="btn-neon inline-flex items-center px-8 py-4 rounded-full text-lg">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Contact Form -->
+                <div class="fade-in-left glass-card rounded-2xl p-8 md:p-12">
+                    <h2 class="text-2xl font-bold text-white uppercase mb-8">Send a Message</h2>
+
+                    @if(session('success'))
+                        <div class="bg-[#c4ff00]/10 border border-[#c4ff00] text-[#c4ff00] px-4 py-3 rounded-lg mb-6">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    <form action="{{ route('en.contact.submit') }}" method="POST" class="space-y-6">
+                        @csrf
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-bold text-white uppercase tracking-wider mb-2">{{ __('ui.contact_form.name') }} *</label>
+                                <input type="text" id="name" name="name" value="{{ old('name') }}" class="input-dark w-full px-4 py-4 rounded-lg @error('name') border-[#ff3333] @enderror" placeholder="{{ __('ui.contact_form.name_placeholder') }}" required>
+                                @error('name')<p class="text-[#ff3333] text-sm mt-1">{{ $message }}</p>@enderror
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-bold text-white uppercase tracking-wider mb-2">{{ __('ui.contact_form.email') }} *</label>
+                                <input type="email" id="email" name="email" value="{{ old('email') }}" class="input-dark w-full px-4 py-4 rounded-lg @error('email') border-[#ff3333] @enderror" placeholder="{{ __('ui.contact_form.email_placeholder') }}" required>
+                                @error('email')<p class="text-[#ff3333] text-sm mt-1">{{ $message }}</p>@enderror
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-sm font-bold text-white uppercase tracking-wider mb-2">{{ __('ui.contact_form.phone') }}</label>
+                            <input type="tel" id="phone" name="phone" value="{{ old('phone') }}" class="input-dark w-full px-4 py-4 rounded-lg" placeholder="{{ __('ui.contact_form.phone_placeholder') }}">
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-bold text-white uppercase tracking-wider mb-2">{{ __('ui.contact_form.subject') }} *</label>
+                            <select id="subject" name="subject" class="input-dark w-full px-4 py-4 rounded-lg @error('subject') border-[#ff3333] @enderror" required>
+                                <option value="">{{ __('ui.contact_form.subject_placeholder') }}</option>
+                                @foreach(__('ui.contact_form.subjects') as $value => $label)
+                                    <option value="{{ $value }}" {{ old('subject') == $value ? 'selected' : '' }}>{{ $label }}</option>
+                                @endforeach
+                            </select>
+                            @error('subject')<p class="text-[#ff3333] text-sm mt-1">{{ $message }}</p>@enderror
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-bold text-white uppercase tracking-wider mb-2">{{ __('ui.contact_form.message') }} *</label>
+                            <textarea id="message" name="message" rows="5" class="input-dark w-full px-4 py-4 rounded-lg resize-none @error('message') border-[#ff3333] @enderror" placeholder="{{ __('ui.contact_form.message_placeholder') }}" required>{{ old('message') }}</textarea>
+                            @error('message')<p class="text-[#ff3333] text-sm mt-1">{{ $message }}</p>@enderror
+                        </div>
+
+                        <div class="flex items-start">
+                            <input type="checkbox" id="privacy" name="privacy" class="mt-1 mr-3 h-5 w-5 rounded border-white/10 bg-[#141414] text-[#c4ff00] focus:ring-[#c4ff00]" required>
+                            <label for="privacy" class="text-sm text-[#a0a0a0]">
+                                {{ __('ui.contact_form.privacy_agree') }} <a href="{{ route('en.privacy') }}" class="text-[#c4ff00] hover:text-white">{{ __('ui.contact_form.privacy_policy') }}</a> {{ __('ui.contact_form.privacy_consent') }} *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-neon w-full py-4 rounded-full text-lg">{{ __('ui.contact_form.send') }}</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="fade-in-right space-y-8">
+                    <!-- Info Cards -->
+                    <div class="dark-card rounded-2xl p-8">
+                        <h2 class="text-2xl font-bold text-white uppercase mb-8">Contact Details</h2>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-[#c4ff00]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-bold text-white uppercase text-sm">Location</h3>
+                                    <p class="text-[#a0a0a0]">Almere, Netherlands</p>
+                                    <p class="text-[#6b6b6b] text-sm">Personal training in Almere and surroundings, events throughout the Netherlands</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-[#c4ff00]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-bold text-white uppercase text-sm">Email</h3>
+                                    <a href="mailto:info@bcnsports.nl" class="text-[#c4ff00] hover:text-white transition">info@bcnsports.nl</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-[#c4ff00]/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-6 h-6 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                </div>
+                                <div class="ml-4">
+                                    <h3 class="font-bold text-white uppercase text-sm">Response Time</h3>
+                                    <p class="text-[#a0a0a0]">Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="dark-card rounded-2xl p-8">
+                        <h2 class="text-2xl font-bold text-white uppercase mb-6">Follow BCN Sports</h2>
+                        <p class="text-[#a0a0a0] mb-6">Stay up to date with workouts, tips and updates!</p>
+
+                        <div class="flex space-x-4">
+                            <a href="https://www.instagram.com/bootcamp_nation/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-[#141414] hover:bg-[#c4ff00] rounded-full flex items-center justify-center transition group">
+                                <svg class="w-6 h-6 text-white group-hover:text-[#0a0a0a]" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.facebook.com/bootcampnationalmere/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-[#141414] hover:bg-[#c4ff00] rounded-full flex items-center justify-center transition group">
+                                <svg class="w-6 h-6 text-white group-hover:text-[#0a0a0a]" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- View Services -->
+                    <div class="neon-border rounded-2xl p-8">
+                        <h2 class="text-2xl font-bold text-white uppercase mb-4">View Our Services</h2>
+                        <p class="text-[#a0a0a0] mb-6">
+                            Curious about the options and prices? Check out the full range of services.
+                        </p>
+                        <a href="{{ route('en.prices') }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-24 bg-[#141414]">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
+                    Frequently Asked <span class="text-[#c4ff00]">Questions</span>
+                </h2>
+                <p class="fade-in stagger-1 text-[#a0a0a0]">Maybe you'll find the answer to your question here</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="fade-in dark-card rounded-xl overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        <span>How does the introduction meeting work?</span>
+                        <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-5 hidden">
+                        <p class="text-[#a0a0a0]">The introduction meeting is free and without obligation. We discuss your goals, current situation, and what you would like to achieve. Based on that, I will propose a suitable training plan.</p>
+                    </div>
+                </div>
+
+                <div class="fade-in stagger-1 dark-card rounded-xl overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        <span>Where do the training sessions take place?</span>
+                        <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-5 hidden">
+                        <p class="text-[#a0a0a0]">Personal training and small group sessions take place outdoors in Almere and surroundings. Bootcamp Trials events are organized throughout the Netherlands. For personal training, we choose a location together that works best for you.</p>
+                    </div>
+                </div>
+
+                <div class="fade-in stagger-2 dark-card rounded-xl overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 font-bold text-white flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden')">
+                        <span>Is Personal Training also suitable for beginners?</span>
+                        <svg class="w-5 h-5 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="px-6 pb-5 hidden">
+                        <p class="text-[#a0a0a0]">Absolutely! Personal Training is especially ideal for beginners. You receive personal guidance and all exercises are adapted to your level. You learn the correct technique from the very beginning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection

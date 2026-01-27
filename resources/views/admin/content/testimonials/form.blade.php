@@ -82,6 +82,34 @@
                         </div>
                     </div>
 
+                    <!-- English translations -->
+                    <div class="mb-6 border-t border-white/10 pt-6 mt-6">
+                        <p class="text-sm font-medium text-bcn-green mb-4">Engelse vertaling (optioneel)</p>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="role_en" class="block text-sm font-medium text-gray-400 mb-2">Rol / Functie (Engels)</label>
+                        <input
+                            type="text"
+                            id="role_en"
+                            name="role_en"
+                            value="{{ old('role_en', $testimonial->role_en ?? '') }}"
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
+                            placeholder="E.g. Personal Trainer, Entrepreneur"
+                        >
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="content_en" class="block text-sm font-medium text-gray-400 mb-2">Review tekst (Engels)</label>
+                        <textarea
+                            id="content_en"
+                            name="content_en"
+                            rows="4"
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
+                            placeholder="The review in English..."
+                        >{{ old('content_en', $testimonial->content_en ?? '') }}</textarea>
+                    </div>
+
                     <div class="mb-6">
                         <label for="sort_order" class="block text-sm font-medium text-gray-400 mb-2">Volgorde</label>
                         <input

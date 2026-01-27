@@ -9,7 +9,9 @@ class Testimonial extends Model
     protected $fillable = [
         'name',
         'role',
+        'role_en',
         'content',
+        'content_en',
         'image',
         'rating',
         'sort_order',
@@ -29,5 +31,21 @@ class Testimonial extends Model
     public function scopeOrdered($query)
     {
         return $query->orderBy('sort_order')->orderBy('id');
+    }
+
+    public function getLocalizedContentAttribute()
+    {
+        if (app()->getLocale() === 'en' && $this->content_en) {
+            return $this->content_en;
+        }
+        return $this->content;
+    }
+
+    public function getLocalizedRoleAttribute()
+    {
+        if (app()->getLocale() === 'en' && $this->role_en) {
+            return $this->role_en;
+        }
+        return $this->role;
     }
 }

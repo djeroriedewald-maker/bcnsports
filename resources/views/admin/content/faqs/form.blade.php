@@ -56,6 +56,34 @@
                         @enderror
                     </div>
 
+                    <!-- English translations -->
+                    <div class="mb-6 border-t border-white/10 pt-6 mt-6">
+                        <p class="text-sm font-medium text-bcn-green mb-4">Engelse vertaling (optioneel)</p>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="question_en" class="block text-sm font-medium text-gray-400 mb-2">Vraag (Engels)</label>
+                        <input
+                            type="text"
+                            id="question_en"
+                            name="question_en"
+                            value="{{ old('question_en', $faq->question_en ?? '') }}"
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
+                            placeholder="E.g. How much does a trial class cost?"
+                        >
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="answer_en" class="block text-sm font-medium text-gray-400 mb-2">Antwoord (Engels)</label>
+                        <textarea
+                            id="answer_en"
+                            name="answer_en"
+                            rows="5"
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
+                            placeholder="The answer in English..."
+                        >{{ old('answer_en', $faq->answer_en ?? '') }}</textarea>
+                    </div>
+
                     <div class="mb-6">
                         <label for="sort_order" class="block text-sm font-medium text-gray-400 mb-2">Volgorde</label>
                         <input

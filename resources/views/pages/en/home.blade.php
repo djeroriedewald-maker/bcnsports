@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Bootcamp Trials & Outdoor Training | BCN Sports')
-@section('meta_description', 'Bootcamp Trials events door heel Nederland en outdoor personal training in Almere. Ontdek je grenzen met uitdagende events, 1:1 begeleiding en small group training. 20+ jaar ervaring.')
+@section('meta_description', 'Bootcamp Trials events throughout the Netherlands and outdoor personal training in Almere. Push your limits with challenging events, 1:1 coaching and small group training. 20+ years of experience.')
 
 @section('content')
     <!-- Hero Section -->
@@ -21,19 +21,19 @@
 
             <h1 class="fade-in stagger-1 text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white mb-6">
                 Bootcamp Trials.<br>
-                <span class="text-[#c4ff00]">Ontdek je grenzen.</span>
+                <span class="text-[#c4ff00]">Push your limits.</span>
             </h1>
 
             <p class="fade-in stagger-2 text-xl md:text-2xl text-[#a0a0a0] max-w-2xl mx-auto mb-10">
-                Uitdagende Bootcamp Trials events en outdoor personal training. Geen excuses, geen afleiding. Alleen jij, je team en resultaat.
+                Challenging Bootcamp Trials events and outdoor personal training. No excuses, no distractions. Just you, your team and results.
             </p>
 
             <div class="fade-in stagger-3 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('prijzen') }}" class="btn-neon px-10 py-4 rounded-full text-lg pulse-neon">
-                    Ontdek Bootcamp Trials
+                <a href="{{ route('en.prices') }}" class="btn-neon px-10 py-4 rounded-full text-lg pulse-neon">
+                    Discover Bootcamp Trials
                 </a>
-                <a href="{{ route('contact') }}" class="btn-neon-outline px-10 py-4 rounded-full text-lg">
-                    Neem Contact Op
+                <a href="{{ route('en.contact') }}" class="btn-neon-outline px-10 py-4 rounded-full text-lg">
+                    Get In Touch
                 </a>
             </div>
         </div>
@@ -51,17 +51,17 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <p class="fade-in text-xl md:text-2xl text-[#a0a0a0] leading-relaxed mb-8">
-                    BCN Sports organiseert <span class="text-white font-semibold">Bootcamp Trials</span> - uitdagende outdoor events
-                    waar je mentale en fysieke grenzen verlegd worden. Daarnaast bieden we persoonlijke begeleiding
-                    met outdoor personal training.
+                    BCN Sports organises <span class="text-white font-semibold">Bootcamp Trials</span> - challenging outdoor events
+                    where your mental and physical limits are pushed. We also offer personal coaching
+                    with outdoor personal training.
                 </p>
                 <p class="fade-in stagger-1 text-lg text-[#a0a0a0] leading-relaxed mb-8">
-                    Bootcamp Trials events vinden plaats door heel Nederland. Personal training en small group sessies
-                    bieden we aan in Almere en omstreken. Altijd buiten, altijd uitdagend.
+                    Bootcamp Trials events take place throughout the Netherlands. Personal training and small group sessions
+                    are offered in Almere and surroundings. Always outside, always challenging.
                 </p>
                 <p class="fade-in stagger-2 text-lg text-[#a0a0a0] leading-relaxed">
-                    Of je meedoet aan een Bootcamp Trials event, wilt afvallen, sterker worden of je voorbereidt
-                    op een evenement - wij bouwen een programma dat past bij jouw doel.
+                    Whether you join a Bootcamp Trials event, want to lose weight, get stronger or prepare
+                    for a competition - we build a program that fits your goals.
                 </p>
             </div>
         </div>
@@ -72,7 +72,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Waarom <span class="text-[#c4ff00]">BCN Sports</span>
+                    Why <span class="text-[#c4ff00]">BCN Sports</span>
                 </h2>
             </div>
 
@@ -83,8 +83,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">20+ Jaar Ervaring</h3>
-                    <p class="text-[#a0a0a0]">In het coachen van sporters op fysiek en mentaal niveau</p>
+                    <h3 class="text-xl font-bold text-white mb-3">20+ Years Experience</h3>
+                    <p class="text-[#a0a0a0]">In coaching athletes at a physical and mental level</p>
                 </div>
 
                 <div class="fade-in stagger-1 dark-card rounded-2xl p-8 text-center">
@@ -93,8 +93,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Bewezen Mentaliteit</h3>
-                    <p class="text-[#a0a0a0]">Gevormd door jarenlange ervaring in extreme fysieke en mentale uitdagingen</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Proven Mentality</h3>
+                    <p class="text-[#a0a0a0]">Shaped by years of experience in extreme physical and mental challenges</p>
                 </div>
 
                 <div class="fade-in stagger-2 dark-card rounded-2xl p-8 text-center">
@@ -103,8 +103,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Flexibele Sessies</h3>
-                    <p class="text-[#a0a0a0]">Jouw training past zich aan op jouw schema en niveau</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Flexible Sessions</h3>
+                    <p class="text-[#a0a0a0]">Your training adapts to your schedule and level</p>
                 </div>
 
                 <div class="fade-in stagger-3 dark-card rounded-2xl p-8 text-center">
@@ -113,8 +113,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Altijd Buiten</h3>
-                    <p class="text-[#a0a0a0]">Frisse lucht, geen wachtrijen, pure focus</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Always Outdoors</h3>
+                    <p class="text-[#a0a0a0]">Fresh air, no queues, pure focus</p>
                 </div>
             </div>
         </div>
@@ -128,8 +128,8 @@
                     Bootcamp Trials <span class="text-[#c4ff00]">& Events</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Al onze coaches nemen zelf actief deel aan uitdagingen zoals HYROX, ultra runs van 50+ kilometer,
-                    marathons en tal van andere events waarbij ze mentaal en fysiek op de proef worden gesteld.
+                    All our coaches actively participate in challenges such as HYROX, ultra runs of 50+ kilometres,
+                    marathons and many other events where they are tested mentally and physically.
                 </p>
             </div>
 
@@ -145,23 +145,23 @@
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-white uppercase mb-2">Team Spirit</h3>
                         <p class="text-[#a0a0a0]">
-                            We vragen niks van jou wat we niet eerst zelf hebben gedaan.
+                            We never ask anything of you that we haven't done ourselves first.
                         </p>
                     </div>
                 </div>
 
                 <div class="fade-in-right dark-card rounded-2xl overflow-hidden group">
                     <div class="relative h-80 overflow-hidden">
-                        <img src="/images/uitdaging%20aangaan.jpg" alt="BCN Sports uitdaging aangaan" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="/images/uitdaging%20aangaan.jpg" alt="BCN Sports push boundaries" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div>
                         <div class="absolute top-4 left-4 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
-                            Uitdaging Aangaan
+                            Take On The Challenge
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white uppercase mb-2">Grenzen Verleggen</h3>
+                        <h3 class="text-xl font-bold text-white uppercase mb-2">Push Boundaries</h3>
                         <p class="text-[#a0a0a0]">
-                            Obstacle run, marathon of ultra trail? Wij stomen je klaar.
+                            Obstacle run, marathon or ultra trail? We get you ready.
                         </p>
                     </div>
                 </div>
@@ -174,18 +174,18 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Ons <span class="text-[#c4ff00]">Aanbod</span>
+                    Our <span class="text-[#c4ff00]">Services</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Kies de trainingsformule die bij jou past. Van een-op-een begeleiding tot kleine groepen - altijd persoonlijk, altijd buiten.
+                    Choose the training formula that suits you. From one-on-one coaching to small groups - always personal, always outdoors.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Bootcamp Trials (uitgelicht) -->
+                <!-- Bootcamp Trials (featured) -->
                 <div class="fade-in dark-card rounded-2xl p-8 border-2 border-[#c4ff00] relative">
                     <div class="absolute -top-3 left-6 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
-                        Onze Specialiteit
+                        Our Specialty
                     </div>
                     <div class="w-12 h-12 bg-[#c4ff00] rounded-xl flex items-center justify-center mb-6 mt-2">
                         <svg class="w-6 h-6 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -194,11 +194,11 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Bootcamp Trials</h3>
                     <p class="text-[#a0a0a0] mb-6">
-                        Uitdagende outdoor events door heel Nederland waar je mentale en fysieke grenzen verlegt.
+                        Challenging outdoor events throughout the Netherlands where you push your mental and physical limits.
                     </p>
-                    <p class="text-[#c4ff00] font-bold mb-4">Events worden aangekondigd</p>
-                    <a href="{{ route('prijzen') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
-                        Bekijk aanbod
+                    <p class="text-[#c4ff00] font-bold mb-4">Events will be announced</p>
+                    <a href="{{ route('en.prices') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
+                        View services
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
@@ -212,11 +212,11 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Personal Training</h3>
                     <p class="text-[#a0a0a0] mb-6">
-                        Volledige aandacht, maximaal resultaat. In een 1:1 sessie staat alles in het teken van jouw doel.
+                        Full attention, maximum results. In a 1:1 session everything revolves around your goal.
                     </p>
-                    <p class="text-[#c4ff00] font-bold mb-4">€74,95 per sessie</p>
-                    <a href="{{ route('prijzen') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
-                        Bekijk tarieven
+                    <p class="text-[#c4ff00] font-bold mb-4">&euro;74.95 per session</p>
+                    <a href="{{ route('en.prices') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
+                        View prices
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
@@ -230,11 +230,11 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Duo Training</h3>
                     <p class="text-[#a0a0a0] mb-6">
-                        Train samen met je partner, vriend of collega. Motiveer elkaar, daag elkaar uit en deel de kosten.
+                        Train together with your partner, friend or colleague. Motivate each other, challenge each other and share the cost.
                     </p>
-                    <p class="text-[#c4ff00] font-bold mb-4">€54,95 per persoon</p>
-                    <a href="{{ route('prijzen') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
-                        Bekijk tarieven
+                    <p class="text-[#c4ff00] font-bold mb-4">&euro;54.95 per person</p>
+                    <a href="{{ route('en.prices') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
+                        View prices
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
@@ -248,11 +248,11 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Small Group</h3>
                     <p class="text-[#a0a0a0] mb-6">
-                        De energie van een groep, de aandacht van personal training. Minimaal 3, maximaal 4 deelnemers.
+                        The energy of a group, the attention of personal training. Minimum 3, maximum 4 participants.
                     </p>
-                    <p class="text-[#c4ff00] font-bold mb-4">€39,95 per persoon</p>
-                    <a href="{{ route('prijzen') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
-                        Bekijk tarieven
+                    <p class="text-[#c4ff00] font-bold mb-4">&euro;39.95 per person</p>
+                    <a href="{{ route('en.prices') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
+                        View prices
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
@@ -268,31 +268,31 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Event Training</h3>
                     <p class="text-[#a0a0a0] mb-6">
-                        Obstacle run, marathon, HYROX of Mud Masters? Wij stomen je klaar met een gericht traject.
+                        Obstacle run, marathon, HYROX or Mud Masters? We get you ready with a targeted programme.
                     </p>
-                    <p class="text-[#c4ff00] font-bold mb-4">Traject op maat</p>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
-                        Neem contact op
+                    <p class="text-[#c4ff00] font-bold mb-4">Custom programme</p>
+                    <a href="{{ route('en.contact') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
+                        Get in touch
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </a>
                 </div>
 
-                <!-- Bedrijfs-bootcamp -->
+                <!-- Corporate Bootcamp -->
                 <div class="fade-in stagger-2 dark-card rounded-2xl p-8">
                     <div class="w-12 h-12 bg-[#c4ff00]/20 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Bedrijfs-bootcamp</h3>
+                    <h3 class="text-2xl font-bold text-white mb-4">Corporate Bootcamp</h3>
                     <p class="text-[#a0a0a0] mb-6">
-                        Haal je team uit de comfortzone. Bouw niet alleen conditie, maar ook teamspirit en mentale veerkracht.
+                        Take your team out of their comfort zone. Build not only fitness, but also team spirit and mental resilience.
                     </p>
-                    <p class="text-[#c4ff00] font-bold mb-4">Offerte op maat</p>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
-                        Vraag offerte aan
+                    <p class="text-[#c4ff00] font-bold mb-4">Custom quote</p>
+                    <a href="{{ route('en.contact') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
+                        Request a quote
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
@@ -302,19 +302,19 @@
         </div>
     </section>
 
-    <!-- Aankomende Events Section -->
+    <!-- Upcoming Events Section -->
     <section class="py-24 bg-[#141414] overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Aankomende <span class="text-[#c4ff00]">Events</span>
+                    Upcoming <span class="text-[#c4ff00]">Events</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Bootcamp Trials events worden hier aangekondigd. Zodra er een datum bekend is, kun je je direct inschrijven.
+                    Bootcamp Trials events will be announced here. As soon as a date is confirmed, you can sign up directly.
                 </p>
             </div>
 
-            <!-- Event Cards - horizontaal scrollbaar op mobile, grid op desktop -->
+            <!-- Event Cards - horizontally scrollable on mobile, grid on desktop -->
             <div class="fade-in flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-4 lg:overflow-visible lg:pb-0">
                 <!-- Event Card 1 - Male -->
                 <div class="snap-center shrink-0 w-[280px] sm:w-[300px] lg:w-auto group">
@@ -328,8 +328,8 @@
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-xl font-bold text-white uppercase mb-1">Bootcamp Trials</h3>
-                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Datum wordt aangekondigd</p>
-                            <p class="text-[#a0a0a0] text-sm">Ontdek je grenzen in deze uitdagende outdoor challenge.</p>
+                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Date to be announced</p>
+                            <p class="text-[#a0a0a0] text-sm">Push your limits in this challenging outdoor event.</p>
                         </div>
                     </div>
                 </div>
@@ -346,8 +346,8 @@
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-xl font-bold text-white uppercase mb-1">Bootcamp Trials</h3>
-                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Datum wordt aangekondigd</p>
-                            <p class="text-[#a0a0a0] text-sm">Verleg je mentale en fysieke grenzen.</p>
+                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Date to be announced</p>
+                            <p class="text-[#a0a0a0] text-sm">Push your mental and physical boundaries.</p>
                         </div>
                     </div>
                 </div>
@@ -364,8 +364,8 @@
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-xl font-bold text-white uppercase mb-1">Bootcamp Trials</h3>
-                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Datum wordt aangekondigd</p>
-                            <p class="text-[#a0a0a0] text-sm">Individueel of als team de uitdaging aan.</p>
+                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Date to be announced</p>
+                            <p class="text-[#a0a0a0] text-sm">Take on the challenge individually or as a team.</p>
                         </div>
                     </div>
                 </div>
@@ -382,18 +382,18 @@
                         </div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-xl font-bold text-white uppercase mb-1">Bootcamp Trials</h3>
-                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Datum wordt aangekondigd</p>
-                            <p class="text-[#a0a0a0] text-sm">Ben jij klaar voor de challenge?</p>
+                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Date to be announced</p>
+                            <p class="text-[#a0a0a0] text-sm">Are you ready for the challenge?</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- CTA onder de cards -->
+            <!-- CTA below the cards -->
             <div class="fade-in stagger-2 text-center mt-12">
-                <p class="text-[#a0a0a0] mb-6">Wil je als eerste op de hoogte zijn van nieuwe events?</p>
-                <a href="{{ route('contact') }}" class="btn-neon inline-block px-10 py-4 rounded-full text-lg">
-                    Houd Me Op De Hoogte
+                <p class="text-[#a0a0a0] mb-6">Want to be the first to know about new events?</p>
+                <a href="{{ route('en.contact') }}" class="btn-neon inline-block px-10 py-4 rounded-full text-lg">
+                    Keep Me Updated
                 </a>
             </div>
         </div>
@@ -405,7 +405,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Wat Onze <span class="text-[#c4ff00]">Klanten</span> Zeggen
+                    What Our <span class="text-[#c4ff00]">Clients</span> Say
                 </h2>
             </div>
 
@@ -440,19 +440,19 @@
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-2xl">
-                <p class="fade-in-left text-[#c4ff00] font-bold uppercase tracking-wider mb-4">Stop met uitstellen</p>
+                <p class="fade-in-left text-[#c4ff00] font-bold uppercase tracking-wider mb-4">Stop putting it off</p>
                 <h2 class="fade-in-left text-4xl md:text-5xl lg:text-6xl font-black uppercase text-white mb-6">
-                    Je weet al lang dat je iets moet <span class="text-[#c4ff00]">veranderen</span>
+                    You already know it's time to make a <span class="text-[#c4ff00]">change</span>
                 </h2>
                 <p class="fade-in-left stagger-1 text-xl text-[#a0a0a0] mb-10">
-                    Dit is je moment. Neem contact op en zet vandaag de eerste stap.
+                    This is your moment. Get in touch and take the first step today.
                 </p>
                 <div class="fade-in-left stagger-2 flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('contact') }}" class="btn-neon px-10 py-4 rounded-full text-lg text-center">
-                        Plan Je Gratis Intake
+                    <a href="{{ route('en.contact') }}" class="btn-neon px-10 py-4 rounded-full text-lg text-center">
+                        Book Your Free Intake
                     </a>
-                    <a href="{{ route('prijzen') }}" class="btn-neon-outline px-10 py-4 rounded-full text-lg text-center">
-                        Bekijk Aanbod
+                    <a href="{{ route('en.prices') }}" class="btn-neon-outline px-10 py-4 rounded-full text-lg text-center">
+                        View Services
                     </a>
                 </div>
             </div>

@@ -18,9 +18,23 @@ Route::get('/ondernemers', [PageController::class, 'ondernemers'])->name('ondern
 Route::get('/privacy', [PageController::class, 'privacy'])->name('privacy');
 Route::get('/voorwaarden', [PageController::class, 'voorwaarden'])->name('voorwaarden');
 
+// English Routes
+Route::prefix('en')->group(function () {
+    Route::get('/', [PageController::class, 'home'])->name('en.home');
+    Route::get('/prices', [PageController::class, 'prijzen'])->name('en.prices');
+    Route::get('/schedule', [PageController::class, 'rooster'])->name('en.schedule');
+    Route::get('/contact', [PageController::class, 'contact'])->name('en.contact');
+    Route::post('/contact', [PageController::class, 'contactSubmit'])->name('en.contact.submit');
+    Route::get('/about-us', [PageController::class, 'overOns'])->name('en.about-us');
+    Route::get('/business', [PageController::class, 'ondernemers'])->name('en.business');
+    Route::get('/privacy', [PageController::class, 'privacy'])->name('en.privacy');
+    Route::get('/terms', [PageController::class, 'voorwaarden'])->name('en.terms');
+});
+
 // Sitemap
 Route::get('/sitemap.xml', function () {
     $sitemap = \Spatie\Sitemap\Sitemap::create()
+        // NL URLs
         ->add(\Spatie\Sitemap\Tags\Url::create('/')->setPriority(1.0)->setChangeFrequency('weekly'))
         ->add(\Spatie\Sitemap\Tags\Url::create('/prijzen')->setPriority(0.9)->setChangeFrequency('monthly'))
         ->add(\Spatie\Sitemap\Tags\Url::create('/rooster')->setPriority(0.8)->setChangeFrequency('weekly'))
@@ -28,7 +42,16 @@ Route::get('/sitemap.xml', function () {
         ->add(\Spatie\Sitemap\Tags\Url::create('/over-ons')->setPriority(0.6)->setChangeFrequency('monthly'))
         ->add(\Spatie\Sitemap\Tags\Url::create('/ondernemers')->setPriority(0.8)->setChangeFrequency('monthly'))
         ->add(\Spatie\Sitemap\Tags\Url::create('/privacy')->setPriority(0.3)->setChangeFrequency('yearly'))
-        ->add(\Spatie\Sitemap\Tags\Url::create('/voorwaarden')->setPriority(0.3)->setChangeFrequency('yearly'));
+        ->add(\Spatie\Sitemap\Tags\Url::create('/voorwaarden')->setPriority(0.3)->setChangeFrequency('yearly'))
+        // EN URLs
+        ->add(\Spatie\Sitemap\Tags\Url::create('/en')->setPriority(1.0)->setChangeFrequency('weekly'))
+        ->add(\Spatie\Sitemap\Tags\Url::create('/en/prices')->setPriority(0.9)->setChangeFrequency('monthly'))
+        ->add(\Spatie\Sitemap\Tags\Url::create('/en/schedule')->setPriority(0.8)->setChangeFrequency('weekly'))
+        ->add(\Spatie\Sitemap\Tags\Url::create('/en/contact')->setPriority(0.7)->setChangeFrequency('monthly'))
+        ->add(\Spatie\Sitemap\Tags\Url::create('/en/about-us')->setPriority(0.6)->setChangeFrequency('monthly'))
+        ->add(\Spatie\Sitemap\Tags\Url::create('/en/business')->setPriority(0.8)->setChangeFrequency('monthly'))
+        ->add(\Spatie\Sitemap\Tags\Url::create('/en/privacy')->setPriority(0.3)->setChangeFrequency('yearly'))
+        ->add(\Spatie\Sitemap\Tags\Url::create('/en/terms')->setPriority(0.3)->setChangeFrequency('yearly'));
 
     return $sitemap->toResponse(request());
 });

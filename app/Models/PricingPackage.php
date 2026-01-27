@@ -25,11 +25,15 @@ class PricingPackage extends Model
     protected $fillable = [
         'category',
         'name',
+        'name_en',
         'description',
+        'description_en',
         'price',
         'price_per_session',
         'period',
+        'period_en',
         'features',
+        'features_en',
         'is_popular',
         'sort_order',
         'is_active',
@@ -39,6 +43,7 @@ class PricingPackage extends Model
         'price' => 'decimal:2',
         'price_per_session' => 'decimal:2',
         'features' => 'array',
+        'features_en' => 'array',
         'is_popular' => 'boolean',
         'is_active' => 'boolean',
     ];
@@ -74,5 +79,37 @@ class PricingPackage extends Model
     public function getCategoryLabelAttribute()
     {
         return self::$categories[$this->category] ?? $this->category;
+    }
+
+    public function getLocalizedNameAttribute()
+    {
+        if (app()->getLocale() === 'en' && $this->name_en) {
+            return $this->name_en;
+        }
+        return $this->name;
+    }
+
+    public function getLocalizedDescriptionAttribute()
+    {
+        if (app()->getLocale() === 'en' && $this->description_en) {
+            return $this->description_en;
+        }
+        return $this->description;
+    }
+
+    public function getLocalizedPeriodAttribute()
+    {
+        if (app()->getLocale() === 'en' && $this->period_en) {
+            return $this->period_en;
+        }
+        return $this->period;
+    }
+
+    public function getLocalizedFeaturesAttribute()
+    {
+        if (app()->getLocale() === 'en' && $this->features_en) {
+            return $this->features_en;
+        }
+        return $this->features;
     }
 }

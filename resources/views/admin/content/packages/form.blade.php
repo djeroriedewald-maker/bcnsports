@@ -132,6 +132,58 @@
                         <p class="text-gray-600 text-sm mt-1">Elke regel wordt een feature item</p>
                     </div>
 
+                    <!-- English translations -->
+                    <div class="mb-6 border-t border-white/10 pt-6 mt-6">
+                        <p class="text-sm font-medium text-bcn-green mb-4">Engelse vertaling (optioneel)</p>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="name_en" class="block text-sm font-medium text-gray-400 mb-2">Naam (Engels)</label>
+                        <input
+                            type="text"
+                            id="name_en"
+                            name="name_en"
+                            value="{{ old('name_en', $package->name_en ?? '') }}"
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
+                            placeholder="E.g. 10-Session Pass"
+                        >
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="description_en" class="block text-sm font-medium text-gray-400 mb-2">Beschrijving (Engels)</label>
+                        <textarea
+                            id="description_en"
+                            name="description_en"
+                            rows="2"
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
+                            placeholder="E.g. Save €100"
+                        >{{ old('description_en', $package->description_en ?? '') }}</textarea>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="period_en" class="block text-sm font-medium text-gray-400 mb-2">Periode / Eenheid (Engels)</label>
+                        <input
+                            type="text"
+                            id="period_en"
+                            name="period_en"
+                            value="{{ old('period_en', $package->period_en ?? '') }}"
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
+                            placeholder="session, person / session, month"
+                        >
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="features_en" class="block text-sm font-medium text-gray-400 mb-2">Features (Engels, één per regel)</label>
+                        <textarea
+                            id="features_en"
+                            name="features_en"
+                            rows="5"
+                            class="w-full bg-bcn-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-bcn-green transition"
+                            placeholder="10 sessions of 60 min&#10;Valid for 6 months&#10;Progress reviews"
+                        >{{ old('features_en', isset($package) && $package->features_en ? implode("\n", $package->features_en) : '') }}</textarea>
+                        <p class="text-gray-600 text-sm mt-1">Each line becomes a feature item</p>
+                    </div>
+
                     <div class="mb-6">
                         <label for="sort_order" class="block text-sm font-medium text-gray-400 mb-2">Volgorde</label>
                         <input

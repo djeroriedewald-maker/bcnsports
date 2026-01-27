@@ -43,15 +43,24 @@
                 </p>
             </div>
 
-            <div class="fade-in neon-border rounded-2xl overflow-hidden">
-                <div class="bg-gradient-to-r from-[#c4ff00]/10 to-transparent p-8 md:p-12">
+            <div class="fade-in rounded-2xl overflow-hidden border border-[#c4ff00]/40 hover:border-[#c4ff00] transition-all duration-500 relative group">
+                <!-- Background Image -->
+                <div class="absolute inset-0">
+                    <img src="/images/eventcard_duo.jpg" alt="Bootcamp Trials" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <!-- Dark Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-[#0a0a0a]/95 via-[#0a0a0a]/80 to-[#0a0a0a]/50"></div>
+                <!-- Neon accent line top -->
+                <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#c4ff00] via-[#c4ff00]/50 to-transparent"></div>
+
+                <div class="relative z-10 p-8 md:p-12">
                     <div class="flex flex-col lg:flex-row lg:items-center gap-8">
                         <div class="flex-1">
                             <div class="inline-block bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full mb-4">
                                 Onze Specialiteit
                             </div>
-                            <h3 class="text-2xl font-bold text-white mb-4">Bootcamp Trials Events</h3>
-                            <p class="text-[#a0a0a0] mb-6">
+                            <h3 class="text-3xl font-black text-white uppercase mb-4">Bootcamp Trials Events</h3>
+                            <p class="text-white/80 mb-6 text-lg">
                                 Doe mee aan onze Bootcamp Trials events en ontdek waar je grenzen liggen.
                                 Individueel of als team, onder begeleiding van trainers met echte Defensie-ervaring.
                             </p>
@@ -60,25 +69,25 @@
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-[#a0a0a0]">Fysieke en mentale uitdagingen in de buitenlucht</span>
+                                    <span class="text-white/70">Fysieke en mentale uitdagingen in de buitenlucht</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-[#a0a0a0]">Begeleiding door trainers met Defensie-achtergrond</span>
+                                    <span class="text-white/70">Begeleiding door trainers met Defensie-achtergrond</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-[#a0a0a0]">Individueel of in teamverband</span>
+                                    <span class="text-white/70">Individueel of in teamverband</span>
                                 </li>
                             </ul>
                         </div>
                         <div class="lg:text-right">
-                            <p class="text-lg font-bold text-white mb-2">Binnenkort beschikbaar</p>
-                            <p class="text-[#a0a0a0] text-sm mb-4">Events worden aangekondigd op deze pagina. Houd de website in de gaten of neem contact op voor meer info.</p>
+                            <p class="text-xl font-black text-[#c4ff00] uppercase mb-2">Binnenkort beschikbaar</p>
+                            <p class="text-white/60 text-sm mb-6">Events worden aangekondigd op deze pagina. Houd de website in de gaten of neem contact op voor meer info.</p>
                             <a href="{{ route('contact') }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
                                 Vraag Info Aan
                             </a>

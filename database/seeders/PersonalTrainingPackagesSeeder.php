@@ -99,7 +99,7 @@ class PersonalTrainingPackagesSeeder extends Seeder
         PricingPackage::create([
             'category' => 'small_group',
             'name' => 'Small Group Training',
-            'description' => 'Maximaal 4 deelnemers voor een dynamische training met persoonlijke aandacht. Ideaal voor vriendengroepen.',
+            'description' => 'Minimaal 3, maximaal 4 deelnemers voor een dynamische training met persoonlijke aandacht. Ideaal voor vriendengroepen.',
             'price' => 39.95,
             'price_per_session' => null,
             'period' => 'persoon / sessie',
@@ -123,14 +123,14 @@ class PersonalTrainingPackagesSeeder extends Seeder
             'is_active' => true,
         ]);
 
-        // Milsim Training
+        // Bootcamp Trials (milsim category)
         PricingPackage::create([
             'category' => 'milsim',
-            'name' => 'Milsim Training',
-            'description' => 'Fysieke voorbereiding voor airsoft milsim events. Focus op uithoudingsvermogen, kracht en tactische bewegingen.',
+            'name' => 'Bootcamp Trials',
+            'description' => 'Uitdagende outdoor events waar je mentale en fysieke grenzen verlegt. Events worden aangekondigd op de website.',
             'price' => 0,
             'price_per_session' => null,
-            'period' => 'traject',
+            'period' => 'event',
             'features' => [],
             'is_popular' => false,
             'sort_order' => 1,

@@ -251,6 +251,15 @@ body {
     color: var(--color-text-muted);
 }
 
+/* Hide scrollbar for horizontal scroll containers */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 8px;

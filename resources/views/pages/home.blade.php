@@ -303,7 +303,7 @@
     </section>
 
     <!-- Aankomende Events Section -->
-    <section class="py-24 bg-[#141414]">
+    <section class="py-24 bg-[#141414] overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
@@ -314,21 +314,87 @@
                 </p>
             </div>
 
-            <div class="fade-in max-w-3xl mx-auto">
-                <div class="neon-border rounded-2xl p-8 md:p-12 text-center">
-                    <div class="w-20 h-20 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-10 h-10 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                        </svg>
+            <!-- Event Cards - horizontaal scrollbaar op mobile, grid op desktop -->
+            <div class="fade-in flex gap-6 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide lg:grid lg:grid-cols-4 lg:overflow-visible lg:pb-0">
+                <!-- Event Card 1 - Male -->
+                <div class="snap-center shrink-0 w-[280px] sm:w-[300px] lg:w-auto group">
+                    <div class="relative rounded-2xl overflow-hidden aspect-[3/4] border border-white/10 group-hover:border-[#c4ff00]/50 transition duration-300">
+                        <img src="/images/eventcard_male.jpg" alt="Bootcamp Trials Event" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4 right-4">
+                            <span class="inline-block bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                                Coming Soon
+                            </span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-xl font-bold text-white uppercase mb-1">Bootcamp Trials</h3>
+                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Datum wordt aangekondigd</p>
+                            <p class="text-[#a0a0a0] text-sm">Ontdek je grenzen in deze uitdagende outdoor challenge.</p>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-white uppercase mb-4">Binnenkort Beschikbaar</h3>
-                    <p class="text-[#a0a0a0] text-lg mb-8 max-w-lg mx-auto">
-                        We werken aan nieuwe Bootcamp Trials events. Wil je als eerste op de hoogte zijn? Neem contact met ons op en we houden je op de hoogte.
-                    </p>
-                    <a href="{{ route('contact') }}" class="btn-neon inline-block px-10 py-4 rounded-full text-lg">
-                        Houd Me Op De Hoogte
-                    </a>
                 </div>
+
+                <!-- Event Card 2 - Female -->
+                <div class="snap-center shrink-0 w-[280px] sm:w-[300px] lg:w-auto group">
+                    <div class="relative rounded-2xl overflow-hidden aspect-[3/4] border border-white/10 group-hover:border-[#c4ff00]/50 transition duration-300">
+                        <img src="/images/eventcard_female.jpg" alt="Bootcamp Trials Event" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4 right-4">
+                            <span class="inline-block bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                                Coming Soon
+                            </span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-xl font-bold text-white uppercase mb-1">Bootcamp Trials</h3>
+                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Datum wordt aangekondigd</p>
+                            <p class="text-[#a0a0a0] text-sm">Verleg je mentale en fysieke grenzen.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 - Male -->
+                <div class="snap-center shrink-0 w-[280px] sm:w-[300px] lg:w-auto group">
+                    <div class="relative rounded-2xl overflow-hidden aspect-[3/4] border border-white/10 group-hover:border-[#c4ff00]/50 transition duration-300">
+                        <img src="/images/eventcard_male.jpg" alt="Bootcamp Trials Event" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4 right-4">
+                            <span class="inline-block bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                                Coming Soon
+                            </span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-xl font-bold text-white uppercase mb-1">Bootcamp Trials</h3>
+                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Datum wordt aangekondigd</p>
+                            <p class="text-[#a0a0a0] text-sm">Individueel of als team de uitdaging aan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Card 4 - Female -->
+                <div class="snap-center shrink-0 w-[280px] sm:w-[300px] lg:w-auto group">
+                    <div class="relative rounded-2xl overflow-hidden aspect-[3/4] border border-white/10 group-hover:border-[#c4ff00]/50 transition duration-300">
+                        <img src="/images/eventcard_female.jpg" alt="Bootcamp Trials Event" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent"></div>
+                        <div class="absolute top-4 left-4 right-4">
+                            <span class="inline-block bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                                Coming Soon
+                            </span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6">
+                            <h3 class="text-xl font-bold text-white uppercase mb-1">Bootcamp Trials</h3>
+                            <p class="text-[#c4ff00] text-sm font-semibold uppercase tracking-wider mb-3">Datum wordt aangekondigd</p>
+                            <p class="text-[#a0a0a0] text-sm">Ben jij klaar voor de challenge?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA onder de cards -->
+            <div class="fade-in stagger-2 text-center mt-12">
+                <p class="text-[#a0a0a0] mb-6">Wil je als eerste op de hoogte zijn van nieuwe events?</p>
+                <a href="{{ route('contact') }}" class="btn-neon inline-block px-10 py-4 rounded-full text-lg">
+                    Houd Me Op De Hoogte
+                </a>
             </div>
         </div>
     </section>

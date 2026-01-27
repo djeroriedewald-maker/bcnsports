@@ -7,7 +7,7 @@
     <!-- Hero Section -->
     <section class="relative py-32 overflow-hidden">
         <div class="absolute inset-0">
-            <img src="/images/P1220022.jpg" alt="BCN Sports Personal Training" class="w-full h-full object-cover opacity-50">
+            <img src="/images/canva/trail%20run.jpg" alt="BCN Sports Personal Training" class="w-full h-full object-cover opacity-50">
             <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a]/70 via-[#0a0a0a]/80 to-[#0a0a0a]"></div>
         </div>
 

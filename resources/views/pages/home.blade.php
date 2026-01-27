@@ -8,7 +8,7 @@
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="/images/20240829_202740.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+            <img src="/images/canva/hero%20frontpage.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/60"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]"></div>
         </div>
@@ -328,6 +328,9 @@
                 </div>
                 <div class="fade-in stagger-2 img-zoom rounded-xl overflow-hidden aspect-square">
                     <img src="/images/IMG-20241003-WA0022.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+                </div>
+                <div class="fade-in stagger-3 img-zoom rounded-xl overflow-hidden aspect-square">
+                    <img src="/images/canva/milsim.jpg" alt="BCN Sports Milsim Training" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>

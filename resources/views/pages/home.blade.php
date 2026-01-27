@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Bootcamp Trials & Outdoor Training | BCN Sports')
-@section('meta_description', 'Bootcamp Trials events en outdoor personal training in Almere. Ontdek je grenzen met uitdagende events, 1:1 begeleiding en small group training. 15+ jaar ervaring.')
+@section('meta_description', 'Bootcamp Trials events door heel Nederland en outdoor personal training in Almere. Ontdek je grenzen met uitdagende events, 1:1 begeleiding en small group training. 20+ jaar ervaring.')
 
 @section('content')
     <!-- Hero Section -->
@@ -56,8 +56,8 @@
                     met outdoor personal training.
                 </p>
                 <p class="fade-in stagger-1 text-lg text-[#a0a0a0] leading-relaxed mb-8">
-                    Onze trainers komen naar jou toe of we spreken af op een locatie die werkt.
-                    Park, bos, strand of een terrein voor onze Bootcamp Trials events. Altijd buiten, altijd uitdagend.
+                    Bootcamp Trials events vinden plaats door heel Nederland. Personal training en small group sessies
+                    bieden we aan in Almere en omstreken. Altijd buiten, altijd uitdagend.
                 </p>
                 <p class="fade-in stagger-2 text-lg text-[#a0a0a0] leading-relaxed">
                     Of je meedoet aan een Bootcamp Trials event, wilt afvallen, sterker worden of je voorbereidt
@@ -83,7 +83,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">15+ Jaar Ervaring</h3>
+                    <h3 class="text-xl font-bold text-white mb-3">20+ Jaar Ervaring</h3>
                     <p class="text-[#a0a0a0]">In het coachen van sporters op fysiek en mentaal niveau</p>
                 </div>
 
@@ -93,8 +93,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Defensie Ervaring</h3>
-                    <p class="text-[#a0a0a0]">Militaire achtergrond als basis voor onze Bootcamp Trials</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Bewezen Mentaliteit</h3>
+                    <p class="text-[#a0a0a0]">Gevormd door jarenlange ervaring in extreme fysieke en mentale uitdagingen</p>
                 </div>
 
                 <div class="fade-in stagger-2 dark-card rounded-2xl p-8 text-center">
@@ -194,7 +194,7 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Bootcamp Trials</h3>
                     <p class="text-[#a0a0a0] mb-6">
-                        Uitdagende outdoor events waar je mentale en fysieke grenzen verlegt. Gebaseerd op onze Defensie-ervaring.
+                        Uitdagende outdoor events door heel Nederland waar je mentale en fysieke grenzen verlegt.
                     </p>
                     <p class="text-[#c4ff00] font-bold mb-4">Events worden aangekondigd</p>
                     <a href="{{ route('prijzen') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">

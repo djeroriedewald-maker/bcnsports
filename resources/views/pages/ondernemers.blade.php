@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Zakelijk - BCN Sports Bedrijfstraining Almere')
-@section('meta_description', 'BCN Sports voor bedrijven. Bedrijfs-bootcamp, teambuilding en outdoor trainingen. Versterk je team met energieke outdoor sessies. Vraag een offerte aan.')
+@section('title', 'Zakelijk - BCN Sports Bedrijfstraining heel Nederland')
+@section('meta_description', 'BCN Sports voor bedrijven door heel Nederland. Bedrijfs-bootcamp, teambuilding en outdoor trainingen. Versterk je team met energieke outdoor sessies. Vraag een offerte aan.')
 
 @section('content')
     <!-- Hero Section -->
@@ -114,7 +114,7 @@
                     Onze <span class="text-[#c4ff00]">Opties</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Wij komen naar jullie locatie of organiseren op een mooie outdoor plek
+                    Door heel Nederland. Wij komen naar jullie locatie of organiseren op een mooie outdoor plek
                 </p>
             </div>
 

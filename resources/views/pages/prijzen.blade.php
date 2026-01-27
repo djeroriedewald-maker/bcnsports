@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Aanbod & Prijzen - BCN Sports Bootcamp Trials & Outdoor Training')
-@section('meta_description', 'Bekijk het aanbod en de prijzen van BCN Sports. Bootcamp Trials events, 1:1 Personal Training vanaf €59,95, duo-training, small group en meer in Almere.')
+@section('meta_description', 'Bekijk het aanbod en de prijzen van BCN Sports. Bootcamp Trials events door heel Nederland, 1:1 Personal Training vanaf €59,95, duo-training, small group en meer.')
 
 @section('content')
     <!-- Hero Section -->
@@ -38,8 +38,8 @@
                     Bootcamp <span class="text-[#c4ff00]">Trials</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-3xl mx-auto">
-                    Onze uitdagende outdoor events waar je mentale en fysieke grenzen verlegt.
-                    Gebaseerd op onze Defensie-ervaring, ontworpen om het beste uit jezelf te halen.
+                    Onze uitdagende outdoor events door heel Nederland waar je mentale en fysieke grenzen verlegt.
+                    Ontworpen met 20+ jaar ervaring om het beste uit jezelf te halen.
                 </p>
             </div>
 
@@ -62,7 +62,7 @@
                             <h3 class="text-3xl font-black text-white uppercase mb-4">Bootcamp Trials Events</h3>
                             <p class="text-white/80 mb-6 text-lg">
                                 Doe mee aan onze Bootcamp Trials events en ontdek waar je grenzen liggen.
-                                Individueel of als team, onder begeleiding van trainers met echte Defensie-ervaring.
+                                Individueel of als team, onder begeleiding van ervaren trainers met een bewezen track record.
                             </p>
                             <ul class="space-y-3 mb-6 text-sm">
                                 <li class="flex items-start">
@@ -75,7 +75,7 @@
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                         <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                                     </svg>
-                                    <span class="text-white/70">Begeleiding door trainers met Defensie-achtergrond</span>
+                                    <span class="text-white/70">Begeleiding door trainers met 20+ jaar ervaring</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -385,7 +385,7 @@
                         </svg>
                     </div>
                     <h3 class="text-white font-bold mb-2">Flexibele Locatie</h3>
-                    <p class="text-[#6b6b6b] text-sm">Training op een locatie in Almere naar keuze</p>
+                    <p class="text-[#6b6b6b] text-sm">Personal training in Almere en omstreken, events door heel Nederland</p>
                 </div>
             </div>
         </div>

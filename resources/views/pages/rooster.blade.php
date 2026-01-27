@@ -98,7 +98,7 @@
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
                     Trainings<span class="text-[#c4ff00]">locatie</span>
                 </h2>
-                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg">Onze outdoor trainingen vinden plaats in Almere</p>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg">Onze outdoor trainingen vinden plaats in Almere en omstreken</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">

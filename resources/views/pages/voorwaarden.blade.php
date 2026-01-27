@@ -29,7 +29,7 @@
                 <h2 class="text-2xl font-bold text-secondary mt-8 mb-4">Artikel 1 - Definities</h2>
                 <p class="text-gray-600 mb-4">In deze voorwaarden wordt verstaan onder:</p>
                 <ul class="list-disc pl-6 text-gray-600 space-y-2 mb-6">
-                    <li><strong>BCN Sports:</strong> de aanbieder van Bootcamp Trials events en outdoor personal training, gevestigd te Almere.</li>
+                    <li><strong>BCN Sports:</strong> de aanbieder van Bootcamp Trials events (door heel Nederland) en outdoor personal training (Almere en omstreken), gevestigd te Almere.</li>
                     <li><strong>Deelnemer:</strong> de natuurlijke persoon die deelneemt aan de activiteiten van BCN Sports.</li>
                     <li><strong>Abonnement:</strong> een overeenkomst waarbij de deelnemer voor een bepaalde periode toegang heeft tot trainingen.</li>
                     <li><strong>Training:</strong> een geplande outdoor training sessie, Bootcamp Trials event of personal training onder begeleiding van een trainer.</li>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - BCN Sports Bootcamp Trials & Outdoor Training Almere')
-@section('meta_description', 'Neem contact op met BCN Sports voor vragen over Bootcamp Trials en Outdoor Training in Almere. Plan een gratis kennismakingsgesprek!')
+@section('title', 'Contact - BCN Sports Bootcamp Trials & Outdoor Training')
+@section('meta_description', 'Neem contact op met BCN Sports voor vragen over Bootcamp Trials en Outdoor Training. Plan een gratis kennismakingsgesprek!')
 
 @section('content')
     <!-- Hero Section -->
@@ -218,7 +218,7 @@
                                 <div class="ml-4">
                                     <h3 class="font-bold text-white uppercase text-sm">Locatie</h3>
                                     <p class="text-[#a0a0a0]">Almere, Nederland</p>
-                                    <p class="text-[#6b6b6b] text-sm">Training op een locatie in Almere naar keuze</p>
+                                    <p class="text-[#6b6b6b] text-sm">Personal training in Almere en omstreken, events door heel Nederland</p>
                                 </div>
                             </div>
 
@@ -314,7 +314,7 @@
                         </svg>
                     </button>
                     <div class="px-6 pb-5 hidden">
-                        <p class="text-[#a0a0a0]">De trainingen vinden buiten plaats in Almere. We kunnen samen een locatie kiezen die voor jou het beste werkt - bijvoorbeeld in een park of sportveldje bij jou in de buurt.</p>
+                        <p class="text-[#a0a0a0]">Personal training en small group sessies vinden buiten plaats in Almere en omstreken. Bootcamp Trials events worden door heel Nederland georganiseerd. Voor personal training kiezen we samen een locatie die voor jou het beste werkt.</p>
                     </div>
                 </div>
 

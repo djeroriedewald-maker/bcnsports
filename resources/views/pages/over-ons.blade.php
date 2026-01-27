@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Over Ons - BCN Sports Bootcamp Trials & Outdoor Training Almere')
-@section('meta_description', 'BCN Sports - Bootcamp Trials en Outdoor Training in Almere. Uitdagende events en persoonlijke training buiten met een unieke aanpak.')
+@section('title', 'Over Ons - BCN Sports Bootcamp Trials & Outdoor Training')
+@section('meta_description', 'BCN Sports - Bootcamp Trials door heel Nederland en Outdoor Training in Almere. Uitdagende events en persoonlijke training buiten met 20+ jaar ervaring.')
 
 @section('content')
     <!-- Hero Section -->
@@ -31,9 +31,9 @@
                     </h2>
                     <div class="space-y-6 text-[#a0a0a0] text-lg">
                         <p>
-                            BCN Sports organiseert Bootcamp Trials - uitdagende outdoor events waar je mentale en fysieke
-                            grenzen verlegt. Daarnaast bieden we persoonlijke training in de buitenlucht, volledig op jou
-                            afgestemd in de frisse lucht van Almere.
+                            BCN Sports organiseert Bootcamp Trials - uitdagende outdoor events door heel Nederland waar je
+                            mentale en fysieke grenzen verlegt. Daarnaast bieden we persoonlijke training in de buitenlucht
+                            in Almere en omstreken, volledig op jou afgestemd.
                         </p>
                         <p>
                             Bij BCN Sports geloof ik dat echte groei begint buiten je comfortzone.
@@ -157,7 +157,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-white uppercase mb-3">Buiten</h3>
                     <p class="text-[#a0a0a0] text-sm">
-                        Verse lucht, daglicht en de natuurlijke omgeving van Almere als jouw sportschool.
+                        Verse lucht, daglicht en de natuur als jouw sportschool. Training in Almere en omstreken.
                     </p>
                 </div>
 

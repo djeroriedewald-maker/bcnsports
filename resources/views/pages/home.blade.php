@@ -214,7 +214,7 @@
                     <p class="text-[#a0a0a0] mb-6">
                         Volledige aandacht, maximaal resultaat. In een 1:1 sessie staat alles in het teken van jouw doel.
                     </p>
-                    <p class="text-[#c4ff00] font-bold mb-4">Vanaf €59,95 per sessie</p>
+                    <p class="text-[#c4ff00] font-bold mb-4">€74,95 per sessie</p>
                     <a href="{{ route('prijzen') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
                         Bekijk tarieven
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -248,7 +248,7 @@
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-4">Small Group</h3>
                     <p class="text-[#a0a0a0] mb-6">
-                        De energie van een groep, de aandacht van personal training. Maximaal 4 personen.
+                        De energie van een groep, de aandacht van personal training. Minimaal 3, maximaal 4 deelnemers.
                     </p>
                     <p class="text-[#c4ff00] font-bold mb-4">€39,95 per persoon</p>
                     <a href="{{ route('prijzen') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
@@ -302,39 +302,32 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Aankomende Events Section -->
     <section class="py-24 bg-[#141414]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    In <span class="text-[#c4ff00]">Actie</span>
+                    Aankomende <span class="text-[#c4ff00]">Events</span>
                 </h2>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
+                    Bootcamp Trials events worden hier aangekondigd. Zodra er een datum bekend is, kun je je direct inschrijven.
+                </p>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="fade-in img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/20240829_202740.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
-                </div>
-                <div class="fade-in stagger-1 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/P1210932.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover">
-                </div>
-                <div class="fade-in stagger-2 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/20241007_093350.jpg" alt="Outdoor Training" class="w-full h-full object-cover">
-                </div>
-                <div class="fade-in stagger-3 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/P1270912.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover">
-                </div>
-                <div class="fade-in img-zoom rounded-xl overflow-hidden aspect-square md:col-span-2 md:row-span-2">
-                    <img src="/images/team%20spirit.jpg" alt="BCN Sports Bootcamp Trials teamwork" class="w-full h-full object-cover">
-                </div>
-                <div class="fade-in stagger-1 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/20231220_085224.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
-                </div>
-                <div class="fade-in stagger-2 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/IMG-20241003-WA0022.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
-                </div>
-                <div class="fade-in stagger-3 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/canva/milsim.jpg" alt="BCN Sports Bootcamp Trials" class="w-full h-full object-cover">
+            <div class="fade-in max-w-3xl mx-auto">
+                <div class="neon-border rounded-2xl p-8 md:p-12 text-center">
+                    <div class="w-20 h-20 bg-[#c4ff00]/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white uppercase mb-4">Binnenkort Beschikbaar</h3>
+                    <p class="text-[#a0a0a0] text-lg mb-8 max-w-lg mx-auto">
+                        We werken aan nieuwe Bootcamp Trials events. Wil je als eerste op de hoogte zijn? Neem contact met ons op en we houden je op de hoogte.
+                    </p>
+                    <a href="{{ route('contact') }}" class="btn-neon inline-block px-10 py-4 rounded-full text-lg">
+                        Houd Me Op De Hoogte
+                    </a>
                 </div>
             </div>
         </div>

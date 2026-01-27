@@ -44,13 +44,13 @@
                 </p>
 
                 <h2 class="text-2xl font-bold text-secondary mt-8 mb-4">Artikel 3 - Abonnementen en Prijzen</h2>
-                <h3 class="text-xl font-semibold text-secondary mt-6 mb-3">3.1 Beschikbare abonnementen</h3>
+                <h3 class="text-xl font-semibold text-secondary mt-6 mb-3">3.1 Beschikbare diensten en tarieven</h3>
                 <div class="bg-light rounded-xl p-6 mb-4">
                     <ul class="text-gray-600 space-y-2 m-0">
-                        <li><strong>Solo Bootcamp Pass:</strong> €39,95 per maand - onbeperkt toegang tot alle trainingen voor 1 persoon</li>
-                        <li><strong>Family Package:</strong> €59,95 per maand - onbeperkt toegang voor maximaal 4 personen</li>
-                        <li><strong>10-Rittenkaart:</strong> €99,00 - 10 trainingen, 6 maanden geldig</li>
-                        <li><strong>Losse les:</strong> €12,50 per training</li>
+                        <li><strong>1:1 Personal Training:</strong> €74,95 per sessie - individuele training met volledige persoonlijke aandacht</li>
+                        <li><strong>Duo Training (1:2):</strong> €54,95 per persoon per sessie - train samen met een partner</li>
+                        <li><strong>Small Group Training:</strong> €39,95 per persoon per sessie - kleine groep van minimaal 3 en maximaal 4 deelnemers</li>
+                        <li><strong>Bootcamp Trials Events:</strong> prijzen worden per event bekendgemaakt bij aankondiging</li>
                     </ul>
                 </div>
 

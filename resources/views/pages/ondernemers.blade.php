@@ -122,7 +122,7 @@
                 <!-- Teamuitje -->
                 <div class="fade-in glass-card rounded-2xl overflow-hidden">
                     <div class="relative h-64">
-                        <img src="/images/20240902_195039.jpg" alt="BCN Sports Teamuitje" class="w-full h-full object-cover">
+                        <img src="/images/P1270860.jpg" alt="BCN Sports Teamuitje" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
                         <div class="absolute bottom-4 left-4">
                             <span class="bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
@@ -170,7 +170,7 @@
                 <!-- Structureel -->
                 <div class="fade-in stagger-1 glass-card rounded-2xl overflow-hidden">
                     <div class="relative h-64">
-                        <img src="/images/20240904_091803.jpg" alt="BCN Sports Vitaliteitsprogramma" class="w-full h-full object-cover">
+                        <img src="/images/P1270832.jpg" alt="BCN Sports Vitaliteitsprogramma" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent"></div>
                         <div class="absolute bottom-4 left-4">
                             <span class="bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">

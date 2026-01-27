@@ -17,7 +17,7 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:locale" content="nl_NL">
     <meta property="og:site_name" content="BCN Sports">
-    <meta property="og:image" content="{{ asset('images/og-image.jpg') }}">
+    <meta property="og:image" content="{{ asset('images/P1210932.jpg') }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="BCN Sports - Personal Training Outdoor Almere">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('title', 'BCN Sports - Personal Training Outdoor Almere')">
     <meta name="twitter:description" content="@yield('meta_description', 'Personal Training Outdoor in Almere')">
-    <meta name="twitter:image" content="{{ asset('images/og-image.jpg') }}">
+    <meta name="twitter:image" content="{{ asset('images/P1210932.jpg') }}">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ url()->current() }}">
@@ -52,7 +52,7 @@
         "description": "Personal Training Outdoor in Almere. Persoonlijke begeleiding van een gecertificeerde trainer. Flexibel, effectief en volledig op maat.",
         "url": "https://bcnsports.nl",
         "logo": "https://bcnsports.nl/images/BCN_LOGO_2024_WHITE.png",
-        "image": "https://bcnsports.nl/images/og-image.jpg",
+        "image": "https://bcnsports.nl/images/P1210932.jpg",
         "telephone": "+31641541751",
         "email": "info@bcnsports.nl",
         "address": {

@@ -8,7 +8,7 @@
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Background Image -->
         <div class="absolute inset-0">
-            <img src="/images/20240904_091803.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+            <img src="/images/20240829_202740.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
             <div class="absolute inset-0 bg-black/60"></div>
             <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a0a]"></div>
         </div>
@@ -309,7 +309,7 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="fade-in img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/20240904_091803.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+                    <img src="/images/20240829_202740.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-1 img-zoom rounded-xl overflow-hidden aspect-square">
                     <img src="/images/P1210932.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover">
@@ -321,13 +321,13 @@
                     <img src="/images/P1270912.jpg" alt="BCN Sports Trainer" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in img-zoom rounded-xl overflow-hidden aspect-square md:col-span-2 md:row-span-2">
-                    <img src="/images/20240902_195039.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+                    <img src="/images/20240421_111132.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-1 img-zoom rounded-xl overflow-hidden aspect-square">
                     <img src="/images/20231220_085224.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-2 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/IMG-20241003-WA0070.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
+                    <img src="/images/IMG-20241003-WA0022.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>

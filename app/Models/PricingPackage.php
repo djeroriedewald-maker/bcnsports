@@ -18,7 +18,7 @@ class PricingPackage extends Model
         self::CATEGORY_DUO => '1:2 Training (Duo)',
         self::CATEGORY_SMALL_GROUP => 'Small Group Training',
         self::CATEGORY_EVENT => 'Event Training',
-        self::CATEGORY_MILSIM => 'Milsim Training',
+        self::CATEGORY_MILSIM => 'Bootcamp Trials',
         self::CATEGORY_BUSINESS => 'Bedrijfs-bootcamp',
     ];
 

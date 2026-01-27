@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Personal Training Buiten | BCN Sports')
-@section('meta_description', 'Outdoor personal training op jouw locatie. 1:1, small group, event- en Milsim training. 15+ jaar ervaring. Plan je gratis intake.')
+@section('title', 'Bootcamp Trials & Outdoor Training | BCN Sports')
+@section('meta_description', 'Bootcamp Trials events en outdoor personal training in Almere. Ontdek je grenzen met uitdagende events, 1:1 begeleiding en small group training. 15+ jaar ervaring.')
 
 @section('content')
     <!-- Hero Section -->
@@ -20,20 +20,20 @@
             </div>
 
             <h1 class="fade-in stagger-1 text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tight text-white mb-6">
-                Train buiten.<br>
-                <span class="text-[#c4ff00]">Groei binnen.</span>
+                Bootcamp Trials.<br>
+                <span class="text-[#c4ff00]">Ontdek je grenzen.</span>
             </h1>
 
             <p class="fade-in stagger-2 text-xl md:text-2xl text-[#a0a0a0] max-w-2xl mx-auto mb-10">
-                Personal training in de buitenlucht. Geen excuses, geen afleiding. Alleen jij, je trainer en resultaat.
+                Uitdagende Bootcamp Trials events en outdoor personal training. Geen excuses, geen afleiding. Alleen jij, je team en resultaat.
             </p>
 
             <div class="fade-in stagger-3 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="{{ route('contact') }}" class="btn-neon px-10 py-4 rounded-full text-lg pulse-neon">
-                    Plan Je Gratis Intake
+                <a href="{{ route('prijzen') }}" class="btn-neon px-10 py-4 rounded-full text-lg pulse-neon">
+                    Ontdek Bootcamp Trials
                 </a>
-                <a href="{{ route('prijzen') }}" class="btn-neon-outline px-10 py-4 rounded-full text-lg">
-                    Bekijk Aanbod
+                <a href="{{ route('contact') }}" class="btn-neon-outline px-10 py-4 rounded-full text-lg">
+                    Neem Contact Op
                 </a>
             </div>
         </div>
@@ -51,16 +51,17 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <p class="fade-in text-xl md:text-2xl text-[#a0a0a0] leading-relaxed mb-8">
-                    Bij BCN Sports train je niet in een overvolle sportschool tussen de spiegels en ego's.
-                    Je traint <span class="text-white font-semibold">buiten</span>. In de natuur. Waar je lichaam hoort te bewegen.
+                    BCN Sports organiseert <span class="text-white font-semibold">Bootcamp Trials</span> - uitdagende outdoor events
+                    waar je mentale en fysieke grenzen verlegd worden. Daarnaast bieden we persoonlijke begeleiding
+                    met outdoor personal training.
                 </p>
                 <p class="fade-in stagger-1 text-lg text-[#a0a0a0] leading-relaxed mb-8">
-                    Onze personal trainers komen naar jou toe - of we spreken af op een locatie die werkt.
-                    Park, bos, strand, je eigen tuin. Zolang het buiten is, maken wij er een trainingslocatie van.
+                    Onze trainers komen naar jou toe of we spreken af op een locatie die werkt.
+                    Park, bos, strand of een terrein voor onze Bootcamp Trials events. Altijd buiten, altijd uitdagend.
                 </p>
                 <p class="fade-in stagger-2 text-lg text-[#a0a0a0] leading-relaxed">
-                    Of je nu wilt afvallen, sterker worden, je voorbereidt op een evenement of jezelf mentaal
-                    en fysiek wilt klaarstomen voor Defensie - wij bouwen een programma dat past bij jouw doel.
+                    Of je meedoet aan een Bootcamp Trials event, wilt afvallen, sterker worden of je voorbereidt
+                    op een evenement - wij bouwen een programma dat past bij jouw doel.
                 </p>
             </div>
         </div>
@@ -92,8 +93,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Defensie Achtergrond</h3>
-                    <p class="text-[#a0a0a0]">Wij weten wat discipline en doorzetten betekent</p>
+                    <h3 class="text-xl font-bold text-white mb-3">Defensie Ervaring</h3>
+                    <p class="text-[#a0a0a0]">Militaire achtergrond als basis voor onze Bootcamp Trials</p>
                 </div>
 
                 <div class="fade-in stagger-2 dark-card rounded-2xl p-8 text-center">
@@ -124,11 +125,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
-                    Wij Doen <span class="text-[#c4ff00]">Zelf Mee</span>
+                    Bootcamp Trials <span class="text-[#c4ff00]">& Events</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Onze trainers nemen zelf deel aan de uitdagingen die we onze klanten voorschotelen.
-                    Trail runs van 50+ kilometer, HYROX-wedstrijden en alles wat ons uit de comfortzone haalt.
+                    Onze trainers nemen zelf deel aan de uitdagingen die we organiseren en voorschotelen.
+                    Bootcamp Trials events, trail runs van 50+ kilometer, HYROX-wedstrijden en alles wat uit de comfortzone haalt.
                 </p>
             </div>
 
@@ -181,8 +182,31 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Bootcamp Trials (uitgelicht) -->
+                <div class="fade-in dark-card rounded-2xl p-8 border-2 border-[#c4ff00] relative">
+                    <div class="absolute -top-3 left-6 bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full">
+                        Onze Specialiteit
+                    </div>
+                    <div class="w-12 h-12 bg-[#c4ff00] rounded-xl flex items-center justify-center mb-6 mt-2">
+                        <svg class="w-6 h-6 text-[#0a0a0a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Bootcamp Trials</h3>
+                    <p class="text-[#a0a0a0] mb-6">
+                        Uitdagende outdoor events waar je mentale en fysieke grenzen verlegt. Gebaseerd op onze Defensie-ervaring.
+                    </p>
+                    <p class="text-[#c4ff00] font-bold mb-4">Traject op maat</p>
+                    <a href="{{ route('prijzen') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
+                        Bekijk aanbod
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                </div>
+
                 <!-- 1:1 Personal Training -->
-                <div class="fade-in dark-card rounded-2xl p-8">
+                <div class="fade-in stagger-1 dark-card rounded-2xl p-8">
                     <div class="w-12 h-12 bg-[#c4ff00] rounded-xl flex items-center justify-center mb-6">
                         <span class="text-[#0a0a0a] font-black text-lg">1:1</span>
                     </div>
@@ -200,7 +224,7 @@
                 </div>
 
                 <!-- 1:2 Training -->
-                <div class="fade-in stagger-1 dark-card rounded-2xl p-8">
+                <div class="fade-in stagger-2 dark-card rounded-2xl p-8">
                     <div class="w-12 h-12 bg-[#c4ff00] rounded-xl flex items-center justify-center mb-6">
                         <span class="text-[#0a0a0a] font-black text-lg">1:2</span>
                     </div>
@@ -218,7 +242,7 @@
                 </div>
 
                 <!-- Small Group Training -->
-                <div class="fade-in stagger-2 dark-card rounded-2xl p-8">
+                <div class="fade-in dark-card rounded-2xl p-8">
                     <div class="w-12 h-12 bg-[#c4ff00] rounded-xl flex items-center justify-center mb-6">
                         <span class="text-[#0a0a0a] font-black text-lg">4</span>
                     </div>
@@ -236,7 +260,7 @@
                 </div>
 
                 <!-- Event Training -->
-                <div class="fade-in dark-card rounded-2xl p-8">
+                <div class="fade-in stagger-1 dark-card rounded-2xl p-8">
                     <div class="w-12 h-12 bg-[#c4ff00]/20 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-6 h-6 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -245,26 +269,6 @@
                     <h3 class="text-2xl font-bold text-white mb-4">Event Training</h3>
                     <p class="text-[#a0a0a0] mb-6">
                         Obstacle run, marathon, HYROX of Mud Masters? Wij stomen je klaar met een gericht traject.
-                    </p>
-                    <p class="text-[#c4ff00] font-bold mb-4">Traject op maat</p>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
-                        Neem contact op
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Milsim Training -->
-                <div class="fade-in stagger-1 dark-card rounded-2xl p-8">
-                    <div class="w-12 h-12 bg-[#c4ff00]/20 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-6 h-6 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Milsim Training</h3>
-                    <p class="text-[#a0a0a0] mb-6">
-                        Voorbereiding op Defensie of ontdek je mentale en fysieke grenzen. Ons team heeft zelf Defensie-achtergrond.
                     </p>
                     <p class="text-[#c4ff00] font-bold mb-4">Traject op maat</p>
                     <a href="{{ route('contact') }}" class="inline-flex items-center text-[#c4ff00] font-bold uppercase text-sm tracking-wider hover:text-white transition">
@@ -330,7 +334,7 @@
                     <img src="/images/IMG-20241003-WA0022.jpg" alt="BCN Sports Training" class="w-full h-full object-cover">
                 </div>
                 <div class="fade-in stagger-3 img-zoom rounded-xl overflow-hidden aspect-square">
-                    <img src="/images/canva/milsim.jpg" alt="BCN Sports Milsim Training" class="w-full h-full object-cover">
+                    <img src="/images/canva/milsim.jpg" alt="BCN Sports Bootcamp Trials" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>

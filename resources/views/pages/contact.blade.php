@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Contact - BCN Sports Personal Training Outdoor Almere')
-@section('meta_description', 'Neem contact op met BCN Sports voor vragen over Personal Training Outdoor in Almere. Plan een gratis kennismakingsgesprek!')
+@section('title', 'Contact - BCN Sports Bootcamp Trials & Outdoor Training Almere')
+@section('meta_description', 'Neem contact op met BCN Sports voor vragen over Bootcamp Trials en Outdoor Training in Almere. Plan een gratis kennismakingsgesprek!')
 
 @section('content')
     <!-- Hero Section -->
@@ -16,7 +16,7 @@
                 Neem <span class="text-[#c4ff00]">Contact</span> Op
             </h1>
             <p class="fade-in stagger-1 text-xl text-[#a0a0a0] max-w-2xl mx-auto">
-                Heb je vragen over Personal Training Outdoor of wil je een kennismakingsgesprek plannen? We horen graag van je!
+                Heb je vragen over Bootcamp Trials, Personal Training of wil je een kennismakingsgesprek plannen? We horen graag van je!
             </p>
         </div>
     </section>
@@ -29,7 +29,7 @@
                     Gratis <span class="text-[#c4ff00]">Kennismakingsgesprek</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Benieuwd wat Personal Training Outdoor voor jou kan betekenen? Plan een vrijblijvend kennismakingsgesprek en ontdek de mogelijkheden.
+                    Benieuwd wat BCN Sports voor jou kan betekenen? Plan een vrijblijvend kennismakingsgesprek en ontdek de mogelijkheden van Bootcamp Trials en outdoor training.
                 </p>
             </div>
 
@@ -152,6 +152,7 @@
                             >
                                 <option value="">Selecteer een onderwerp</option>
                                 <option value="kennismaking" {{ old('subject') == 'kennismaking' ? 'selected' : '' }}>Gratis kennismakingsgesprek</option>
+                                <option value="bootcamp-trials" {{ old('subject') == 'bootcamp-trials' ? 'selected' : '' }}>Vraag over Bootcamp Trials</option>
                                 <option value="personal-training" {{ old('subject') == 'personal-training' ? 'selected' : '' }}>Vraag over Personal Training</option>
                                 <option value="duo-training" {{ old('subject') == 'duo-training' ? 'selected' : '' }}>Vraag over Duo / Small Group</option>
                                 <option value="bedrijf" {{ old('subject') == 'bedrijf' ? 'selected' : '' }}>Bedrijfs-bootcamp / Zakelijk</option>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Aanbod & Prijzen - BCN Sports Personal Training Outdoor')
-@section('meta_description', 'Bekijk het aanbod en de prijzen van BCN Sports Personal Training Outdoor in Almere. 1:1 Personal Training vanaf €59,95, duo-training, small group en meer.')
+@section('title', 'Aanbod & Prijzen - BCN Sports Bootcamp Trials & Outdoor Training')
+@section('meta_description', 'Bekijk het aanbod en de prijzen van BCN Sports. Bootcamp Trials events, 1:1 Personal Training vanaf €59,95, duo-training, small group en meer in Almere.')
 
 @section('content')
     <!-- Hero Section -->
@@ -16,7 +16,7 @@
                 Aanbod & <span class="text-[#c4ff00]">Prijzen</span>
             </h1>
             <p class="fade-in stagger-1 text-xl text-[#a0a0a0] max-w-2xl mx-auto">
-                Persoonlijke begeleiding die past bij jouw doelen. Van 1-op-1 sessies tot kleine groepen.
+                Van Bootcamp Trials events tot persoonlijke 1-op-1 begeleiding. Kies wat bij jouw doelen past.
             </p>
         </div>
     </section>
@@ -30,9 +30,67 @@
         $business = $packages->get('business', collect());
     @endphp
 
+    <!-- Bootcamp Trials Section -->
+    <section class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
+                    Bootcamp <span class="text-[#c4ff00]">Trials</span>
+                </h2>
+                <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-3xl mx-auto">
+                    Onze uitdagende outdoor events waar je mentale en fysieke grenzen verlegt.
+                    Gebaseerd op onze Defensie-ervaring, ontworpen om het beste uit jezelf te halen.
+                </p>
+            </div>
+
+            <div class="fade-in neon-border rounded-2xl overflow-hidden">
+                <div class="bg-gradient-to-r from-[#c4ff00]/10 to-transparent p-8 md:p-12">
+                    <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+                        <div class="flex-1">
+                            <div class="inline-block bg-[#c4ff00] text-[#0a0a0a] text-xs font-bold uppercase px-3 py-1 rounded-full mb-4">
+                                Onze Specialiteit
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Bootcamp Trials Events</h3>
+                            <p class="text-[#a0a0a0] mb-6">
+                                Doe mee aan onze Bootcamp Trials events en ontdek waar je grenzen liggen.
+                                Individueel of als team, onder begeleiding van trainers met echte Defensie-ervaring.
+                            </p>
+                            <ul class="space-y-3 mb-6 text-sm">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-[#a0a0a0]">Fysieke en mentale uitdagingen in de buitenlucht</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-[#a0a0a0]">Begeleiding door trainers met Defensie-achtergrond</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-[#c4ff00] mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-[#a0a0a0]">Individueel of in teamverband</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lg:text-right">
+                            <p class="text-xl font-bold text-[#c4ff00] mb-4">Traject op maat</p>
+                            <a href="{{ route('contact') }}" class="btn-neon inline-block px-8 py-3 rounded-full text-sm">
+                                Neem Contact Op
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 1:1 Personal Training Section -->
     @if($personal1on1->isNotEmpty())
-    <section class="py-24 bg-[#0a0a0a]">
+    <section class="py-24 bg-[#141414]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
@@ -130,15 +188,15 @@
     @endif
 
     <!-- Other Training Options -->
-    @if($duo->isNotEmpty() || $smallGroup->isNotEmpty() || $event->isNotEmpty() || $milsim->isNotEmpty() || $business->isNotEmpty())
-    <section class="py-24 bg-[#141414]">
+    @if($duo->isNotEmpty() || $smallGroup->isNotEmpty() || $event->isNotEmpty() || $business->isNotEmpty())
+    <section class="py-24 bg-[#0a0a0a]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="fade-in text-4xl md:text-5xl font-black uppercase text-white mb-4">
                     Meer <span class="text-[#c4ff00]">Opties</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-3xl mx-auto">
-                    Naast 1-op-1 training bieden we ook andere mogelijkheden aan.
+                    Naast Bootcamp Trials en 1-op-1 training bieden we ook andere mogelijkheden aan.
                 </p>
             </div>
 
@@ -201,34 +259,6 @@
                     <div class="w-14 h-14 bg-[#c4ff00]/10 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">{{ $package->name }}</h3>
-                    @if($package->description)
-                        <p class="text-[#a0a0a0] mb-4">{{ $package->description }}</p>
-                    @endif
-                    <div class="flex items-baseline gap-2 mb-6">
-                        @if($package->price > 0)
-                            <span class="text-3xl font-black text-[#c4ff00]">{{ $package->formatted_price }}</span>
-                        @else
-                            <span class="text-xl font-bold text-[#c4ff00]">Traject op maat</span>
-                        @endif
-                    </div>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center text-[#c4ff00] font-semibold hover:underline">
-                        Vraag offerte aan
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
-                @endforeach
-
-                <!-- Milsim Training -->
-                @foreach($milsim as $package)
-                <div class="fade-in stagger-{{ $staggerIndex++ }} dark-card rounded-2xl p-8">
-                    <div class="w-14 h-14 bg-[#c4ff00]/10 rounded-xl flex items-center justify-center mb-6">
-                        <svg class="w-7 h-7 text-[#c4ff00]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-3">{{ $package->name }}</h3>

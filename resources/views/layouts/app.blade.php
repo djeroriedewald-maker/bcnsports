@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="@yield('meta_description', 'BCN Sports - Personal Training Outdoor in Almere. Persoonlijke begeleiding, buiten trainen, flexibel inplannen. Train met een gecertificeerde trainer.')">
-    <meta name="keywords" content="personal training, outdoor training, fitness, Almere, personal trainer, HYROX, functionele training, buiten sporten, 1-op-1 training">
+    <meta name="description" content="@yield('meta_description', 'BCN Sports - Bootcamp Trials & Outdoor Training in Almere. Ontdek je grenzen met uitdagende events, personal training en persoonlijke begeleiding.')">
+    <meta name="keywords" content="bootcamp trials, outdoor training, personal training, fitness, Almere, personal trainer, HYROX, functionele training, buiten sporten, 1-op-1 training">
     <meta name="author" content="BCN Sports">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="NL-FL">
     <meta name="geo.placename" content="Almere">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="@yield('title', 'BCN Sports - Personal Training Outdoor Almere')">
-    <meta property="og:description" content="@yield('meta_description', 'Personal Training Outdoor in Almere. Train buiten met persoonlijke begeleiding van een gecertificeerde trainer. Flexibel, effectief en op maat.')">
+    <meta property="og:title" content="@yield('title', 'BCN Sports - Bootcamp Trials & Outdoor Training Almere')">
+    <meta property="og:description" content="@yield('meta_description', 'Bootcamp Trials & Outdoor Training in Almere. Ontdek je grenzen met uitdagende events en persoonlijke begeleiding. Flexibel, effectief en op maat.')">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:locale" content="nl_NL">
@@ -20,12 +20,12 @@
     <meta property="og:image" content="{{ asset('images/P1210932.jpg') }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="BCN Sports - Personal Training Outdoor Almere">
+    <meta property="og:image:alt" content="BCN Sports - Bootcamp Trials & Outdoor Training Almere">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('title', 'BCN Sports - Personal Training Outdoor Almere')">
-    <meta name="twitter:description" content="@yield('meta_description', 'Personal Training Outdoor in Almere')">
+    <meta name="twitter:title" content="@yield('title', 'BCN Sports - Bootcamp Trials & Outdoor Training Almere')">
+    <meta name="twitter:description" content="@yield('meta_description', 'Bootcamp Trials & Outdoor Training in Almere')">
     <meta name="twitter:image" content="{{ asset('images/P1210932.jpg') }}">
 
     <!-- Canonical URL -->
@@ -35,7 +35,7 @@
     <link rel="icon" type="image/png" href="{{ asset('images/favicon.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('images/apple-touch-icon.png') }}">
 
-    <title>@yield('title', 'BCN Sports - Personal Training Outdoor Almere')</title>
+    <title>@yield('title', 'BCN Sports - Bootcamp Trials & Outdoor Training Almere')</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -48,8 +48,8 @@
         "@@type": "SportsActivityLocation",
         "@@id": "https://bcnsports.nl/#organization",
         "name": "BCN Sports",
-        "alternateName": "Personal Training Outdoor Almere",
-        "description": "Personal Training Outdoor in Almere. Persoonlijke begeleiding van een gecertificeerde trainer. Flexibel, effectief en volledig op maat.",
+        "alternateName": "Bootcamp Trials & Outdoor Training Almere",
+        "description": "Bootcamp Trials & Outdoor Training in Almere. Uitdagende events en persoonlijke begeleiding van een gecertificeerde trainer. Flexibel, effectief en volledig op maat.",
         "url": "https://bcnsports.nl",
         "logo": "https://bcnsports.nl/images/BCN_LOGO_2024_WHITE.png",
         "image": "https://bcnsports.nl/images/P1210932.jpg",
@@ -87,7 +87,7 @@
         ],
         "hasOfferCatalog": {
             "@@type": "OfferCatalog",
-            "name": "Personal Training Pakketten",
+            "name": "Bootcamp Trials & Training Pakketten",
             "itemListElement": [
                 {
                     "@@type": "Offer",
@@ -186,7 +186,7 @@
                 <div class="md:col-span-1">
                     <img src="/images/BCN_LOGO_2024_WHITE.png" alt="BCN Sports" class="h-10 w-auto mb-6">
                     <p class="text-[#a0a0a0] text-sm leading-relaxed">
-                        Personal Training Outdoor in Almere. Train buiten met persoonlijke begeleiding van een gecertificeerde trainer.
+                        Bootcamp Trials & Outdoor Training in Almere. Uitdagende events en persoonlijke begeleiding van een gecertificeerde trainer.
                     </p>
                 </div>
                 <div>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Over Ons - BCN Sports Personal Training Outdoor Almere')
-@section('meta_description', 'BCN Sports Personal Training Outdoor in Almere. Persoonlijke training buiten met een unieke aanpak. Ontdek waarom outdoor fitness werkt.')
+@section('title', 'Over Ons - BCN Sports Bootcamp Trials & Outdoor Training Almere')
+@section('meta_description', 'BCN Sports - Bootcamp Trials en Outdoor Training in Almere. Uitdagende events en persoonlijke training buiten met een unieke aanpak.')
 
 @section('content')
     <!-- Hero Section -->
@@ -16,7 +16,7 @@
                 Over <span class="text-[#c4ff00]">BCN Sports</span>
             </h1>
             <p class="fade-in stagger-1 text-xl text-[#a0a0a0] max-w-2xl mx-auto">
-                Persoonlijke aandacht, professionele begeleiding en de kracht van buiten trainen.
+                Bootcamp Trials events, persoonlijke aandacht en de kracht van buiten trainen.
             </p>
         </div>
     </section>
@@ -27,21 +27,22 @@
             <div class="grid lg:grid-cols-2 gap-16 items-center">
                 <div class="fade-in-left">
                     <h2 class="text-4xl md:text-5xl font-black uppercase text-white mb-8">
-                        Personal Training <span class="text-[#c4ff00]">Outdoor</span>
+                        Bootcamp Trials & <span class="text-[#c4ff00]">Outdoor Training</span>
                     </h2>
                     <div class="space-y-6 text-[#a0a0a0] text-lg">
                         <p>
-                            BCN Sports staat voor persoonlijke training in de buitenlucht. Geen overvolle sportschool,
-                            geen wachten op apparaten, maar volledig op jou afgestemde sessies in de frisse lucht van Almere.
+                            BCN Sports organiseert Bootcamp Trials - uitdagende outdoor events waar je mentale en fysieke
+                            grenzen verlegt. Daarnaast bieden we persoonlijke training in de buitenlucht, volledig op jou
+                            afgestemd in de frisse lucht van Almere.
                         </p>
                         <p>
-                            Bij BCN Sports geloof ik dat effectieve training begint met persoonlijke aandacht.
-                            Elke sessie wordt afgestemd op jouw doelen, niveau en wensen. Of je nu wilt afvallen,
+                            Bij BCN Sports geloof ik dat echte groei begint buiten je comfortzone.
+                            Of je nu meedoet aan een Bootcamp Trials event, wilt afvallen,
                             sterker worden of je conditie wilt verbeteren - samen werken we aan jouw resultaat.
                         </p>
                         <p>
-                            De combinatie van persoonlijke begeleiding en de voordelen van buiten trainen
-                            zorgt voor een unieke trainervaring die je nergens anders vindt.
+                            De combinatie van uitdagende events, persoonlijke begeleiding en de voordelen van buiten trainen
+                            zorgt voor een unieke ervaring die je nergens anders vindt.
                         </p>
                     </div>
                 </div>
@@ -78,7 +79,7 @@
                     Bewezen In <span class="text-[#c4ff00]">Competitie</span>
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    De kennis en ervaring die ik opdoe bij professionele fitness competities zoals HYROX,
+                    De kennis en ervaring die ik opdoe bij competities zoals HYROX en onze eigen Bootcamp Trials events,
                     breng ik direct naar de trainingen.
                 </p>
             </div>
@@ -130,7 +131,7 @@
                     Waarom <span class="text-[#c4ff00]">BCN Sports</span>?
                 </h2>
                 <p class="fade-in stagger-1 text-[#a0a0a0] text-lg max-w-2xl mx-auto">
-                    Wat maakt Personal Training Outdoor bij BCN Sports anders?
+                    Wat maakt Bootcamp Trials & Outdoor Training bij BCN Sports anders?
                 </p>
             </div>
 
@@ -239,7 +240,7 @@
                 Klaar om te <span class="text-[#c4ff00]">starten</span>?
             </h2>
             <p class="fade-in stagger-1 text-xl text-[#a0a0a0] mb-10">
-                Plan een gratis kennismakingsgesprek en ontdek hoe Personal Training Outdoor jou kan helpen jouw doelen te bereiken.
+                Plan een gratis kennismakingsgesprek en ontdek hoe Bootcamp Trials & Outdoor Training jou kan helpen jouw doelen te bereiken.
             </p>
             <div class="fade-in stagger-2 flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="{{ route('contact') }}" class="btn-neon px-10 py-4 rounded-full text-lg">

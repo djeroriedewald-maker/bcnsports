@@ -32,6 +32,20 @@ class LocaleHelper
     }
 
     /**
+     * Whether a route name participates in NL/EN localization.
+     * Admin and other unmapped routes (often with required parameters)
+     * must be skipped to avoid UrlGenerationException.
+     */
+    protected static function isLocalizable(?string $routeName): bool
+    {
+        if ($routeName === null) {
+            return false;
+        }
+
+        return isset(self::$routeMap[$routeName]) || in_array($routeName, self::$routeMap, true);
+    }
+
+    /**
      * Get the URL for switching to the other language.
      */
     public static function switchLanguageUrl(): string
@@ -43,6 +57,11 @@ class LocaleHelper
         }
 
         $currentName = $currentRoute->getName();
+
+        // Non-localizable routes (e.g. admin pages, parameterized routes) stay put.
+        if (!self::isLocalizable($currentName)) {
+            return url()->current();
+        }
 
         if (app()->getLocale() === 'en') {
             // Switch to NL: find the NL route name
@@ -75,6 +94,17 @@ class LocaleHelper
         }
 
         $currentName = $currentRoute->getName();
+
+        // Non-localizable routes (e.g. admin pages, parameterized routes) have no
+        // language alternates; point both hreflangs at the current URL.
+        if (!self::isLocalizable($currentName)) {
+            $current = url()->current();
+
+            return [
+                'nl' => $current,
+                'en' => $current,
+            ];
+        }
 
         // Determine NL and EN route names
         if (app()->getLocale() === 'en') {

@@ -100,6 +100,18 @@
                     <p class="text-gray-500">Geen berichten gevonden</p>
                 </div>
             @else
+                <!-- Select All Header -->
+                <div class="flex items-center p-4 border-b border-white/10 bg-white/5">
+                    <label class="flex items-center cursor-pointer select-none">
+                        <input
+                            type="checkbox"
+                            id="selectAllCheckbox"
+                            class="w-5 h-5 rounded border-white/20 bg-bcn-dark text-bcn-green focus:ring-bcn-green focus:ring-offset-bcn-dark cursor-pointer"
+                            onchange="toggleSelectAll(this)"
+                        >
+                        <span class="ml-3 text-sm text-gray-400">Selecteer alle berichten op deze pagina</span>
+                    </label>
+                </div>
                 <div class="divide-y divide-white/10">
                     @foreach($messages as $message)
                         <div class="flex items-start p-6 hover:bg-white/5 transition">
@@ -151,20 +163,38 @@
 
     <script>
         function updateBulkBar() {
-            const checkboxes = document.querySelectorAll('.message-checkbox:checked');
+            const all = document.querySelectorAll('.message-checkbox');
+            const checked = document.querySelectorAll('.message-checkbox:checked');
             const bulkBar = document.getElementById('bulkBar');
             const selectedCount = document.getElementById('selectedCount');
 
-            if (checkboxes.length > 0) {
+            if (checked.length > 0) {
                 bulkBar.classList.remove('hidden');
-                selectedCount.textContent = checkboxes.length;
+                selectedCount.textContent = checked.length;
             } else {
                 bulkBar.classList.add('hidden');
             }
+
+            // Keep the "select all" checkbox in sync
+            const selectAll = document.getElementById('selectAllCheckbox');
+            if (selectAll) {
+                selectAll.checked = all.length > 0 && checked.length === all.length;
+                selectAll.indeterminate = checked.length > 0 && checked.length < all.length;
+            }
+        }
+
+        function toggleSelectAll(source) {
+            document.querySelectorAll('.message-checkbox').forEach(cb => cb.checked = source.checked);
+            updateBulkBar();
         }
 
         function deselectAll() {
             document.querySelectorAll('.message-checkbox').forEach(cb => cb.checked = false);
+            const selectAll = document.getElementById('selectAllCheckbox');
+            if (selectAll) {
+                selectAll.checked = false;
+                selectAll.indeterminate = false;
+            }
             updateBulkBar();
         }
 
